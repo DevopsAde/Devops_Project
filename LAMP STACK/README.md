@@ -19,9 +19,12 @@ Below we will create an EC2 instance, connect into it and establish a connection
 ## STEPS IN CREATING AN EC2 INSTANCE
 
 - Step 1:
+
+
 ![Alt text](Images/search.png)
 
 - Step 2
+
 ![Alt text](<Images/security script.png>)
 
 
