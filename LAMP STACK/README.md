@@ -20,65 +20,99 @@ Below we will create an EC2 instance, connect into it and establish a connection
 
 - Step 1:
 
+Type ec2 on the search field
+
 ![Alt text](Images/search.png)
 
 - Step 2
+
+Click the launch instance highlighted in orange
 
 ![Alt text](<Images/Instance Launch.png>)
 
 - Step 3
 
+Give your instance a name
+
 ![Alt text](<Images/instance name.png>)
 
 - Step 4
+
+Select the Ubuntu AMI Image and make sure is the free tier enabled so you dont incur costs
 
 ![Alt text](<Images/Select AMI.png>)
 
 - Step 5
 
+Create a key Pair, this will enabled you to securely SSH into the Ubuntu Machine. And the pem format should be selected.
+
 ![Alt text](<Images/Create Key Pair.png>)
 
 - Step 6
+
+Select the key pair you just created from the drop down menu.
 
 ![Alt text](<Images/KeyPair selected.png>)
 
 - Step 7
 
+For now select the default Security Group option
+
 ![Alt text](Images/SecurityGroup.png)
 
 - Step 8
+
+Hit the Launch button 
 
 ![Alt text](<Images/Click Launch.png>)
 
 - Step 9
 
+EC2 Instance launched successfully
+
 ![Alt text](<Images/launch successfully.png>)
 
 - Step 10
+
+Refresh the instance after initializing
 
 ![Alt text](<Images/Refresh Instance.png>)
 
 - Step 11
 
+Now on the far right corner click on connect to SSH into our Ubuntu Machine.
+
 ![Alt text](<Images/connect to instance.png>)
 
 - Step 12
+
+Select the SSH client option
 
 ![Alt text](<Images/SSH Client.png>)
 
 - Step 13
 
+Copy the ssh -i command full path address
+
 ![Alt text](<Images/SSH cmd connect.png>)
 
 - Step 14
+
+But first remember when we created the key pair it was saved into downloads, to proceed we need to change directory to Downloads and paste the ssh - command full path
+
+address into the terminal.
 
 ![Alt text](<Images/change dir.png>)
 
 - Step 15
 
+It will ask you to confirm Yes or Y, either will work by typing in the terminal Yes or Y.
+
 ![Alt text](<Images/enter yes.png>)
 
 - Step 16
+
+Holla!!! You are now inside the Ubuntu AMI Machine.
 
 ![Alt text](<Images/you inside the ubuntu server.png>)
 
