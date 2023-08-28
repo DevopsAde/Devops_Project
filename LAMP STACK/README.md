@@ -226,13 +226,17 @@ Holla!!! Apache works
 
 ### INSTALLING Mysql
 
-Now, that our web server up and running, we need to install Database Management System (DBMS)to be able to 
+Now, that our web server up and running, we need to install Database Management System (DBMS)to be able to store and manage data for the website in relational 
 
-store and amange data for the site in relational database.
+database.
 
 Now, to install mysql. We run the command below on the terminal:
 
 **`$ sudo apt install mysql-server`**
+
+![Alt text](<Images/mysql install.png>)
+
+![Alt text](<Images/mysql installation.png>)
 
 When prompted, confirm installation by typing **`Y`**` for 
 
@@ -242,15 +246,17 @@ After successful installation, log into the MySql with the command below:
 
 **`$ sudo mysql`**
 
+![Alt text](<Images/sudo connect to mysql.png>)
+
 This command above literally connects to the Mysql server as the administrative database user **`root`**
 
-In moving forward, its recommended we run a security script that comes pre-installed with MySQL. The purpose 
+In moving forward, its recommended we run a security script that comes pre-installed with MySQL. The purpose of this script is to remove insecure default settings and 
 
-of this script is to remove insecure default settings and lock down access to the database system. In doing 
-
-this we going to run the code below: 
+lock down access to the database system. In doing this we going to run the code below: 
 
 **`ALTER USER `root`@`localhost` IDENTIFIED WITH mysql_native_password BY `PassWord.1`;`**
+
+![Alt text](<Images/security script.png>)
 
 After inserting the code, Exit the MySQL shell.
 
@@ -258,14 +264,23 @@ Now, start the interactive script above by running:
 
 **`$ sudo mysql_secure_installation`**
 
+![Alt text](<Images/sql pass validation.png>)
+
 This will ask if you want to configure the **`VALIDATE PASSWORD PLUGIN`**
 
 The screenshot below follows the steps in doing this.
 
+![Alt text](<Images/sql pass validation.png>)
+
+![Alt text](<Images/sql pass validation B.png>)
+
+![Alt text](<Images/sql pass validation C.png>)
 
 Afterall this, we going to test if we are able to log in to the MySql console by typing:
 
 **`$ sudo mysql -p`**
+
+![Alt text](<Images/Log into Mysql.png>)
 
 - Note that the -p flag in this command is used to prompt you for the password used after changing the 
 
