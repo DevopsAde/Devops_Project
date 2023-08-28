@@ -1,8 +1,8 @@
 # Documentation For LAMP STACK IMPLEMENTATION
 
-- This Project shows how to build and deploy web applications using the LAMP stack. It emphasis on creating 
+- This Project shows how to build and deploy web applications using the LAMP stack. It emphasis on creating dynamic websites by combining Linux, Apache, MySQL, and 
 
-dynamic websites by combining Linux, Apache, MySQL, and PHP.
+PHP.
 
 ## Types of Technology stack
 
@@ -20,33 +20,83 @@ Below we will create an EC2 instance, connect into it and establish a connection
 
 - Step 1:
 
-
 ![Alt text](Images/search.png)
 
 - Step 2
 
-![Alt text](<Images/security script.png>)
+![Alt text](<Images/Instance Launch.png>)
 
+- Step 3
 
+![Alt text](<Images/instance name.png>)
 
+- Step 4
+
+![Alt text](<Images/Select AMI.png>)
+
+- Step 5
+
+![Alt text](<Images/Create Key Pair.png>)
+
+- Step 6
+
+![Alt text](<Images/KeyPair selected.png>)
+
+- Step 7
+
+![Alt text](Images/SecurityGroup.png)
+
+- Step 8
+
+![Alt text](<Images/Click Launch.png>)
+
+- Step 9
+
+![Alt text](<Images/launch successfully.png>)
+
+- Step 10
+
+![Alt text](<Images/Refresh Instance.png>)
+
+- Step 11
+
+![Alt text](<Images/connect to instance.png>)
+
+- Step 12
+
+![Alt text](<Images/SSH Client.png>)
+
+- Step 13
+
+![Alt text](<Images/SSH cmd connect.png>)
+
+- Step 14
+
+![Alt text](<Images/change dir.png>)
+
+- Step 15
+
+![Alt text](<Images/enter yes.png>)
+
+- Step 16
+
+![Alt text](<Images/you inside the ubuntu server.png>)
 
 ## Installing Apache and Updating the Firewall
 
 What is Apache
 
-Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is
+Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. Most WordPress hosting 
 
-fast, reliable, and secure. Most WordPress hosting providers use Apache as their web server software.
+providers use Apache as their web server software.
 
 Now, we going to install Apache using Ubuntu's package
 
 manager **`apt`**:
 
-so going back to the EC2 instance we created, remember we stopped it, now we going to start it to so has to 
+so going back to the EC2 instance we created, remember we stopped it, now we going to start it to so has to enter into the ubuntu machine and install Apache. After 
 
-enter into the ubuntu machine and install Apache. After successfully starting the EC2 instance, SSH into the
- 
-machine and run the command below:
+successfully starting the EC2 instance, SSH into the machine and run the command below:
 
  **`sudo apt update`**
  **`run apache2 package installation`**
@@ -56,26 +106,19 @@ To verify that apache2 is running as a service, use the following command below:
 
 **`sudo systemctl status apache2`**
 
+From the above image all status green and running, which indicates everything is running correctly. But before we can recieve any traffic, we need to open TCP port 22 
 
-From the above image all status green and running, which indicates everything is running correctly. But 
-
-before we can recieve any traffic, we need to open TCP port 22 on the EC2 instance and SSH into it, and also 
-
-add a rule to EC2 configuration to open inbound connection through port 80:
+on the EC2 instance and SSH into it, and also add a rule to EC2 configuration to open inbound connection through port 80:
 
 - Below are the steps and configuration:
 
-Now, that all settings and configurations are implemented, and server is running we can access it locally 
-
-from the internet.
+Now, that all settings and configurations are implemented, and server is running we can access it locally from the internet.
 
 To do that lets run it locally on the Ubuntu shell
 
 **`$ curl http://localhost:80`** and **`$ curl http://127.0.0.1:80`**
 
-Both command practically does the same thing, the first try to access the server via DNS name and the second 
-
-one by IP address.
+Both command practically does the same thing, the first try to access the server via DNS name and the second one by IP address.
 
 # Note
 
