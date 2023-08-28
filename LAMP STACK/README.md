@@ -154,9 +154,11 @@ To verify that apache2 is running as a service, use the following command below:
 
 ![Alt text](<Images/apache status.png>)
 
-From the above image all status green and running, which indicates everything is running correctly. But before we can recieve any traffic, we need to open TCP port 22 
+From the above image all status green and running, which indicates everything is running correctly. 
 
-on the EC2 instance and SSH into it, and also add a rule to EC2 configuration to open inbound connection through port 80:
+But before we can recieve any traffic, we need to open TCP port 22 on the EC2 instance and SSH into it, and also add a rule to EC2 configuration to open inbound 
+
+connection through port 80:
 
 - Below are the steps and configuration:
 
