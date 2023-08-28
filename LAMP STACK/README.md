@@ -121,7 +121,6 @@ Holla!!! You are now inside the Ubuntu AMI Machine.
 What is Apache:
 
 Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. Most WordPress hosting 
-
 providers use Apache as their web server software.
 
 Now, we going to install Apache using Ubuntu's package
