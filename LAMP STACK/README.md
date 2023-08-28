@@ -348,9 +348,9 @@ save the changes and exit. Then reload Apache so the changes can take effect:
 
 With this command **`$ sudo systemctl reload apache2`**
 
-Note that we have custom location to host our website's files and folders, we will create a PHP test script to confirm that Apache is able to handle and process 
+Note that we have custom location to host our website's files and folders, we will create a PHP test script to confirm that Apache is able to handle 
 
-requests for PHP files. We will create a new file named **`index.php`** inside the custom web root folder below:
+and process requests for PHP files. We will create a new file named **`index.php`** inside the custom web root folder below:
 
 **`$ vim /var/www/projectlamp/index.php`**. This will open a blank file, insert this into the blank file 
 
