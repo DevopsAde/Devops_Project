@@ -136,15 +136,41 @@ successfully starting the EC2 instance, SSH into the machine and run the command
  **`run apache2 package installation`**
  **`$ sudo apt install apache2`**
 
+ But first we need to update a list of packages in package manager with the command below:
+
+- To Update a list of packages
+
+![Alt text](<Images/apache packages.png>)
+
+- Run apache2 package installation
+
+![Alt text](<Images/sudo apt install.png>)
+
 To verify that apache2 is running as a service, use the following command below:
 
 **`sudo systemctl status apache2`**
+
+![Alt text](<Images/apache status.png>)
 
 From the above image all status green and running, which indicates everything is running correctly. But before we can recieve any traffic, we need to open TCP port 22 
 
 on the EC2 instance and SSH into it, and also add a rule to EC2 configuration to open inbound connection through port 80:
 
 - Below are the steps and configuration:
+
+![Alt text](<Images/click on security group.png>)
+
+![Alt text](<Images/click on edit inbound rules.png>)
+
+![Alt text](<Images/edit inbound rules.png>)
+
+![Alt text](<Images/inbound rules saved successfully.png>)
+
+![Alt text](<Images/curl http.png>)
+
+![Alt text](<Images/copy ipv4 address.png>)
+
+![Alt text](<Images/Apache works.png>)
 
 Now, that all settings and configurations are implemented, and server is running we can access it locally from the internet.
 
