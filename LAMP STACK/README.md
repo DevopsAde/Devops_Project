@@ -312,7 +312,7 @@ After successful installation we can check the PHP Version installed with the co
 
 **`php -v`**
 
-![Alt text](<Images/New php version.png>)
+![Alt text](<Images/php version.png>)
 
 At this point, the full LAMP (Linux, Apache, MySql & Php) is completely installed and fully operational.
 
