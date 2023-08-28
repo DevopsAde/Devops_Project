@@ -296,9 +296,11 @@ Now, MySQL server is now installed and secured.
 
 Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP which is used to display dynamic content to the end user. 
 
-We wiil need to install the **`php`** package, and **`php-mysql`** which is a PHP module that allows PHP to communicate with MySQL-based databases. Also we will need 
+We wiil need to install the **`php`** package, and **`php-mysql`** which is a PHP module that allows PHP to communicate 
 
-**`libapache2-mod-php`** to enable Apache to handle PHP files. Note, Core PHP packages will utomatically be installed as dependencies.
+with MySQL-based databases. Also we will need  **`libapache2-mod-php`** to enable Apache to handle PHP files. 
+
+Note, Core PHP packages will utomatically be installed as dependencies.
 
 - ALL COMMANDS CAN BE RUN AT ONCE WITH THE FOLLOWING COMMANDS BELOW:
 
@@ -316,9 +318,9 @@ After successful installation we can check the PHP Version installed with the co
 
 At this point, the full LAMP (Linux, Apache, MySql & Php) is completely installed and fully operational.
 
-To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s files and folders. The main reason behind this logic is, 
+To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s files and folders. 
 
-**`Virtual host`** allows you to have multiple websites located on a single machine.
+The main reason behind this logic is, **`Virtual host`** allows you to have multiple websites located on a single machine.
 
 - To configure our first Virtual Host, note the default **`Directory Index`** settings on Apache, a file named **`index.html`** will always take precedence over an 
 
