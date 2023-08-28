@@ -118,7 +118,7 @@ Holla!!! You are now inside the Ubuntu AMI Machine.
 
 ## Installing Apache and Updating the Firewall
 
-What is Apache
+- What is Apache:
 
 Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. Most WordPress hosting 
 
@@ -136,7 +136,7 @@ successfully starting the EC2 instance, SSH into the machine and run the command
  **`run apache2 package installation`**
  **`$ sudo apt install apache2`**
 
- But first we need to update a list of packages in package manager with the command below:
+But first we need to update a list of packages in package manager with the command below:
 
 - To Update a list of packages
 
