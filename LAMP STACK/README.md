@@ -340,11 +340,11 @@ File after Edit
 
 ![Alt text](<Images/edit php success.png>)
 
-Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**, by pressing the 
+Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**, 
 
-**`Esc key`**, Press **`:(colon)`** to open he prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit **`Enter`**. This will 
+by pressing the **`Esc key`**, Press **`:(colon)`** to open he prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit 
 
-save the changes and exit. Then reload Apache so the changes can take effect:
+**`Enter`**. This will save the changes and exit. Then reload Apache so the changes can take effect:
 
 With this command **`$ sudo systemctl reload apache2`**
 
