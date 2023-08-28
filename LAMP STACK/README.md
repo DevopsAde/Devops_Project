@@ -118,7 +118,7 @@ Holla!!! You are now inside the Ubuntu AMI Machine.
 
 ## Installing Apache and Updating the Firewall
 
-- What is Apache:
+What is Apache:
 
 Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. Most WordPress hosting 
 
@@ -172,13 +172,13 @@ Click on the edit inbound rule on the right
 
 Step 3:
 
-Edit all parameters and save
+Edit all parameters and save rules
 
 ![Alt text](<Images/edit inbound rules.png>)
 
 Step 4:
 
-Save all parameters
+Inbound rules edited succesfully
 
 ![Alt text](<Images/inbound rules saved successfully.png>)
 
@@ -215,6 +215,7 @@ Below is the output:
 Same content got by **`curl`** command in the terminal, but the other is nicely presented in **`HTML`**` 
 
 format on the web browser.
+
 Step 7:
 
 Holla!!! Apache works
