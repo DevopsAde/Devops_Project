@@ -56,7 +56,7 @@ Select the key pair you just created from the drop down menu.
 
 - Step 7
 
-For now select the default Security Group option
+For now select the default Security Group option from the Drop down menu.
 
 ![Alt text](Images/SecurityGroup.png)
 
