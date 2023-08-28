@@ -296,7 +296,7 @@ Now, MySQL server is now installed and secured.
 
 Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP which is used to display dynamic content to the end user. 
 
-We wiil need to install the **`php`** package, also **`php-mysql`** which is a PHP module that allows PHP to communicate with MySQL-based databases. Also we will need 
+We wiil need to install the **`php`** package, and **`php-mysql`** which is a PHP module that allows PHP to communicate with MySQL-based databases. Also we will need 
 
 **`libapache2-mod-php`** to enable Apache to handle PHP files. Note, Core PHP packages will utomatically be installed as dependencies.
 
@@ -304,9 +304,15 @@ We wiil need to install the **`php`** package, also **`php-mysql`** which is a P
 
 **`$ sudo apt install php libapache2-mod-php php-mysql`**
 
+![Alt text](<Images/php installation.png>)
+
+![Alt text](<Images/php install cont.png>)
+
 After successful installation we can check the PHP Version installed with the command below:
 
 **`php -v`**
+
+![Alt text](<Images/New php version.png>)
 
 At this point, the full LAMP (Linux, Apache, MySql & Php) is completely installed and fully operational.
 
@@ -325,6 +331,14 @@ directive. To do this run the command below:
 **`sudo vim /etc/apache2/mods-enabled/dir.conf`**
 
 This command opens up the vim for you to edit the file.
+
+Initial File Before Edit
+
+![Alt text](<Images/edit php file.png>)
+
+File after Edit
+
+![Alt text](<Images/edit php success.png>)
 
 Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**, by pressing the 
 
