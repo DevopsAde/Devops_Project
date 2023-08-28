@@ -226,9 +226,9 @@ Holla!!! Apache works
 
 ### INSTALLING Mysql
 
-Now, that our web server up and running, we need to install Database Management System (DBMS) to be able to store and manage data for the website in 
+Now, that our web server up and running, we need to install Database Management System (DBMS) to be able to store and manage data 
 
-relational database.
+for the website in relational database.
 
 Now, to install mysql. We run the command below on the terminal:
 
