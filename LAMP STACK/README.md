@@ -158,19 +158,33 @@ on the EC2 instance and SSH into it, and also add a rule to EC2 configuration to
 
 - Below are the steps and configuration:
 
+Step 1:
+
+Click on the security group tab option
+
 ![Alt text](<Images/click on security group.png>)
+
+Step 2:
+
+Click on the edit inbound rule on the right
 
 ![Alt text](<Images/click on edit inbound rules.png>)
 
+Step 3:
+
+Edit all parameters and save
+
 ![Alt text](<Images/edit inbound rules.png>)
+
+Step 4:
+
+Save all parameters
 
 ![Alt text](<Images/inbound rules saved successfully.png>)
 
-![Alt text](<Images/curl http.png>)
+Step 5:
 
-![Alt text](<Images/copy ipv4 address.png>)
-
-![Alt text](<Images/Apache works.png>)
+Now lets check if we can acess it on our Ubuntu shell.
 
 Now, that all settings and configurations are implemented, and server is running we can access it locally from the internet.
 
@@ -179,6 +193,14 @@ To do that lets run it locally on the Ubuntu shell
 **`$ curl http://localhost:80`** and **`$ curl http://127.0.0.1:80`**
 
 Both command practically does the same thing, the first try to access the server via DNS name and the second one by IP address.
+
+![Alt text](<Images/curl http.png>)
+
+Step 6:
+
+Copy the ipv4 address and paste it on the local web browser of our machine.
+
+![Alt text](<Images/copy ipv4 address.png>)
 
 # Note
 
@@ -193,6 +215,11 @@ Below is the output:
 Same content got by **`curl`** command in the terminal, but the other is nicely presented in **`HTML`**` 
 
 format on the web browser.
+Step 7:
+
+Holla!!! Apache works
+
+![Alt text](<Images/Apache works.png>)
 
 ### INSTALLING Mysql
 
