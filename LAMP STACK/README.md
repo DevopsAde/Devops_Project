@@ -120,16 +120,17 @@ Holla!!! You are now inside the Ubuntu AMI Machine.
 
 What is Apache:
 
-Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. Most WordPress hosting 
-providers use Apache as their web server software.
+Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. 
+
+Most WordPress hosting providers use Apache as their web server software.
 
 Now, we going to install Apache using Ubuntu's package
 
 manager **`apt`**:
 
-so going back to the EC2 instance we created, remember we stopped it, now we going to start it to so has to enter into the ubuntu machine and install Apache. After 
+so going back to the EC2 instance we created, remember we stopped it, now we going to start it to so has to enter into the ubuntu machine and install Apache. 
 
-successfully starting the EC2 instance, SSH into the machine and run the command below:
+After successfully starting the EC2 instance, SSH into the machine and run the command below:
 
  **`sudo apt update`**
  **`run apache2 package installation`**
