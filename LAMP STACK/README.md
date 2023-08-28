@@ -269,12 +269,15 @@ This will ask if you want to configure the **`VALIDATE PASSWORD PLUGIN`**
 The screenshot below follows the steps in doing this.
 
 SCREENSHOT 1
+
 ![Alt text](<Images/sql pass validation.png>)
 
 SCREENSHOT 2
+
 ![Alt text](<Images/sql pass validation B.png>)
 
 SCREENSHOT 3
+
 ![Alt text](<Images/sql pass validation C.png>)
 
 Afterall this, we going to test if we are able to log in to the MySql console by typing:
