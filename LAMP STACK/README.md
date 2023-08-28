@@ -357,4 +357,6 @@ requests for PHP files. We will create a new file named **`index.php`** inside t
 **`<?php
 phpinfo();`**
 
+![Alt text](<Images/php blank file.png>)
+
 After doing this save and close the file and refresh the page and below is the output:
