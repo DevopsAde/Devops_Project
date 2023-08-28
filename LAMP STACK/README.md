@@ -226,9 +226,9 @@ Holla!!! Apache works
 
 ### INSTALLING Mysql
 
-Now, that our web server up and running, we need to install Database Management System (DBMS)to be able to store and manage data for the website in relational 
+Now, that our web server up and running, we need to install Database Management System (DBMS) to be able to store and manage data for the website in 
 
-database.
+relational database.
 
 Now, to install mysql. We run the command below on the terminal:
 
@@ -238,9 +238,7 @@ Now, to install mysql. We run the command below on the terminal:
 
 ![Alt text](<Images/mysql installation.png>)
 
-When prompted, confirm installation by typing **`Y`**` for 
-
-Yes and hit **`Enter`**
+When prompted, confirm installation by typing **`Y`**` for Yes and hit **`Enter`**
 
 After successful installation, log into the MySql with the command below:
 
@@ -290,15 +288,11 @@ Now, MySQL server is now installed and secured.
 
 ## Installing PHP
 
-Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP 
+Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP which is used to display dynamic content to the end user. 
 
-which is used to display dynamic content to the end user. We wiil need to install the **`php`** package, also 
+We wiil need to install the **`php`** package, also **`php-mysql`** which is a PHP module that allows PHP to communicate with MySQL-based databases. Also we will need 
 
-**`php-mysql`** which is a PHP module that allows PHP to communicate with MySQL-based databases. Also we will 
-
-need **`libapache2-mod-php`** to enable Apache to handle PHP files. Note, Core PHP packages will 
-
-automatically be installed as dependencies.
+**`libapache2-mod-php`** to enable Apache to handle PHP files. Note, Core PHP packages will utomatically be installed as dependencies.
 
 - ALL COMMANDS CAN BE RUN AT ONCE WITH THE FOLLOWING COMMANDS BELOW:
 
@@ -310,41 +304,36 @@ After successful installation we can check the PHP Version installed with the co
 
 At this point, the full LAMP (Linux, Apache, MySql & Php) is completely installed and fully operational.
 
-To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s 
+To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s files and folders. The main reason behind this logic is, 
 
-files and folders. The main reason behind this logic is, **`Virtual host`** allows you to have multiple
+**`Virtual host`** allows you to have multiple websites located on a single machine.
 
- websites located on a single machine.
+- To configure our first Virtual Host, note the default **`Directory Index`** settings on Apache, a file named **`index.html`** will always take precedence over an 
 
- - To configure our first Virtual Host, note the default **`Directory Index`** settings on Apache, a file 
- 
-named **`index.html`** will always take precedence over an **`index.php`** file. 
+**`index.php`** file. 
 
-To do this we edit the **`/etc/apache2/mods-enabled/dir.conf`** file and change the order in which the 
+To do this we edit the **`/etc/apache2/mods-enabled/dir.conf`** file and change the order in which the **`index.php`** file is listed within the **`Directory Index`** 
 
-**`index.php`** file is listed within the **`Directory Index`** directive. To do this run the command below:
+directive. To do this run the command below:
 
 **`sudo vim /etc/apache2/mods-enabled/dir.conf`**
 
 This command opens up the vim for you to edit the file.
 
-Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`**
+Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**, by pressing the 
 
-after you save and close the file on **`VIM`**, by pressing the **`Esc key`**, Press **`:(colon)`** to open 
+**`Esc key`**, Press **`:(colon)`** to open he prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit **`Enter`**. This will 
 
-the prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit 
-
-**`Enter`**. This will save the changes and exit. Then reload Apache so the changes can take effect:
+save the changes and exit. Then reload Apache so the changes can take effect:
 
 With this command **`$ sudo systemctl reload apache2`**
 
-Note that we have custom location to host our website's files and folders, we will create a PHP test script
+Note that we have custom location to host our website's files and folders, we will create a PHP test script to confirm that Apache is able to handle and process 
 
-to confirm that Apache is able to handle and process requests for PHP files. We will create a new file named 
-
-**`index.php`** inside the custom web root folder below:
+requests for PHP files. We will create a new file named **`index.php`** inside the custom web root folder below:
 
 **`$ vim /var/www/projectlamp/index.php`**. This will open a blank file, insert this into the blank file 
+
 **`<?php
 phpinfo();`**
 
