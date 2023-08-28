@@ -24,7 +24,7 @@ The analogy when you commit, git literally takes a snapshot of the current state
 
 Now lets make our first commit by following the following steps below.
 
-![Alt text](<Making your first Commit.png>)
+![Alt text](<Images/Making your first Commit.png>)
 
 ## NOTE
 
