@@ -130,7 +130,6 @@ manager **`apt`**:
 
 so going back to the EC2 instance we created, remember we stopped it, now we going to start it to so has to enter into the ubuntu machine and install Apache.
 
-
 After successfully starting the EC2 instance, SSH into the machine and run the command below:
 
  **`sudo apt update`**
