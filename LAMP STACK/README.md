@@ -367,9 +367,11 @@ After doing this save and close the file and refresh the page and below is the o
 
 Note, the primary purpose of this output above, is useful for debugging and to ensure that your setttings are applied correctly.
 
-It's also best to remove the page you created as it contains sensitive information about the PHP environment and the Ubuntu Server. By doing this we apply the 
+It's also best to remove the page you created as it contains sensitive information about the PHP environment and the Ubuntu Server.
 
-following command: **'$ sudo rm /var/www/projectlamp/index.php'**
+ By doing this we apply the following command: 
+ 
+ **'$ sudo rm /var/www/projectlamp/index.php'**
 
 ## Creating a Virtual Host for your Website using Apache
 
@@ -381,16 +383,18 @@ Next step is to assign ownership of the directory with your current system user:
 
 **'sudo chown -R $USER:$USER /var/www/newproject'**
 
-Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file. By hitting the **'i'** for insert button on the keyboard paste the following text below:
+Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file. 
 
-**' <VirtualHost *:80>
+By hitting the **'i'** for insert button on the keyboard paste the following text below:
+
+**'<VirtualHost *:80>
 ServerName newproject
 ServerAlias www.newproject
 ServerAdmin webmaster@localhost
 DocumentRoot /var/www/newproject
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost> '**
+</VirtualHost>'**
 
 Now use a2ensite command to enable the new virtual host:
 
