@@ -362,3 +362,14 @@ phpinfo();`**
 ![Alt text](<Images/php blank file.png>)
 
 After doing this save and close the file and refresh the page and below is the output:
+
+![Alt text](<Images/New php version.png>)
+
+Note, the primary purpose of this output above, is useful for debugging and to ensure that your setttings are applied correctly.
+
+It's also best to remove the page you created as it contains sensitive information about the PHP environment and the Ubuntu Server. By doing this we apply the 
+
+following command: **'$ sudo rm /var/www/projectlamp/index.php'**
+
+## Creating a Virtual Host for your Website using Apache
+
