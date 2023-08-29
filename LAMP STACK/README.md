@@ -373,3 +373,38 @@ following command: **'$ sudo rm /var/www/projectlamp/index.php'**
 
 ## Creating a Virtual Host for your Website using Apache
 
+We will set up a domain called **'projectlamp'** and create a directory for **'projectlamp'** using **'mkdir'** command as follows:
+
+**'sudo mkdir /var/www/projectlamp'**
+
+Next step is to assign ownership of the directory with your current system user:
+
+**'sudo chown -R $USER:$USER /var/www/newproject'**
+
+Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file. By hitting the **'i'** for insert button on the keyboard paste the following text below:
+
+**'<VirtualHost *:80>
+ServerName newproject
+ServerAlias www.newproject
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/newproject
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>'**
+
+Now use a2ensite command to enable the new virtual host:
+
+**'sudo a2ensite newproject'**
+
+To disable Apache default website use **'sudo a2dissite 000-default'**
+
+To make sure the configuration file doesnt contain any syntax errors, run the command below: **'sudo apache2ctl configtest'**.
+
+![Alt text](<Images/syntax fine.png>)
+
+Now Reload Apache so these following changes take effect
+
+**'sudo systemctl reload apache2'**
+
+
+# THANK YOU
