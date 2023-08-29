@@ -1,6 +1,6 @@
 # Documentation For LAMP STACK IMPLEMENTATION
 
-- This Project shows how to build and deploy web applications using the LAMP stack. It emphasis on creating dynamic websites by combining Linux, Apache, MySQL, and 
+- This Project shows how to build and deploy web applications using the LAMP stack. It emphasis on creating dynamic websites by combining Linux, Apache, MySQL, and
 
 PHP.
 
@@ -62,7 +62,7 @@ For now select the default Security Group option from the Drop down menu.
 
 - Step 8
 
-Hit the Launch button 
+Hit the Launch button
 
 ![Alt text](<Images/Click Launch.png>)
 
@@ -120,7 +120,7 @@ Holla!!! You are now inside the Ubuntu AMI Machine.
 
 What is Apache:
 
-Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure. 
+Apache is an open source software available for free. It runs on 67% of all webservers in the world. It is fast, reliable, and secure.
 
 Most WordPress hosting providers use Apache as their web server software.
 
@@ -152,7 +152,7 @@ To verify that apache2 is running as a service, use the following command below:
 
 ![Alt text](<Images/apache status.png>)
 
-From the above image all status green and running, which indicates everything is running correctly. 
+From the above image all status green and running, which indicates everything is running correctly.
 
 But before we can recieve any traffic, we need to open TCP port 22 on the EC2 instance and SSH into it.
 
@@ -206,15 +206,15 @@ Copy the ipv4 address and paste it on the local web browser of our machine.
 
 # Note
 
-- The curl is a tool for transferring data from or to a server using URLs. It supports these protocols: DICT, 
+- The curl is a tool for transferring data from or to a server using URLs. It supports these protocols: DICT,
 
-FILE, FTP, FTPS, GOPHER, GOPHERS, HHTP, HTTPS, IMAP etc. Now, to fully test how the Apache HTTP server can 
+FILE, FTP, FTPS, GOPHER, GOPHERS, HHTP, HTTPS, IMAP etc. Now, to fully test how the Apache HTTP server can
 
 respond to request from the internet. On the web browser type this in url.
 
 Below is the output:
 
-Same content got by **`curl`** command in the terminal, but the other is nicely presented in **`HTML`**` 
+Same content got by **`curl`** command in the terminal, but the other is nicely presented in **`HTML`**`
 
 format on the web browser.
 
@@ -226,7 +226,7 @@ Holla!!! Apache works
 
 ### INSTALLING Mysql
 
-Now, that our web server up and running, we need to install Database Management System (DBMS) to be able to store and manage data 
+Now, that our web server up and running, we need to install Database Management System (DBMS) to be able to store and manage data
 
 for the website in relational database.
 
@@ -238,7 +238,7 @@ Now, to install mysql. We run the command below on the terminal:
 
 ![Alt text](<Images/mysql installation.png>)
 
-When prompted, confirm installation by typing **`Y`**` for Yes and hit **`Enter`**
+When prompted, confirm installation by typing **`Y`**`for Yes and hit **`Enter`**
 
 After successful installation, log into the MySql with the command below:
 
@@ -248,11 +248,11 @@ After successful installation, log into the MySql with the command below:
 
 This command above literally connects to the Mysql server as the administrative database user **`root`**
 
-In moving forward, its recommended we run a security script that comes pre-installed with MySQL. The purpose of this script is to remove insecure default settings and 
+In moving forward, its recommended we run a security script that comes pre-installed with MySQL. The purpose of this script is to remove insecure default settings and
 
-lock down access to the database system. In doing this we going to run the code below: 
+lock down access to the database system. In doing this we going to run the code below:
 
-**`ALTER USER `root`@`localhost` IDENTIFIED WITH mysql_native_password BY `PassWord.1`;`**
+**`ALTER USER`root`@`localhost` IDENTIFIED WITH mysql_native_password BY `PassWord.1`;`**
 
 ![Alt text](<Images/security script.png>)
 
@@ -286,7 +286,7 @@ Afterall this, we going to test if we are able to log in to the MySql console by
 
 ![Alt text](<Images/Log into Mysql.png>)
 
-- Note that the -p flag in this command is used to prompt you for the password used after changing the 
+- Note that the -p flag in this command is used to prompt you for the password used after changing the
 
 **`root`** user.
 
@@ -294,11 +294,11 @@ Now, MySQL server is now installed and secured.
 
 ## Installing PHP
 
-Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP which is used to display dynamic content to the end user. 
+Having installed Apache to serve the content and MySQL to store and manage data. We going to delve into PHP which is used to display dynamic content to the end user.
 
-We wiil need to install the **`php`** package, and **`php-mysql`** which is a PHP module that allows PHP to communicate 
+We wiil need to install the **`php`** package, and **`php-mysql`** which is a PHP module that allows PHP to communicate
 
-with MySQL-based databases. Also we will need  **`libapache2-mod-php`** to enable Apache to handle PHP files. 
+with MySQL-based databases. Also we will need  **`libapache2-mod-php`** to enable Apache to handle PHP files.
 
 Note, Core PHP packages will utomatically be installed as dependencies.
 
@@ -318,15 +318,15 @@ After successful installation we can check the PHP Version installed with the co
 
 At this point, the full LAMP (Linux, Apache, MySql & Php) is completely installed and fully operational.
 
-To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s files and folders. 
+To test the setup with a PHP script, its best to set up a proper **`Apache Virtual Host`** to hold website`s files and folders.
 
 The main reason behind this logic is, **`Virtual host`** allows you to have multiple websites located on a single machine.
 
-- To configure our first Virtual Host, note the default **`Directory Index`** settings on Apache, a file named **`index.html`** will always take precedence over an 
+- To configure our first Virtual Host, note the default **`Directory Index`** settings on Apache, a file named **`index.html`** will always take precedence over an
 
-**`index.php`** file. 
+**`index.php`** file.
 
-To do this we edit the **`/etc/apache2/mods-enabled/dir.conf`** file and change the order in which the **`index.php`** file is listed within the **`Directory Index`** 
+To do this we edit the **`/etc/apache2/mods-enabled/dir.conf`** file and change the order in which the **`index.php`** file is listed within the **`Directory Index`**
 
 directive. To do this run the command below:
 
@@ -342,19 +342,19 @@ File after Edit
 
 ![Alt text](<Images/edit php success.png>)
 
-Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**, 
+Edit this on the DirectoryIndex **`index.php index.html index.cgi index.pl index.xhtml index.htm`** after you save and close the file on **`VIM`**,
 
-by pressing the **`Esc key`**, Press **`:(colon)`** to open he prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit 
+by pressing the **`Esc key`**, Press **`:(colon)`** to open he prompt bar in the bottom left corner of the window. Type **`x`** after the **`colon`** and hit
 
 **`Enter`**. This will save the changes and exit. Then reload Apache so the changes can take effect:
 
 With this command **`$ sudo systemctl reload apache2`**
 
-Note that we have custom location to host our website's files and folders, we will create a PHP test script to confirm that Apache is able to 
+Note that we have custom location to host our website's files and folders, we will create a PHP test script to confirm that Apache is able to
 
 handle and process requests for PHP files. We will create a new file named **`index.php`** inside the custom web root folder below:
 
-**`$ vim /var/www/projectlamp/index.php`**. This will open a blank file, insert this into the blank file 
+**`$ vim /var/www/projectlamp/index.php`**. This will open a blank file, insert this into the blank file
 
 **`<?php
 phpinfo();`**
@@ -369,46 +369,45 @@ Note, the primary purpose of this output above, is useful for debugging and to e
 
 It's also best to remove the page you created as it contains sensitive information about the PHP environment and the Ubuntu Server.
 
- By doing this we apply the following command: 
- 
- **'$ sudo rm /var/www/projectlamp/index.php'**
+ By doing this we apply the following command:
+
+ **`$ sudo rm /var/www/projectlamp/index.php`**
 
 ## Creating a Virtual Host for your Website using Apache
 
-We will set up a domain called **'projectlamp'** and create a directory for **'projectlamp'** using **'mkdir'** command as follows:
+We will set up a domain called **'projectlamp'** and create a directory for **`projectlamp`** using **`mkdir`** command as follows:
 
-**'sudo mkdir /var/www/projectlamp'**
+**`sudo mkdir /var/www/projectlamp`**
 
 Next step is to assign ownership of the directory with your current system user:
 
 **'sudo chown -R $USER:$USER /var/www/newproject'**
 
-Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file. 
+Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file.
 
-By hitting the **'i'** for insert button on the keyboard paste the following text below:
+By hitting the **`i`** for insert button on the keyboard paste the following text below:
 
-**'<VirtualHost *:80>
+**`<VirtualHost *:80>
 ServerName newproject
-ServerAlias www.newproject
+ServerAlias <www.newproject>
 ServerAdmin webmaster@localhost
 DocumentRoot /var/www/newproject
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>'**
+</VirtualHost>`**
 
 Now use a2ensite command to enable the new virtual host:
 
-**'sudo a2ensite newproject'**
+**`sudo a2ensite newproject`**
 
-To disable Apache default website use **'sudo a2dissite 000-default'**
+To disable Apache default website use **`sudo a2dissite 000-default`**
 
-To make sure the configuration file doesnt contain any syntax errors, run the command below: **'sudo apache2ctl configtest'**.
+To make sure the configuration file doesnt contain any syntax errors, run the command below: **`sudo apache2ctl configtest`**.
 
 ![Alt text](<Images/syntax fine.png>)
 
 Now Reload Apache so these following changes take effect
 
-**'sudo systemctl reload apache2'**
-
+**`sudo systemctl reload apache2`**
 
 # THANK YOU
