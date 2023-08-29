@@ -383,14 +383,14 @@ Next step is to assign ownership of the directory with your current system user:
 
 Then open and create a new configuration filein apache using the **'vi'** or **'vim'** line editor, this creates a new blank file. By hitting the **'i'** for insert button on the keyboard paste the following text below:
 
-**'<VirtualHost *:80>
+**' <VirtualHost *:80>
 ServerName newproject
 ServerAlias www.newproject
 ServerAdmin webmaster@localhost
 DocumentRoot /var/www/newproject
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>'**
+</VirtualHost> '**
 
 Now use a2ensite command to enable the new virtual host:
 
