@@ -387,21 +387,21 @@ Then open and create a new configuration filein apache using the **'vi'** or **'
 
 By hitting the **`i`** for insert button on the keyboard paste the following text below:
 
-**`<VirtualHost *:80>
+**`<VirtualHost *:80>`**
 
-ServerName newproject
+**`ServerName newproject`**
 
-ServerAlias <www.newproject>
+**`ServerAlias <www.newproject>`**
 
-ServerAdmin webmaster@localhost
+**`ServerAdmin webmaster@localhost`**
 
-DocumentRoot /var/www/newproject
+**`DocumentRoot /var/www/newproject`**
 
-ErrorLog ${APACHE_LOG_DIR}/error.log
+**`ErrorLog ${APACHE_LOG_DIR}/error.log`**
 
-CustomLog ${APACHE_LOG_DIR}/access.log combined
+**`CustomLog ${APACHE_LOG_DIR}/access.log combined`**
 
-</VirtualHost>`**
+**`</VirtualHost>`**
 
 Now use a2ensite command to enable the new virtual host:
 
