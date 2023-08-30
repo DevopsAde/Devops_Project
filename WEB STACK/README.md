@@ -137,3 +137,15 @@ processing. Also, we will need **`php-mysql`**, a PHP module that allows PHP to 
 We need to install this 2 packages at once, command below:
 
 **`sudo apt install php-fpm php-mysql`**
+
+When Prompted enter **`Y`** and Hit **`Enter`**
+
+![Alt text](<Images/package dependencies.png>)
+
+Successful Download in Progress
+
+![Alt text](<Images/dependencies install progress.png>)
+
+Now that we have the PHP components installed we now have to configure Nginx to use them.
+
+## Configuring Nginx to Use PHP Processor
