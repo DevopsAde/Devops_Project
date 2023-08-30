@@ -122,4 +122,4 @@ Hurray what this means is that password was set, and changed successfully.
 
 Now that my Mysql server is set up and running we move to the setting up and installing PHP.
 
-##### Installing PHP
+## Installing PHP
