@@ -71,3 +71,21 @@ using the Public IPv4 address which in this case is **`34.255.87.229`**
 ### Hurray Nginx Server Works
 
 ![Alt text](<Images/nginx confirmed.png>)
+
+#### INSTALLING MYSQL
+
+We Previously have our Nginx Web Server up and running, now we need to install the Database Management System (DBMS) 
+
+to store and manage data for the site in a relational database.
+
+Using this command we installed Mysql **`sudo apt install mysql-server`**
+
+![Alt text](<Images/mysql installation.png>)
+
+When Prompted during installation Type **`Y`** and Hit **`Enter`**
+
+![Alt text](<Images/press Y and hit enter.png>)
+
+Download in Progress
+
+![Alt text](<Images/sql download progress.png>)
