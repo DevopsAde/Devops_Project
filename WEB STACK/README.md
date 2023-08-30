@@ -30,12 +30,18 @@ To display web pages we going to install Nginx, a high performance web server. U
 
 ![Alt text](<Images/apt pkg.png>)
 
-**`sudo apt install`** installed 113 packages
+**`sudo apt update`** installed 113 packages
 
 ![Alt text](<Images/apt pkg cont.png>)
+
+**`sudo apt install nginx`**
 
 ![Alt text](<Images/nginx install.png>)
 
 ![Alt text](<Images/nginx install B.png>)
 
 ![Alt text](<Images/nginx install c.png>)
+
+To verify the status of nginx installation if everything is okay, HOLLA!!! ALL GREEN
+
+![Alt text](<Images/nginx status.png>)
