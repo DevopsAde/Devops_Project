@@ -68,6 +68,6 @@ Now for the finally part lets check our Nginx server can respond to requests fro
 
 using the Public IPv4 address which in this case is **`34.255.87.229`**
 
-### HURRAY NGINX SERVER WORKS
+### Hurray Nginx Server Works
 
 ![Alt text](<Images/nginx confirmed.png>)
