@@ -68,7 +68,7 @@ Now for the finally part lets check our Nginx server can respond to requests fro
 
 using the Public IPv4 address which in this case is **`34.255.87.229`**
 
-### Hurray Nginx Server Works
+### Hurray!!! Nginx Server Works
 
 ![Alt text](<Images/nginx confirmed.png>)
 
@@ -116,7 +116,7 @@ Now, lets see if we can login to the MySQL console by using this command **`sudo
 
 for the password used after the changing the **`root`** user password **`PassWord.1`**
 
-Hurray what this means is that password was set, and changed successfully.
+Hurray!!! what this means is that password was set, and changed successfully.
 
 ![Alt text](<Images/mysql console connect.png>)
 
