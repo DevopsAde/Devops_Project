@@ -149,3 +149,15 @@ Successful Download in Progress
 Now that we have the PHP components installed we now have to configure Nginx to use them.
 
 ## Configuring Nginx to Use PHP Processor
+
+In this configuration, using Nginx web server we would create server blocks similar to virtual hosts in Apache to encapsulate 
+
+the configuration details and host more than one domain on a single server. We will use **`projectLEMP`** in this example has the domain name.
+
+NOTE: By default Nginx has one server block enabled by default and its configured to serve documents out of a directory at **`/var/www/html`**. 
+
+This works for a single site, also it can be difficult to manage if you want to host multiple sites. 
+
+So, instead of modifying **`/var/www/html`**, we will create a directory structure within **`/var/www`** for the **`domain`** website leaving 
+
+**`/var/www/html`** as the default directory to served for a client whose request does not match any other sites.
