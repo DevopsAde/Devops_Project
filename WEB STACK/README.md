@@ -22,3 +22,18 @@ Below is the output using the Git Bash:
 
 ![Alt text](<Images/Git Bash ssh contd.png>)
 
+## Installing the Nginx Web Server
+
+To display web pages we going to install Nginx, a high performance web server. Using the command **`apt update`** package manager to install this package, then 
+
+finally use **`apt`** install to get Nginx installed.
+
+![Alt text](<Images/apt pkg.png>)
+
+![Alt text](<Images/apt pkg cont.png>)
+
+![Alt text](<Images/nginx install.png>)
+
+![Alt text](<Images/nginx install B.png>)
+
+![Alt text](<Images/nginx install c.png>)
