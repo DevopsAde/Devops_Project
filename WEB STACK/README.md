@@ -89,3 +89,35 @@ When Prompted during installation Type **`Y`** and Hit **`Enter`**
 Download in Progress
 
 ![Alt text](<Images/sql download progress.png>)
+
+After successful installation, lets login to the Mysql console with this command
+
+**`sudo mysql`** this command connect to the MySQL server as the administrative database user root. Output below:
+
+![Alt text](<Images/sql connect.png>)
+
+Moving forward we have to run a security script that comes pre-installed with Mysql. The purpose of this script is to remove 
+
+insecure default settings and lock down access to the database system. But before we proceed we set a password for the root user
+
+using **`mysql_native_password`** as a default authentication method. In this setting we define the user password as **`PassWord.1`**
+
+![Alt text](<Images/sql password set.png>)
+
+Now, what follows is to start the interactive script with this commands below and steps:
+
+![Alt text](<Images/sql validation.png>)
+
+![Alt text](<Images/sql validation B.png>)
+
+![Alt text](<Images/sql validation C.png>)
+
+Now, lets see if we can login to the MySQL console by using this command **`sudo mysql -p`** note the **`-p`** flag is used to prompt 
+
+for the password used after the changing the **`root`** user password **`PassWord.1`**
+
+Hurray what this means is that password was set, and changed successfully.
+
+![Alt text](<Images/mysql console connect.png>)
+
+Now that my Mysql server is set up and running we move to the setting up and installing PHP.
