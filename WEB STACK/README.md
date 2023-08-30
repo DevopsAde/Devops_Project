@@ -45,3 +45,9 @@ To display web pages we going to install Nginx, a high performance web server. U
 To verify the status of nginx installation if everything is okay, HOLLA!!! ACTIVE AND RUNNING SUCCESSFULLY.
 
 ![Alt text](<Images/nginx status.png>)
+
+Now, that we have launched our first Web Server into the clouds, to receive any traffic we need to open TCP port 80 
+
+which is a default port for web browsers to access web pages on the internet. Note, TCP port 22 is open by default on 
+
+the EC2 instance via SSH. The latter is used to open inbound connection.  
