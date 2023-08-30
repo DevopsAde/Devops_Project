@@ -239,3 +239,23 @@ You see the text from the **`echo`** command i wrote to the index.html file, it 
 LEMP stack is fully configured. Next we create a PHP script to test that Nginx can handle **`.php`** files with websites
 
 ## Testing PHP with Nginx
+
+To test and validate that Nginx can efficiently take in **`.php`** files to the PHP processor. We will create a test PHP file 
+
+in the document root. Using the **`nano`** text editor, open a new file and name it **`info.php`** within the document root in the 
+
+text editor using this command below:
+
+**`nano /var/www/projectLEMP/info.php`**
+
+Then paste this in the nano editor below:
+
+![Alt text](<Images/PHP code.png>)
+
+Now lets access this page in the web browser by visiting the Domain or public IP Address we just configured in the Nginx configuration
+
+file, followed by the **`/info.php`**. The command below executes this:
+
+**`http://`server_domain_or_IP`/info.php`** Note: In this case its my **`public address`** on my EC2 instance followed by the **`/info.php`**.
+
+![Alt text](Images/info.php.png)
