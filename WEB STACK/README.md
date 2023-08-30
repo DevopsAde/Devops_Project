@@ -228,10 +228,6 @@ Our new website is now active, but the web root **`/var/www/projectLEMP`** is st
 
 that location and test the new server block works. Do this by insert the following command on the Git Bash terminal:
 
-**`sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with 
-
-public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html`**
-
 ![Alt text](<Images/sudo echo.png>)
 
 Hurray!!!! It works you see the text from the **`echo`** command i wrote to the index.html file, it basically means the NGinx site is working efficiently.
