@@ -126,10 +126,14 @@ Now that my Mysql server is set up and running we move to the setting up and ins
 
 Now that we have Nginx installed to serve content and Mysql installed to store and manage data. We now have to install PHP to process code 
 
-and generate dynamic content for the web server. Now to note the difference **`APACHE`**` embeds the PHP interpreter in each request, **`NGINX`** requires 
+and generate dynamic content for the web server. Now to note the difference **`APACHE`**` embeds the PHP interpreter in each request, 
 
-an external program to handle PHP processing which act as a bridge between the PHP interpreter and the web server. We need to install **`php-fpm`**
+**`NGINX`** requires an external program to handle PHP processing which act as a bridge between the PHP interpreter and the web server. 
 
-which stands for **`PHP FastCGI process manager`**, this tells Nginx to pass PHP requests to this software for processing. Also, we will need **`php-mysql`**, 
+We need to install **`php-fpm`** which stands for **`PHP FastCGI process manager`**, this tells Nginx to pass PHP requests to this software for 
 
-a PHP module that allows PHP to communicate with Mysql-based Databases.
+processing. Also, we will need **`php-mysql`**, a PHP module that allows PHP to communicate with Mysql-based Databases.
+
+We need to install this 2 packages at once, command below:
+
+**`sudo apt install php-fpm php-mysql`**
