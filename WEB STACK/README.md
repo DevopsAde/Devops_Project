@@ -267,3 +267,5 @@ Its best practice to remove the file you created as it contains sensitive inform
 Use the following command below:
 
 **`sudo rm /var/www/public_address/info.php`**
+
+## Retrieving Data from MySQL Database with PHP
