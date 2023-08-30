@@ -161,3 +161,47 @@ This works for a single site, also it can be difficult to manage if you want to 
 So, instead of modifying **`/var/www/html`**, we will create a directory structure within **`/var/www`** for the **`domain`** website leaving 
 
 **`/var/www/html`** as the default directory to served for a client whose request does not match any other sites.
+
+Now we going to Create the root web directory for **`your_domain`** in this case its **`projectLEMP`**.
+
+**`sudo mkdir /var/www/projectLEMP`**
+
+Next is to assign ownership of the directory with the **`$USER`** environment variable, which in this case represent your current system user.
+
+**`sudo chown -R $USER:$USER /var/www/projectLEMP`**
+
+Next is to open a new configuration file using **`nano`** with the command below: **`sudo nano /etc/nginx/sites-available/projectLEMP`** this 
+
+automatically creates a new blank file.
+
+Paste the following code inside the nano editor press **`ctrl and X`** and hit **`Y`** and **`Enter`**
+
+![Alt text](<Images/nano code.png>)
+
+![Alt text](<Images/nginx config test.png>)
+
+In the above command, we going to give a brief definition of what each directives and location blocks do.
+
+- **`Listen`**: In this case, Nginx will listen to **`port 80`**, the default port for **`HTTP`**.
+
+- **`root`**: In the root document this where files on the websites are stored.
+
+- **`index`**: This Define in which order Nginx will prioritize index files for the website. Always note that its a common a practice
+
+ to list **`index.html`** files with a higher precedence than **`index.php`** files to allow for quickly setting up a maintenance 
+ 
+ landing page in PHP applications.
+
+- **`server_name`**: Domain names or IP address the server block should respond, Always remember to pint this directive to the server's 
+
+domain name or public IP address.
+
+- **`location /`**: This first location block includes a **`try_files`** directive, which checks for the files or directories matching a URL request. 
+
+In this case, if Nginx cannot find the appropriate resource, it returns a **`404 error`**
+
+- **`location ~ /\.ht`**: The last location block deals with **`.htaccess`** files, which Nginx does not process. By adding the deny all directive, if any **`.htaccess`** files happen to find their way into the document roor, they will not be served to visitors.
+
+- **`location ~\.php$`**: Location block handles the actual PHP process by pointing Nginx to the **`fastcgi-php.conf`** configuration
+
+ file and the **`php7.4-fpm.sock file`** which declares what socket is associated with **`php-fpm`**
