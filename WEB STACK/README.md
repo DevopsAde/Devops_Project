@@ -63,3 +63,11 @@ Lets check it locally on our Ubuntu shell machine and run the command below:
 **`$ curl http://localhost:80`** or **`curl http://127.0.0.1:80`** both display same outputs.
 
 ![Alt text](<Images/curl verification.png>)
+
+Now for the finally part lets check our Nginx server can respond to requests from the internet. 
+
+using the Public IPv4 address which in this case is **`34.255.87.229`**
+
+### HURRAY NGINX SERVER WORKS
+
+![Alt text](<Images/nginx confirmed.png>)
