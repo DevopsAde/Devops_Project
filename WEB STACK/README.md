@@ -256,6 +256,8 @@ Now lets access this page in the web browser by visiting the Domain or public IP
 
 file, followed by the **`/info.php`**. The command below executes this:
 
-**`http://`server_domain_or_IP`/info.php`** Note: In this case its my **`public address`** on my EC2 instance followed by the **`/info.php`**.
+**`http://`server_domain_or_IP`/info.php`** 
+
+Note: In this case its my **`public address`** on my EC2 instance followed by the **`/info.php`**.
 
 ![Alt text](Images/info.php.png)
