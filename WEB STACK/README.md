@@ -235,3 +235,8 @@ that location and test the new server block works. Do this by insert the followi
 You see the text from the **`echo`** command i wrote to the index.html file, it basically means the Nginx site is working efficiently.
 
 ![Alt text](<Images/echo command works.png>)
+
+LEMP stack is fully configured. Next we create a PHP script to test that Nginx can handle **`.php`** files within websites
+
+
+## Testing PHP with Nginx
