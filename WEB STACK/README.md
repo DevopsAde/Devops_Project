@@ -213,3 +213,27 @@ In this case, if Nginx cannot find the appropriate resource, it returns a **`404
 Also to check or test your configuration for syntax errors used the command **`sudo nginx -t`**
 
 ![Alt text](<Images/config&syntax okay.png>)
+
+If you detect any errors, kindly go back to the configuration file to review its content.
+
+We also need to disable default Nginx host currently configured to listen on **`port 80`**. Run this command:
+
+**`sudo unlink /etc/nginx/sites-enabled/default`**
+
+After applying the command, reload Nginx to apply the changes **`sudo systemctl reload nginx`**
+
+![Alt text](<Images/nginx reload.png>)
+
+Our new website is now active, but the web root **`/var/www/projectLEMP`** is still empty. We now have to create an index.html file in 
+
+that location and test the new server block works. Do this by insert the following command on the Git Bash terminal:
+
+**`sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/
+
+meta-data/public-ipv4) > /var/www/projectLEMP/index.html`**`
+
+![Alt text](<Images/sudo echo.png>)
+
+Hurray!!!! It works you see the text from the **`echo`** command i wrote to the index.html file, it basically means the NGinx site is working efficiently.
+
+![Alt text](<Images/echo command works.png>)
