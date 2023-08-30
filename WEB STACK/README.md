@@ -205,3 +205,7 @@ In this case, if Nginx cannot find the appropriate resource, it returns a **`404
 - **`location ~\.php$`**: Location block handles the actual PHP process by pointing Nginx to the **`fastcgi-php.conf`** configuration
 
  file and the **`php7.4-fpm.sock file`** which declares what socket is associated with **`php-fpm`**
+
+ Now to activate all the configuration by linking to the config file from Nginx **`sites-enabled`** directory. Run the command below:
+
+ **`sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`**
