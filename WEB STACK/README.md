@@ -72,7 +72,7 @@ using the Public IPv4 address which in this case is **`34.255.87.229`**
 
 ![Alt text](<Images/nginx confirmed.png>)
 
-#### INSTALLING MYSQL
+## INSTALLING MYSQL
 
 We Previously have our Nginx Web Server up and running, now we need to install the Database Management System (DBMS) 
 
