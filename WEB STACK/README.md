@@ -1,14 +1,14 @@
 # Documentation For WEB STACK IMPLEMENTATION
 
-This Project shows how to build and deploy web applications using the LEMP stack. It emphasis on creating dynamic and high-performing websites by 
+This Project shows how to build and deploy web applications using the LEMP stack. It emphasis on creating dynamic and high-performing 
 
-combining Linux, Nginx, MySQL, and PHP.
+websites by combining Linux, Nginx, MySQL, and PHP.
 
 Note, in the previous deployment of LAMP stack we used Putty on Windows to connect into our EC2 instance, now we going to introduce another method using the Git Bash 
 
-terminal and SSH into it and see if it works. But first we going to create an EC2 instance, following this link to see the steps in creating an instance **`https://
+terminal and SSH into it and see if it works. But first we going to create an EC2 instance, following this link to see the steps in creating an instance 
 
-github.com/DevopsAde/Devops_Project/tree/main/LAMP%20STACK`**
+**`https://github.com/DevopsAde/Devops_Project/tree/main/LAMP%20STACK`**
 
 Now that i have my EC2 instance created, always remember to copy this command to connect, below is the output:
 
