@@ -230,6 +230,8 @@ that location and test the new server block works. Do this by insert the followi
 
 ![Alt text](<Images/sudo echo.png>)
 
-Hurray!!!! It works you see the text from the **`echo`** command i wrote to the index.html file, it basically means the NGinx site is working efficiently.
+## Hurray!!!! It works. 
+
+You see the text from the **`echo`** command i wrote to the index.html file, it basically means the Nginx site is working efficiently.
 
 ![Alt text](<Images/echo command works.png>)
