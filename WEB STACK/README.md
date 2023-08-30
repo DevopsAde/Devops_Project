@@ -51,3 +51,15 @@ Now, that we have launched our first Web Server into the clouds, to receive any 
 which is a default port for web browsers to access web pages on the internet. Note, TCP port 22 is open by default on 
 
 the EC2 instance via SSH. The latter is used to open inbound connection.  
+
+Click on security and click on edit inbound rules on the far right and input the details below and save rules.
+
+![Alt text](<Images/edit inbound rules.png>)
+
+Also, note the **`0.0.0.0/0`** means any IP Address can access it from anywhere.
+
+Lets check it locally on our Ubuntu shell machine and run the command below:
+
+**`$ curl http://localhost:80`** or **`curl http://127.0.0.1:80`** both display same outputs.
+
+![Alt text](<Images/curl verification.png>)
