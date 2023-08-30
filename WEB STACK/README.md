@@ -236,7 +236,6 @@ You see the text from the **`echo`** command i wrote to the index.html file, it 
 
 ![Alt text](<Images/echo command works.png>)
 
-LEMP stack is fully configured. Next we create a PHP script to test that Nginx can handle **`.php`** files within websites
-
+LEMP stack is fully configured. Next we create a PHP script to test that Nginx can handle **`.php`** files with websites
 
 ## Testing PHP with Nginx
