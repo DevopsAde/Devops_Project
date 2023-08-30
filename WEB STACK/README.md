@@ -42,6 +42,6 @@ To display web pages we going to install Nginx, a high performance web server. U
 
 ![Alt text](<Images/nginx install c.png>)
 
-To verify the status of nginx installation if everything is okay, HOLLA!!! ALL GREEN
+To verify the status of nginx installation if everything is okay, HOLLA!!! ACTIVE AND RUNNING SUCCESSFULLY.
 
 ![Alt text](<Images/nginx status.png>)
