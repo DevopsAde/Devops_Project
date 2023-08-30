@@ -24,9 +24,9 @@ Below is the output using the Git Bash:
 
 ## Installing the Nginx Web Server
 
-To display web pages we going to install Nginx, a high performance web server. Using the command **`apt update`** package manager to install this package, then 
+To display web pages we going to install Nginx, a high performance web server. Using the command **`apt update`** package manager
 
-finally use **`apt`** install to get Nginx installed.
+ to install this package, then finally use **`apt`** install to get Nginx installed.
 
 ![Alt text](<Images/apt pkg.png>)
 
