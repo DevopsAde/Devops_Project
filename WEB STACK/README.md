@@ -261,3 +261,9 @@ file, followed by the **`/info.php`**. The command below executes this:
 Note: In this case its my **`public address`** on my EC2 instance followed by the **`/info.php`**.
 
 ![Alt text](Images/info.php.png)
+
+Its best practice to remove the file you created as it contains sensitive information about your PHP environment and your ubuntu server. 
+
+Use the following command below:
+
+**`sudo rm /var/www/public_address/info.php`**
