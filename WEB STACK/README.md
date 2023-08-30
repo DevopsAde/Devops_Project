@@ -1,8 +1,8 @@
 # Documentation For WEB STACK IMPLEMENTATION
 
-This Project shows how to build and deploy web applications using the LEMP stack. It emphasis on creating dynamic and high-performing websites by combining Linux,
+This Project shows how to build and deploy web applications using the LEMP stack. It emphasis on creating dynamic and high-performing websites by 
 
-Nginx, MySQL, and PHP.
+combining Linux, Nginx, MySQL, and PHP.
 
 Note, in the previous deployment of LAMP stack we used Putty on Windows to connect into our EC2 instance, now we going to introduce another method using the Git Bash 
 
