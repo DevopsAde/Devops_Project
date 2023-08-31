@@ -269,3 +269,18 @@ Use the following command below:
 **`sudo rm /var/www/public_address/info.php`**
 
 ## Retrieving Data from MySQL Database with PHP
+
+In this example we will create a test databse (DB) with simple **`To do list`** and configure access to it, to enable Nginx website query data
+
+from the DB and display it. We will now create a new user with the **`mysql_native_password`** authentication method in order to be able to connect 
+ 
+to the MySQL database from PHP.
+
+Now lets create a database **`example_database`** and a user named **`example_user`**. First step, is to connect to the MySQL console using the root account:
+
+**`sudo mysql`** but in this case remember in the previous configuration we set up a password for the mysql database, so we instead we use the 
+ 
+command **`sudo mysql -p`**, **`-p`** stands for the password set.
+
+![Alt text](<Images/sudo mysql.png>)
+
