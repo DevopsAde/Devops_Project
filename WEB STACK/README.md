@@ -344,7 +344,7 @@ To now confirm all data was inserted correctly and saved run the following comma
 
 ![Alt text](<Images/Data inserted successful.png>)
 
-## Hurray 
+## Hurray!!!
 
 All data inserted successfully in the test table, now lets exit the MySQL console by typing **`exit`** and Hit **`Enter`**
 
