@@ -306,10 +306,24 @@ authentication method. We are defining this user's password as **`Password.1`**.
 
 ![Alt text](<Images/user database.png>)
 
-Now, we give the user permission over the **`example_user`** database. We grant his with the following command: 
+Now, we give the user permission over the **`example_user`** database. We grant this with the following command: 
 
 **`GRANT ALL ON train_database.* TO 'example_user'@'%';`**
 
 What this means in general is we giving the **`example_user`** user full privilege over the **`train_database`**, while 
 
 preventing this user from creating or modifying other databases on the server. After, type **`exit`** and hit **`Enter`**.
+
+![Alt text](Images/exit.png)
+
+Let us now test if the new user has the proper permissions by logging into the MySQL console again, using the 
+
+custom user credentials with the following command below:
+
+**`mysql -u example_user -p`**. NOTE: **`-p`** prompts for the password set in this case, its **`Password.1`**
+
+![Alt text](<Images/user login database.png>)
+
+Now, lets confirm if we have access to the **`train_database`**, we use the command below:
+
+**`SHOW DATABASES;`**
