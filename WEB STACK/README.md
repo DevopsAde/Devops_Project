@@ -288,8 +288,20 @@ for the mysql database, so we instead we use the command **`sudo mysql -p`**, **
 
 To create a new Database, insert the following code into the terminal: **`CREATE DATABASE`** `train_database`; in this case i changed 
 
-the name of the databse to train_database. NOTE: The name of your database is case sensitive advice using a lower case just like the 
+the name of the databse to train_database. 
+
+NOTE: The name of your database is case sensitive advice using a lower case just like the 
 
 example above or you will encounter an error.
 
 ![Alt text](<Images/database insert.png>)
+
+In moving forward we going to create a new user and grant him full privileges on the database we have just created.
+
+The command below creates a new user named **`example_user`**, remember using mysql_native_password as default 
+
+authentication method. We are defining this user's password as **`Password.1`**.
+
+**`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Password.1';`**
+
+![Alt text](<Images/user database.png>)
