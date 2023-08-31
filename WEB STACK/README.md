@@ -360,4 +360,10 @@ Copy the **`todo_list.php`** content into **`vi`** editor.
 
 Click **`Ctrl + X`** and hit **`Y and Enter`**
 
+Also note if any configuration has been made, remember to edit it in **`vi editor`** or else the website would not display the **`todo_list.php content`**
+
+Lets see if we can access this by visiting the domain name or public IP address been configured for the website, this must be
+
+followed by **`/todo_list.php`**
+
 
