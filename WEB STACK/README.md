@@ -286,4 +286,10 @@ for the mysql database, so we instead we use the command **`sudo mysql -p`**, **
 
 ![Alt text](<Images/sudo mysql.png>)
 
-To create a new Database, insert the following code into the terminal: **`CREATE DATABASE`** `example_databse`;
+To create a new Database, insert the following code into the terminal: **`CREATE DATABASE`** `train_database`; in this case i changed 
+
+the name of the databse to train_database. NOTE: The name of your database is case sensitive advice using a lower case just like the 
+
+example above or you will encounter an error.
+
+![Alt text](<Images/database insert.png>)
