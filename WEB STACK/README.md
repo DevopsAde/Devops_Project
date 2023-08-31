@@ -305,3 +305,11 @@ authentication method. We are defining this user's password as **`Password.1`**.
 **`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'Password.1';`**
 
 ![Alt text](<Images/user database.png>)
+
+Now, we give the user permission over the **`example_user`** database. We grant his with the following command: 
+
+**`GRANT ALL ON train_database.* TO 'example_user'@'%';`**
+
+What this means in general is we giving the **`example_user`** user full privilege over the **`train_database`**, while 
+
+preventing this user from creating or modifying other databases on the server. After, type **`exit`** and hit **`Enter`**.
