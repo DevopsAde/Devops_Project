@@ -340,11 +340,13 @@ Lets, try by inserting a few rows of content into the test table.
 
 To now confirm all data was inserted correctly and saved run the following command below:
 
-**`SELECT * FROM example_database.todo_list;`**. Confirm the following output below:
+**`SELECT * FROM example_database.todo_list;`**. 
 
-![Alt text](<Images/Data inserted successful.png>)
+Confirm the following output below:
 
 ## Hurray!!!
+
+![Alt text](<Images/Data inserted successful.png>)
 
 All data inserted successfully in the test table, now lets exit the MySQL console by typing **`exit`** and Hit **`Enter`**
 
