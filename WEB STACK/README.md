@@ -343,3 +343,5 @@ To now confirm all data was inserted correctly and saved run the following comma
 **`SELECT * FROM example_database.todo_list;`**. Confirm the following output below:
 
 ![Alt text](<Images/Data inserted successful.png>)
+
+All data inserted successfully in the test table, now lets exit the MySQL console by typing **`exit`** and Hit **`Enter`**
