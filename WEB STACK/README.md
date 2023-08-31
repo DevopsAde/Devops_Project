@@ -344,4 +344,20 @@ To now confirm all data was inserted correctly and saved run the following comma
 
 ![Alt text](<Images/Data inserted successful.png>)
 
-## Hurray!!! All data inserted successfully in the test table, now lets exit the MySQL console by typing **`exit`** and Hit **`Enter`**
+## Hurray 
+
+All data inserted successfully in the test table, now lets exit the MySQL console by typing **`exit`** and Hit **`Enter`**
+
+Now lets test and create a PHP script which will connect to Mysql and query the content provided. This new PHP file will be 
+
+in the custom web root directory using any preferred editor, in this case i will use vi for this. Using this command below:
+
+**`nano /var/www/projectLEMP/todo_list.php`**
+
+Copy the **`todo_list.php`** content into **`vi`** editor.
+
+![Alt text](Images/todolistscript.png)
+
+Click **`Ctrl + X`** and hit **`Y and Enter`**
+
+
