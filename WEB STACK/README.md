@@ -330,4 +330,16 @@ Now, lets confirm if we have access to the **`train_database`** we use the comma
 
 ![Alt text](<Images/Show database.png>)
 
-Next, lets create a test table named **`todo_list`**. We run the following SQL statement below:
+Next, lets create a test table named **`todo_list`**. We run the following SQL statement in the Mysql console below:
+
+![Alt text](Images/todolist.png)
+
+Lets, try by inserting a few rows of content into the test table.
+
+![Alt text](<Images/insert rows.png>)
+
+To now confirm all data was inserted correctly and saved run the following command below:
+
+**`SELECT * FROM example_database.todo_list;`**. Confirm the following output below:
+
+![Alt text](<Images/Data inserted successful.png>)
