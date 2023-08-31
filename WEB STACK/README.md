@@ -324,6 +324,10 @@ custom user credentials with the following command below:
 
 ![Alt text](<Images/user login database.png>)
 
-Now, lets confirm if we have access to the **`train_database`**, we use the command below:
+Now, lets confirm if we have access to the **`train_database`** we use the command below:
 
 **`SHOW DATABASES;`**
+
+![Alt text](<Images/Show database.png>)
+
+Next, lets create a test table named **`todo_list`**. We run the following SQL statement below:
