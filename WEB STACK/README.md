@@ -368,4 +368,13 @@ Lets see if we can access this by visiting the domain name or public IP address 
 
 followed by **`/todo_list.php`**
 
+NOTE: You might encounter an error check if the EC2 instance Public IP Address has changed, then edit it followed by **`/todo_list.php`**
 
+
+## Hurray!!! it works
+
+![Alt text](Images/todolistdisplay.png)
+
+Congratulations, the PHP environment is ready to connect and interact with my Mysql server.
+
+## THANK YOU
