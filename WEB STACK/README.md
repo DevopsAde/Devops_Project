@@ -379,4 +379,4 @@ NOTE: You might encounter an error check if the EC2 instance Public IP Address h
 
 Congratulations, the PHP environment is ready to connect and interact with my Mysql server.
 
-## THANK YOU AM BACK
+## THANK YOU 
