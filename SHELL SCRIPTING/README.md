@@ -104,9 +104,21 @@ An example below is a function to greet a user and call the greet function and p
 
 ## Lets write out First Shell Script
 
-- Step 1:
+- Step 1: On the terminal create a folder called using the command **`mkdir shell-scripting`**
 
+- Step 2: Create a file called **`user-input.sh`** using the command **`touch user-input.sh`**
 
+- Step 3: Inside the file copy and paste the block of code below:
+
+- Step 4: Save the file
+
+![Alt text](Images/user-input.png)
+
+- Step 5: Then run the command **`sudo chmod +x user-input.sh`** to make the file executable.
+
+- Step 6: Run the script using the command **`./user-input.sh`**
+
+![Alt text](<Images/first shell script.png>)
 
 
 
