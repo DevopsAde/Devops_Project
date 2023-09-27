@@ -24,7 +24,7 @@ Example: Assigning value to a **`variable`** and Retrieving value from the **`va
 
 ![Alt text](<Images/Screenshot 2023-09-27 122607.png>)
 
-- Control Flow: There are control flow statements like if-else, for loops, while loops and case statementts to control the flow of execution
+- Control Flow: There are control flow statements like **`if-else`**, **`for loops`**, **`while loops`** and **`case statements`** to control the flow of execution
 
 in your scripts. These statements allows you to make decisions, iterate over lists and execute different commands based on conditions.
 
