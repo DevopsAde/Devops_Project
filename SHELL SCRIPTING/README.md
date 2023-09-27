@@ -30,6 +30,12 @@ in your scripts. These statements allows you to make decisions, iterate over lis
 
 Example: Using the **`if-else`** to execute script based on a condition
 
+In the example below we going to run a script to check if a number is positive, negative, or zero
+
+![Alt text](Images/if-else.png)
+
+![Alt text](<Images/if-else cont.png>)
+
 
 
 
