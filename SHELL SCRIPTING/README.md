@@ -12,7 +12,9 @@ does the job of cloning all 1000 repositories at once. We have the advantage of 
 
 Bash scripts essentially are series of commands and instructions executed sequentially in a shell environment. You can create a shell script 
 
-by saving collection of commands in a text file using the **`.sh`** extension. Note, this scripts can be executed directly from the command line or called from other scripts.
+by saving collection of commands in a text file using the **`.sh`** extension. Note, this scripts can be executed directly from the 
+
+command line or called from other scripts.
 
 ## Shell Scripting Syntax Elements
 
@@ -24,9 +26,11 @@ Example: Assigning value to a **`variable`** and Retrieving value from the **`va
 
 ![Alt text](Images/variable.png)
 
-- Control Flow: There are control flow statements like **`if-else`**, **`for loops`**, **`while loops`** and **`case statements`** to control the flow of execution
+- Control Flow: There are control flow statements like **`if-else`**, **`for loops`**, **`while loops`** and **`case statements`** 
 
-in your scripts. These statements allows you to make decisions, iterate over lists and execute different commands based on conditions.
+to control the flow of execution in your scripts. These statements allows you to make decisions, iterate over lists and execute 
+
+different commands based on conditions.
 
 Example: Using the **`if-else`** to execute script based on a condition
 
@@ -42,9 +46,9 @@ In this example script we going to print numbers from 1 to 5 using a **`for loop
 
 ![Alt text](Images/for-loop.png)
 
-- Command Substitution: Allows you to capture the output of a command and use it as a value within your script. Note: you can use the **`$()`** syntax
+- Command Substitution: Allows you to capture the output of a command and use it as a value within your script. 
 
-for command substitution.
+Note: you can use the **`$()`** syntax for command substitution.
 
 Example below using the **`$()`** syntax for command substitution
 
@@ -88,15 +92,15 @@ which is empty.
 
 Example: Pass the result of a command as input to another command
 
-In the screenshot below you can see the first command didnt produce any output, because the **`grep "pattern"`** is not included in the **`echo "Hello world"`**
+In the screenshot below you can see the first command didnt produce any output, because the **`grep "pattern"`** is not included 
 
-but see the second command after changing to **`grep "world"`** and it fully displayed the echo message.
+in the **`echo "Hello world"`** but see the second command after changing to **`grep "world"`** and it fully displayed the echo message.
 
 ![Alt text](<Images/grep hello world.png>)
 
-- Functions: Bash function allows you to define and group related commands together and also a provides a way to modularize code and make it more 
+- Functions: Bash function allows you to define and group related commands together and also a provides a way to modularize code and
 
-reusable. Functions are define using the function keyword or simply by declaring the function name followed by parentheses. 
+ make it more reusable. Functions are define using the function keyword or simply by declaring the function name followed by parentheses. 
 
 An example below is a function to greet a user and call the greet function and pass the name as an argument.
 
