@@ -16,9 +16,9 @@ by saving collection of commands in a text file using the **`.sh`** extension. N
 
 ## Shell Scripting Syntax Elements
 
-- Variables: You can define and workwith variables by storing data of various types such as numbers, strings and arrays. You can assign values to the variables 
+- Variables: You can define and workwith variables by storing data of various types such as numbers, strings and arrays. 
 
-using the **`=`** operator and access their values using the variable name preceded by a **`$`** sign.
+You can assign values to the variables using the **`=`** operator and access their values using the variable name preceded by a **`$`** sign.
 
 
 
