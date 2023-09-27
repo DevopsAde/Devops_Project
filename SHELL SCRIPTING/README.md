@@ -20,6 +20,8 @@ by saving collection of commands in a text file using the **`.sh`** extension. N
 
 You can assign values to the variables using the **`=`** operator and access their values using the variable name preceded by a **`$`** sign.
 
+Example: Assigning value to a **`variable`**
+
 
 
 ## Types of Technology stack
