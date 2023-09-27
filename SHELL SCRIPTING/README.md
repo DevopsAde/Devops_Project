@@ -14,6 +14,14 @@ Bash scripts essentially are series of commands and instructions executed sequen
 
 by saving collection of commands in a text file using the **`.sh`** extension. Note, this scripts can be executed directly from the command line or called from other scripts.
 
+## Shell Scripting Syntax Elements
+
+- Variables: You can define and workwith variables by storing data of various types such as numbers, strings and arrays. You can assign values to the
+
+variables using the **`=`** operator and access their values using the variable name preceded by a **`$`** sign.
+
+
+
 ## Types of Technology stack
 
 - LAMP (Linux, Apache, MySQL, PHP or Python, or Perl)
