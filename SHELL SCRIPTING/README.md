@@ -22,7 +22,7 @@ You can assign values to the variables using the **`=`** operator and access the
 
 Example: Assigning value to a **`variable`** and Retrieving value from the **`variable`**
 
-![Alt text](<Images/Screenshot 2023-09-27 122607.png>)
+![Alt text](Images/variable.png)
 
 - Control Flow: There are control flow statements like **`if-else`**, **`for loops`**, **`while loops`** and **`case statements`** to control the flow of execution
 
