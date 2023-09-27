@@ -36,6 +36,84 @@ In the example below we going to run a script to check if a number is positive, 
 
 ![Alt text](<Images/if-else cont.png>)
 
+Example: Using the **`for loop`** to iterate through a list
+
+In this example script we going to print numbers from 1 to 5 using a **`for loop`**
+
+![Alt text](Images/for-loop.png)
+
+- Command Substitution: Allows you to capture the output of a command and use it as a value within your script. Note: you can use the **`$()`** syntax
+
+for command substitution.
+
+Example below using the **`$()`** syntax for command substitution
+
+![Alt text](<Images/command substitution.png>)
+
+- Input and Output: Bash provides various ways to handle input and output. You literally use the **`read`** command to accept user input, and
+
+output text to the console using the **`echo`** command. Also, you can redirect input from a file using **`<`** , output to a file using
+
+**`>`** and **`|`** (pipe the output of one command as input to another).
+
+Now lets try out some examples below:
+
+Example: Accept user input
+
+![Alt text](<Images/accept user input.png>)
+
+Example: Output text to the terminal
+
+![Alt text](<Images/output to terminal.png>)
+
+Example: Output the result of a command into a file
+
+First you will need to create a txt file using the **`touch index.txt`** 
+
+![Alt text](<Images/create txt file.png>)
+
+then type the following the code below:
+
+![Alt text](<Images/output result into file.png>)
+
+Use the **`cat`** command to print output in the text file.
+
+Example: Pass the content of a file as input to a command
+
+![Alt text](Images/pattern.png)
+
+In the screenshot below you can see no output was displayed, this because the command **`grep "pattern"`** is not found in the **`< input.txt`** file 
+
+which is empty.
+
+Example: Pass the result of a command as input to another command
+
+In the screenshot below you can see the first command didnt produce any output, because the **`grep "pattern"`** is not included in the **`echo "Hello world"`**
+
+but see the second command after changing to **`grep "world"`** and it fully displayed the echo message.
+
+![Alt text](<Images/grep hello world.png>)
+
+- Functions: Bash function allows you to define and group related commands together and also a provides a way to modularize code and make it more 
+
+reusable. Functions are define using the function keyword or simply by declaring the function name followed by parentheses. 
+
+An example below is a function to greet a user and call the greet function and pass the name as an argument.
+
+![Alt text](Images/function.png)
+
+## Lets write out First Shell Script
+
+- Step 1:
+
+
+
+
+
+
+
+
+
 
 
 
