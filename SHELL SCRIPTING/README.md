@@ -20,7 +20,9 @@ by saving collection of commands in a text file using the **`.sh`** extension. N
 
 You can assign values to the variables using the **`=`** operator and access their values using the variable name preceded by a **`$`** sign.
 
-Example: Assigning value to a **`variable`**
+Example: Assigning value to a **`variable`** and Retrieving value from the **`variable`**
+
+![Alt text](<Images/Screenshot 2023-09-27 122607.png>)
 
 
 
