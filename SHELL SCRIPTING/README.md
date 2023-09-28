@@ -208,11 +208,35 @@ Now lets proceed with this steps below:
 
 ![Alt text](Images/backup.png)
 
+## NOTE BELOW: 
+
+Remember, i will create a folder  **`mkdir testing`** and create 3 files in the folder, which are **`file1.txt, file2.txt & file3.txt`**. 
+
+![Alt text](<Images/files created.png>)
+
+This files would be contents that i will use has backup to the **`backup_dir`** directory of any choice, in this case i will 
+
+choose **`Documents`** folder.
+
+## Edit the backup.sh file
+
+- Now, change the **`source_dir=" /path/to/source_directory"`** to where you have the folder **`testing`**
+
+- Also, change the **`backup_dir="/path/to/backup_directory"`** to where you want to back the files in this case 
+
+i will be backing it up in my **`Documents Folder`**.
+
+![Alt text](<Images/edit source and backup.png>)
+
 - Step 3: Execute permission on **`backup.sh`** using the command **`sudo chmod +x backup.sh`**
 
 - Step 4: Run the script using the command: **`./backup.sh`**
 
+![Alt text](<Images/backup completed.png>)
 
+Note the file1.txt, file2.txt and file3.txt below  backedup in the Documents Folder.
+
+![Alt text](<Images/backup successful.png>)
 
 
 
