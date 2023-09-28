@@ -132,6 +132,20 @@ that directory, create two files inside it, list the files, move back one level 
 
 finally list the files in the current directory again.
 
+- Step 1: Create a file and name it **`navigating-linux-filesystem.sh`**
+
+- Step 2: Paste this code block below into the file created above and save.
+
+![Alt text](<Images/code block.png>)
+
+- Step 3: Run the command **`sudo chmod +x navigating-linux-filesystem.sh`** to execute the permission on the file
+
+- Step 4: Run the script now using the command **`./navigating-linux-filesystem.sh`**
+
+![Alt text](Images/navigating-linux.png)
+
+
+
 
 
 
