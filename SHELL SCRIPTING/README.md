@@ -144,6 +144,16 @@ finally list the files in the current directory again.
 
 ![Alt text](Images/navigating-linux.png)
 
+## File Operations and Sorting
+
+In this exercise we will write a simple shell script that emphasis on **`File Operations and Sorting`**.
+
+We will create three script (**`file1.txt, file2.txt & file3.txt`**), we now display the files in current order, sort them alphabetically
+
+save the sorted files in sorted_files.txt, display the sorted files, remove the original files, now rename the sorted file to 
+
+**`sorted_files_sorted_alphabetically.txt`** and finally display the contents of the final sorted file.
+
 
 
 
