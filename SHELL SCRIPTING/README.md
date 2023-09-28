@@ -158,6 +158,8 @@ save the sorted files in sorted_files.txt, display the sorted files, remove the 
 
 - Step 2: Copy and paste the code block below into the file created.
 
+![Alt text](Images/sorting.png)
+
 - Step 3: Execute permission on sorting.sh using the command **`sudo chmod +x sorting.sh`**
 
 - Step 4: Run the script using the command **`./sorting.sh`**
