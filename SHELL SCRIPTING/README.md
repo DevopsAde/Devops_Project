@@ -124,6 +124,14 @@ An example below is a function to greet a user and call the greet function and p
 
 ![Alt text](<Images/first shell script.png>)
 
+## Directory Manipulation and Navigation
+
+In this script exercise we going to display the current directory, create a new directory and called it **`my_directory`**, change to
+
+that directory, create two files inside it, list the files, move back one level up, remove the **`my_directory`** and its contents, and
+
+finally list the files in the current directory again.
+
 
 
 
