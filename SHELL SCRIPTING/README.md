@@ -180,7 +180,7 @@ such as raising **`num1 to the power of 2`** and calculating the **`square root 
 
 - Step 2: Copy and paste the code block below:
 
-![Alt text](Images/calculation.png)
+![Alt text](Images/calcula.png)
 
 - Step 3: Execute the permission on **`calculations.sh`** using the command: **`sudo chmod +x calculations.sh`**
 
@@ -188,7 +188,7 @@ such as raising **`num1 to the power of 2`** and calculating the **`square root 
 
 Output commands displayed below:
 
-![Alt text](<Images/calc result.png>)
+![Alt text](Images/calculations.png)
 
 ## File Backup and Timestamping
 
@@ -237,6 +237,9 @@ i will be backing it up in my **`Documents Folder`**.
 Note the file1.txt, file2.txt and file3.txt below  backedup in the Documents Folder.
 
 ![Alt text](<Images/backup successful.png>)
+
+
+
 
 # THANK YOU
 
