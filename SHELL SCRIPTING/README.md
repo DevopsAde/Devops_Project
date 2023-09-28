@@ -168,6 +168,28 @@ Final result of sorted file
 
 ![Alt text](<Images/sorted files.png>)
 
+## Working with Numbers and Calculations
+
+This script defines two variables **`num1`** and **`num2`** with numeric values, performs basic arithmetic operations 
+
+(addition, subtraction, multiplication, divison, and modulus), and display the results. It also performs more complex calculations
+
+such as raising **`num1 to the power of 2`** and calculating the **`square root of num2`** and displays those results as well.
+
+- Step 1: On the terminal create a file called **`calculations.sh`** using the command **`touch calculations.sh`**
+
+- Step 2: Copy and paste the code block below:
+
+![Alt text](Images/calculation.png)
+
+- Step 3: Execute the permission on **`calculations.sh`** using the command: **`sudo chmod +x calculations.sh`**
+
+- Step 4: Run the script using this command: **`./calculations.sh`**
+
+Output commands displayed below:
+
+![Alt text](<Images/calc result.png>)
+
 
 
 
