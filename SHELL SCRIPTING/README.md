@@ -154,6 +154,29 @@ save the sorted files in sorted_files.txt, display the sorted files, remove the 
 
 **`sorted_files_sorted_alphabetically.txt`** and finally display the contents of the final sorted file.
 
+- Step 1: Create a file in the terminal called **`sorting.sh`** using the command **`touch sorting.sh`**
+
+- Step 2: Copy and paste the code block below into the file created.
+
+- Step 3: Execute permission on sorting.sh using the command **`sudo chmod +x sorting.sh`**
+
+- Step 4: Run the script using the command **`./sorting.sh`**
+
+Final result of sorted file
+
+![Alt text](<Images/sorted files.png>)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
