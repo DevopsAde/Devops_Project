@@ -190,6 +190,28 @@ Output commands displayed below:
 
 ![Alt text](<Images/calc result.png>)
 
+## File Backup and Timestamping
+
+This script defines the source directory and backup directory paths. It then creates a timestamp using the current date and time,
+
+and creates a backup directory with the timestamp appended to its name. The script then copies all files from the source directory 
+
+to the backup directory using the **`cp`** command with the **`-r`** option for recursive copying. Finally, it displays a message
+
+indicating the completion of the backup process and shows the path of the backup directory with the timestamp.
+
+Now lets proceed with this steps below:
+
+- Step 1: On your terminal create a file **`touch backup.sh`**
+
+- Step 2: Copy and paste the code block below into the file.
+
+![Alt text](Images/backup.png)
+
+- Step 3: Execute permission on **`backup.sh`** using the command **`sudo chmod +x backup.sh`**
+
+- Step 4: Run the script using the command: **`./backup.sh`**
+
 
 
 
