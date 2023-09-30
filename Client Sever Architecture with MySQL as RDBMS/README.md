@@ -17,8 +17,8 @@ Below is an explanatory diagram of a Client and Server Requests and Responses.
 ![Alt text](Images/client-server-network.png)
 **`source: zenarmor.com/docs/network-basics/what-is-client-server-network`**
 
-NOTE: The Client system access the Website using the Web browser and sends HTTP requests to a Web server (Apache, Nginx, IIS or any other)
+NOTE: The client system trys to access the Website using the Web browser and sends HTTP requests to a Web server 
 
-over the internet.
+(Apache, Nginx, IIS or any other) over the internet.
 
 
