@@ -6,4 +6,12 @@ between clients and servers.
 
 ## Client-Server Architecture with MySQL
 
-*What is Client-Server Architecture*
+*What is Client-Server Architecture* : Client-Server refers to an architecture in which two or more computers
+
+are connected together over a network to send and receive requests between one another.
+
+- Example: **`MACHINE A`** sending requests is called CLIENT & **`MACHINE B`** responding (serving the request) is called SERVER. 
+
+Below is a simple diagram of a Client and Server Requests and Responses.
+
+![Alt text](<Images/client server.png>)
