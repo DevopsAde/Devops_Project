@@ -15,3 +15,4 @@ are connected together over a network to send and receive requests between one a
 Below is a simple diagram of a Client and Server Requests and Responses.
 
 ![Alt text](<Images/client server.png>)
+**`source: techtarget.com/searchnetworking/definition/client-server`**
