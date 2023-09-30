@@ -6,4 +6,4 @@ between clients and servers.
 
 ## Client-Server Architecture with MySQL
 
-- What is Client-Server Architecture
+- What is *Client-Server Architecture*
