@@ -69,7 +69,9 @@ In this section, we going to implement a Client Sever Architecture using MySQL D
 
 We going to demonstrate a basic client-server using MySQL RDBMS, by Create and Configuring two Linux-based virtual 
 
-servers (EC2 instances in AWS).
+servers (EC2 instances in AWS). **`Server A name - mysql-server`** and **`Server B name - mysql-client`**
+
+
 
 
 
