@@ -99,7 +99,7 @@ To ensure the server is running use the command **`systemctl`** command:
 
 ![Alt text](<Images/mysql status.png>)
 
-Next, is to configure MySQL Server to allow connections from remote hosts.
+**Next, is to configure MySQL Server to allow connections from remote hosts**.
 
 ![Alt text](<Images/sql set up.png>)
 
