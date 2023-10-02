@@ -20,7 +20,7 @@ are connected together over a network to send and receive requests between one a
 
 - Example: **`MACHINE A`** sending requests is called CLIENT & **`MACHINE B`** responding (serving the request) is called SERVER. 
 
-Below is an explanatory diagram of a Client and Server Requests and Responses.
+Below is an explanatory diagram of a Client and Server Requests and Responses and examples of client-server applications.
 
 ![Alt text](Images/client-server-network.png)
 **`source: zenarmor.com/docs/network-basics/what-is-client-server-network`**
@@ -28,6 +28,10 @@ Below is an explanatory diagram of a Client and Server Requests and Responses.
 NOTE: The client system trys to access the Website using the Web browser and sends HTTP requests to a Web server 
 
 (Apache, Nginx, IIS or any other) over the internet.
+
+Now, if we dive further by adding a Database Server we get a sample architecture below:
+
+![Alt text](<Images/client-server db.png>)
 
 
 
