@@ -103,7 +103,7 @@ To ensure the server is running use the command **`systemctl`** command:
 
 ![Alt text](<Images/sql set up.png>)
 
-Note: **`ALTER USER 'root'@`localhost' IDENTIFIED WITH mysql_native_password BY 'Password.1';`** was used.
+Note: **`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password.1';`** was used.
 
 
 
