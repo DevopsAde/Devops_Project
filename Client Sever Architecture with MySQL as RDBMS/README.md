@@ -156,7 +156,7 @@ creating or modifying other database on the server.
 
 - Run the following command to install MySQL client software. **`sudo apt update && sudo apt upgrade`**
 
-- Install the mysql-client package using the *8`sudo apt install mysql-client -y`** command.
+- Install the mysql-client package using the **`sudo apt install mysql-client -y`** command.
 
 
 
