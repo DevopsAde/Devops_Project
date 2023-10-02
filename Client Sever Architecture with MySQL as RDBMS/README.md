@@ -67,11 +67,23 @@ round-trip time, time for packets to go to and back from the server. Note, this 
 
 In this section, we going to implement a Client Sever Architecture using MySQL Database Management System (DBMS).
 
-We going to demonstrate a basic client-server using MySQL RDBMS, by Create and Configuring two Linux-based virtual 
+We going to demonstrate a basic client-server using MySQL RDBMS, by Creating and Configuring two Linux-based virtual 
 
-servers (EC2 instances in AWS). **`Server A name - mysql-server`** and **`Server B name - mysql-client`**
+servers (EC2 instances in AWS). **`Server A name - MySQL-server`** and **`Server B name - MySQL-client`**
 
 ![Alt text](Images/instances.png)
+
+On **`MySQL server`** Linux Server install MySQL Server Software. But first we going to use **`MySQL server`** local IP
+
+address to connect from **`MySQL client`**. MySQL server uses TCP port **`3306`** by default, so we going to create a 
+
+new entry in 'INBOUND RULES' in 'mysql server' Security Groups.
+
+- Output below:
+
+![Alt text](<Images/edit inbound rules.png>)
+
+
 
 
 
