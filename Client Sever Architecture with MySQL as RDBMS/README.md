@@ -43,7 +43,29 @@ in the local network).
 
 - Example of a Client-Server Communication in action, here we would open our Ubuntu System or Windows Terminal 
 
-and run **`curl`** command:
+and run the **`curl`** command.
+
+**NOTE**: The Ubuntu does not have the **`curl`**, so we install it running **`sudo apt install curl`**
+
+![Alt text](<Images/curl cmd.png>)
+
+In this example, the Ubuntu terminal is the **client**, while **`www.propitixhomes.com`** will be the **server**.
+
+Now, that we have the **`curl`** command installed, lets re-run the **`curl -Iv www.propitixhomes.com`**. 
+
+- Output below: This shows the requests from the URL are being collected from a computer with an IP address
+
+of **`75.2.115.196`** on port **`80`**.
+
+![Alt text](<Images/curl www.png>)
+
+Alternatively, another way to get a server's IP address is to use a diagnostic tool called **`PING`**. This will show 
+
+round-trip time, time for packets to go to and back from the server. Note, this tool uses **`ICMP PROTOCOL`**.
+
+## IMPLEMENT A CLIENTSERVER ARCHITECTURE USING MySQL DATABASE MANAGEMENT SYSTEM (DBMS)
+
+
 
 
 
