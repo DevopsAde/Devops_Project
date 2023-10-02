@@ -33,5 +33,11 @@ Now, if we dive further by adding a Database Server we get a sample architecture
 
 ![Alt text](<Images/client-server db.png>)
 
+Lets analyse what's happening in the diagram above. In this case, the Web Server acts has a "Client" which connects and
+
+reads/writes to/from a Database (DB) server (MySQL, MongoDB, Oracle, SQL Server or any other), note, the communication
+
+between them happens over a Local Network or Internet Connection(it's a common practice to place the Web Server and DB Server close to each other in the local network).
+
 
 
