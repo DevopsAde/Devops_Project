@@ -144,7 +144,11 @@ creating or modifying other database on the server.
 
 ![Alt text](<Images/restart service.png>)
 
-**Next, is to configure MySQL Server to allow connections from remote hosts**.
+**Next, is to configure MySQL Server to allow connections from remote hosts**. Now lets run this command below
+
+**`sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf`**. Edit the **`bind-address`** and replace **`127.0.0.1`** to **`0.0.0.0`**
+
+![Alt text](<Images/edit localhost.png>)
 
 
 
