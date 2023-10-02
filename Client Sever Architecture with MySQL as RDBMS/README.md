@@ -41,5 +41,7 @@ happens over a Local Network or Internet Connection (it's a common practice to p
 
 in the local network).
 
+- Example of a Client-Server Communication in action, here we would open our Ubuntu System or Windows Terminal and run **`curl`** command:
+
 
 
