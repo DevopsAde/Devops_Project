@@ -131,6 +131,19 @@ creating or modifying other database on the server.
 
 **`mysql -u admin_user -p`**
 
+![Alt text](<Images/admin user test.png>)
+
+*NOTE:* The **`-p`** flag is use to prompt for the password used when creating the **`admin_user`**.
+
+- Now, lets confirm if we have access to Testing_databse my using the command **`SHOW DATABASE;`**
+
+![Alt text](<Images/show database.png>)
+
+- Exit MySQL console and restart the MySQL service using this 2 following commands below:
+
+- **`sudo systemctl restart mysql`** *and* **`sudo systemctl status mysql.service`** 
+
+
 
 
 
