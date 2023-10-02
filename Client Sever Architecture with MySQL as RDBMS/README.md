@@ -105,7 +105,11 @@ To ensure the server is running use the command **`systemctl`** command:
 
 Note: **`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password.1';`** was used.
 
+**`Run MySQL secure Installation`** using the **`sudo mysql_secure_installation`**
 
+![Alt text](<Images/secure install.png>)
+
+![Alt text](<Images/secure install B.png>)
 
 
 
