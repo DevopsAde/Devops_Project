@@ -150,6 +150,14 @@ creating or modifying other database on the server.
 
 ![Alt text](<Images/edit localhost.png>)
 
+## SETTING UP MYSQL CLIENT
+
+- SSH into MySQL client EC2 instance
+
+- Run the following command to install MySQL client software. **`sudo apt update && sudo apt upgrade`**
+
+- Install the mysql-client package using the *8`sudo apt install mysql-client -y`** command.
+
 
 
 
