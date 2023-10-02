@@ -115,6 +115,8 @@ Note: **`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 
 
 - Then we connect to the MySQL console using the **`sudo mysql -p`** command.
 
+- Lastly, is giving the user permission over the Testing_db database.
+
 - Below are the commands used in creating a Database and a new user to grant full access to the database.
 
 ![Alt text](<Images/database creation.png>)
