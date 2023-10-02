@@ -67,7 +67,9 @@ round-trip time, time for packets to go to and back from the server. Note, this 
 
 In this section, we going to implement a Client Sever Architecture using MySQL Database Management System (DBMS).
 
-We going to demonstrate a basic client-server using MySQL RDBMS, by Create and Configuring two Linux-based virtual servers (EC2 instances in AWS).
+We going to demonstrate a basic client-server using MySQL RDBMS, by Create and Configuring two Linux-based virtual 
+
+servers (EC2 instances in AWS).
 
 
 
