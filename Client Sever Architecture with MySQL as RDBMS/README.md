@@ -63,7 +63,11 @@ Alternatively, another way to get a server's IP address is to use a diagnostic t
 
 round-trip time, time for packets to go to and back from the server. Note, this tool uses **`ICMP PROTOCOL`**.
 
-## IMPLEMENT A CLIENTSERVER ARCHITECTURE USING MySQL DATABASE MANAGEMENT SYSTEM (DBMS)
+## IMPLEMENT A CLIENT SERVER ARCHITECTURE USING MySQL DATABASE MANAGEMENT SYSTEM (DBMS)
+
+In this section, we going to implement a Client Sever Architecture using MySQL Database Management System (DBMS).
+
+We going to demonstrate a basic client-server using MySQL RDBMS, by Create and Configuring two Linux-based virtual servers (EC2 instances in AWS).
 
 
 
