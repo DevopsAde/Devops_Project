@@ -6,9 +6,9 @@ between clients and servers.
 
 First let's define what actually a Client and Server is?
 
-- Client: A client is a user or system that requests a specific resource or service from another entity know as server.
+- Client: A client is a user or system that requests a specific resource or service from another entity know as server
 
-                                            *WHILE*
+*WHILE*
 
 - SERVER: Is a resource or service provider that listens for incoming requests from clients and responds to those requests.                                        
 
