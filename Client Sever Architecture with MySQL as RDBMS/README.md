@@ -73,15 +73,38 @@ servers (EC2 instances in AWS). **`Server A name - MySQL-server`** and **`Server
 
 ![Alt text](Images/instances.png)
 
-On **`MySQL server`** Linux Server install MySQL Server Software. But first we going to use **`MySQL server`** local IP
-
-address to connect from **`MySQL client`**. MySQL server uses TCP port **`3306`** by default, so we going to create a 
-
-new entry in 'INBOUND RULES' in 'mysql server' Security Groups.
+ But first we going to use **`MySQL server`** local IP address to connect from **`MySQL client`**. MySQL server uses 
+ 
+ TCP port **`3306`** by default, so we going to create a new entry in 'INBOUND RULES' in 'mysql server' Security Groups.
 
 - Output below:
 
 ![Alt text](<Images/edit inbound rules.png>)
+
+On **`MySQL server`** Linux Server install MySQL Server Software. 
+
+**`sudo apt update`**
+
+![Alt text](<Images/sudo apt update.png>)
+
+Next, is to install the MySQL-Server Package
+
+**`sudo apt install mysql-server`**
+
+![Alt text](<Images/mysql install.png>)
+
+To ensure the server is running use the command **`systemctl`** command:
+
+**`sudo systemctl start mysql.service`** and Hit Enter, then Type **`sudo systemctl status mysql.service`** 
+
+![Alt text](<Images/mysql status.png>)
+
+
+
+
+Next, is to configure MySQL Server to allow connections from remote hosts.
+
+
 
 
 
