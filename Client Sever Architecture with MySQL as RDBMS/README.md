@@ -121,6 +121,16 @@ Note: **`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 
 
 ![Alt text](<Images/database creation.png>)
 
+*Note:* This will basically give the admin_user full priviledge over the Testing_database, while preventing this user from 
+
+creating or modifying other database on the server.
+
+** Exit the shell by hitting by typing **`Exit`**
+
+- Now lets confirm if the new user has the proper permissions by logging into MySQL console again, using the 
+
+**`mysql -u admin_user -p`**
+
 
 
 
