@@ -71,6 +71,8 @@ We going to demonstrate a basic client-server using MySQL RDBMS, by Create and C
 
 servers (EC2 instances in AWS). **`Server A name - mysql-server`** and **`Server B name - mysql-client`**
 
+![Alt text](Images/instances.png)
+
 
 
 
