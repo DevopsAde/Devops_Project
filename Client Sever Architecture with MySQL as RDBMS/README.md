@@ -158,6 +158,10 @@ creating or modifying other database on the server.
 
 - Install the mysql-client package using the **`sudo apt install mysql-client -y`** command.
 
+- Now from the MySQL client instance we going to connect remotely to MySQL server databse using the command below:
+
+**`sudo mysql -u admin_user -h 172.31.28.61 -p`**
+
 
 
 
