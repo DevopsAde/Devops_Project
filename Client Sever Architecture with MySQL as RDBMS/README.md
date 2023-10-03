@@ -53,7 +53,25 @@ In this example, the Ubuntu terminal is the **client**, while **`www.propitixhom
 
 Now, that we have the **`curl`** command installed, lets re-run the **`curl -Iv www.propitixhomes.com`**. 
 
+## NOTE
 
+- The **`I`** or **`location`**: This option tells **`curl`** to follow HTTPS redirects. When a server responds with a redirect
+
+(HTTP status codes 3xx), **`curl`** will automatically make additional requests to the new location specified in the
+
+redirect header.
+
+- **`v`** or **`verbose`**: This option makes **`curl`** more chatty. It displays detailed information about the request
+
+and response, including headers and other relevant details. It's useful for debugging and understanding the
+
+communication between the client and the server.
+
+So, when you use **`curl -Iv`**, you are asking **`curl`** to not only follow redirects but also provide detailed
+
+verbose output for each step of the communication. This can be particularly helpful when troubleshooting  network
+
+or HTTP-related issues.
 
 - Output below: This shows the requests from the URL are being collected from a computer with an IP address
 
