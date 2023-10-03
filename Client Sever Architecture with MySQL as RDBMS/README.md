@@ -53,6 +53,8 @@ In this example, the Ubuntu terminal is the **client**, while **`www.propitixhom
 
 Now, that we have the **`curl`** command installed, lets re-run the **`curl -Iv www.propitixhomes.com`**. 
 
+
+
 - Output below: This shows the requests from the URL are being collected from a computer with an IP address
 
 of **`75.2.115.196`** on port **`80`**.
@@ -161,6 +163,12 @@ creating or modifying other database on the server.
 - Now from the MySQL client instance we going to connect remotely to MySQL server databse using the command below:
 
 **`sudo mysql -u admin_user -h 172.31.28.61 -p`**
+
+- Finally, type the command in MySQL console : **`SHOW DATABASE`**
+
+![Alt text](<Images/database testing.png>)
+
+
 
 
 
