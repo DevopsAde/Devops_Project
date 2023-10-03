@@ -144,7 +144,7 @@ Note: **`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 
 
 creating or modifying other database on the server.
 
-** Exit the shell by hitting by typing **`Exit`**
+Exit the shell by hitting by typing **`Exit`**
 
 - Now lets confirm if the new user has the proper permissions by logging into MySQL console again, using the 
 
@@ -185,6 +185,9 @@ creating or modifying other database on the server.
 - Finally, type the command in MySQL console : **`SHOW DATABASE`**
 
 ![Alt text](<Images/database testing.png>)
+
+
+## THANK YOU
 
 
 
