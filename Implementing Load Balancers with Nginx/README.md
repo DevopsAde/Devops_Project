@@ -6,7 +6,7 @@ performance, and ensure high availability for your web applications.
 
 ## Introduction to Load Balancing and Nginx
 
-- What is Load Balancing?
+- **`What is Load Balancing`**?
 
 In simple terms, load balancing means distributing the work or tasks among several computers or servers so 
 
@@ -31,6 +31,10 @@ that no one server is overworked, which could degrade performance. If a single s
 redirects traffic to the remaining online servers. When a new server is added to the server group, the load balancer 
 
 automatically starts to send request to it.
+
+A typical Load Balancing Diagram Below:
+
+![Alt text](<Images/load balancer diag.png>)
 
 # In this steps, a load balancer performs the following functions:
 
