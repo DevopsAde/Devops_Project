@@ -114,6 +114,8 @@ using the command **`sudo systemctl status apache2`**, output below confirms apa
 
 <span style="color:blue;">Web_Server_B</span>
 
+<span style="color:blue">some *This is Blue italic.* text</span>
+
 
 
 
