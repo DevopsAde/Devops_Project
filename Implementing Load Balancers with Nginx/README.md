@@ -171,6 +171,11 @@ Public IP Address:**`LISTEN PORT 8000`**
 # NOTE: Commands Preview used 
 
 ![Alt text](<Images/cmd preview B.png>)
+*Web_Server EC2 Instance*
+
+# NOTE: Repeat this above process for the second EC2 instance (Web_server_B), pay attention to the different IP Public Address.
+
+![Alt text](<Images/ec2 instance_B.png>)
 
 
 
