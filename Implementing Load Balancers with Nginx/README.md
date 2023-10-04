@@ -114,6 +114,22 @@ using the command **`sudo systemctl status apache2`**, output below confirms apa
 
 - Image 2: *Web_Server_B*
 
+- Step 6: We will start by configuring **`Apache`** Webserver to serve content on port 8000 instead of its default port
+
+which is port 80. Then next, will be to create a new **`index.html`** file. This file will contain code to display the 
+
+public IP of the EC2 instance. We will then override the apache webserver's default HTML file with a new file.
+
+- Using any text editor open the file **`/etc/apache2/ports.conf`**, use the **`sudo nano /etc/apache2/ports.conf`**
+
+- Step 7: Add a new listen Directive for port 8000, **`Hit Ctrl + X, HIt Y and Enter`**. This saves the file.
+
+![Alt text](<Images/add port 8000.png>)
+
+- Step 8: Next open the file **`/etc/apache2/sites-available/000-default.conf`** and change **`port 80`**` on the 
+
+virtual host to **`8000`**.
+
 
 
 
