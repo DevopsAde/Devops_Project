@@ -82,11 +82,21 @@ their public IP address.
 
 a load balancer distributing traffic acroos the webservers.
 
-- Step 1: Create two Instances **`Web_Server`"" && **`Web_Server_B`**
+- Step 1: Create two Instances: In this  **`Web_Server`"" && **`Web_Server_B`**
 
 ![Alt text](Images/instances.png)
 
-- Step 2: Edit inbound rules and open port 8000 on both EC2 instances created, and llow traffic from anywhere.
+- Step 2: Edit inbound rules and open port 8000 on both "EC2 instances" created, and allow traffic from anywhere.
 
 ![Alt text](<Images/edit inbound.png>)
+
+- Step 3: Install Apache Webserver
+
+After provisioning both of our servers and have opened the necessary ports, we then install apache softare on both servers (EC2 Instances).
+
+To do this we must connect to each of the webservers via **`ssh`**.
+
+- Step 4: SSH into each webservers and run the following commands to install apache webservers on both EC2 instances (webservers) created.
+
+![Alt text](<Images/ssh connect.png>)
 
