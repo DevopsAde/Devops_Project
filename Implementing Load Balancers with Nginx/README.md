@@ -162,9 +162,9 @@ we need to get the public IP address of the EC2 instance and replace the placeho
 
 3. Let's now load the page on the browser to view it's content. Typed like this on the browser, remember with the 
 
-Public IP Address:**`LISTEN PORT 8000`**
+Public IP Address:**`http://54.170.14.15:8000/`**, followed by the listening **`port 8000`**.
 
-**`http://54.170.14.15:8000/`**. Output Below:
+Output Below:
 
 ![Alt text](<Images/public html output.png>)
 
