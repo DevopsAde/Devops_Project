@@ -96,7 +96,9 @@ After provisioning both of our servers and have opened the necessary ports, we t
 
 To do this we must connect to each of the webservers via **`ssh`**.
 
-- Step 4: SSH into each webservers and run the following commands to install apache webservers on both EC2 instances (webservers) created.
+- Step 4: SSH into each webservers and run the following commands to install apache webservers on both EC2 instances 
+
+(webservers) created.
 
 ![Alt text](<Images/ssh connect.png>)
 
