@@ -181,6 +181,8 @@ Public IP Address:**`LISTEN PORT 8000`**
 
 - We will create a new EC2 instance. Open **`port 80`** to accept traffic from anywhere.
 
+![Alt text](<Images/nginx edit inbound.png>)
+
 - Next, we SSH into the EC2 instance.
 
 - And then Install Nginx into the instance using the command below:
@@ -194,7 +196,25 @@ Public IP Address:**`LISTEN PORT 8000`**
 ![Alt text](<Images/nginx installation.png>)
 *NGINX INSTALLED AND VERIFIED SUCCESSFULLY*
 
+- Next, open Nginx configuration file with the command below:
 
+**`sudo nano /etc/nginx/conf.d/loadbalancer.conf`**
+
+- Paste this configuration file below, this file configures nginx to act like a load balancer. Also note to edit the file
+
+and provide necessary information like your server IP addressof both servers (EC2 instances).
+
+![Alt text](<Images/nginx edit.png>)
+
+- Test configurations. Use the command below:
+
+**`sudo nginx -t`**
+
+![Alt text](Images/nginx-t.png)
+
+- Next, we restart Nginx to load the new configuration with the command below:
+
+**`sudo systemctl restart nginx`**
 
 
 
