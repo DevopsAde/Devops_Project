@@ -32,9 +32,8 @@ redirects traffic to the remaining online servers. When a new server is added to
 
 automatically starts to send request to it.
 
-A typical Load Balancing Diagram Below:
-
 ![Alt text](<Images/load balancer diag.png>)
+          A typical Load Balancing Diagram 
 
 # In this steps, a load balancer performs the following functions:
 
