@@ -70,6 +70,8 @@ When you insert NGINXas a load balancer in front of your application and server,
 
 performance, and reliability. NGINX helps in maximizing customer satisfaction and return on IT investments.
 
-<span style="color:red">setting up a basic load balancer</span>
-
-<span style="color:red">red texto</span>
+<style>
+    body {
+        color:red;
+    }
+    </style>
