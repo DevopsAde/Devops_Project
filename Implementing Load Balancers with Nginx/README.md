@@ -200,9 +200,9 @@ Public IP Address:**`LISTEN PORT 8000`**
 
 **`sudo nano /etc/nginx/conf.d/loadbalancer.conf`**
 
-- Paste this configuration file below, this file configures nginx to act like a load balancer. Also note to edit the file
+- Paste this configuration file below, this file configures nginx to act like a load balancer. Also, note to edit the file
 
-and provide necessary information like your server IP addressof both servers (EC2 instances).
+and provide necessary information like your server IP address of both servers (EC2 instances).
 
 ![Alt text](<Images/nginx edit.png>)
 
@@ -211,10 +211,17 @@ and provide necessary information like your server IP addressof both servers (EC
 **`sudo nginx -t`**
 
 ![Alt text](Images/nginx-t.png)
+*configuration OK*
 
 - Next, we restart Nginx to load the new configuration with the command below:
 
 **`sudo systemctl restart nginx`**
+
+- Finally, paste the Public address of Nginx Load Balancer. We should see the same webpages served by the webservers.
+
+
+
+
 
 
 
