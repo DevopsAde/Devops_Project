@@ -1,5 +1,9 @@
 # Implementing Load Balancers with Nginx
-
+<style>
+    body {
+        color:red;
+    }
+    </style>
 - In this project, we going to learn how to distribute traffic efficiently across multiple servers, optimize
 
 performance, and ensure high availability for your web applications.
@@ -70,8 +74,4 @@ When you insert NGINXas a load balancer in front of your application and server,
 
 performance, and reliability. NGINX helps in maximizing customer satisfaction and return on IT investments.
 
-<style>
-    body {
-        color:red;
-    }
-    </style>
+
