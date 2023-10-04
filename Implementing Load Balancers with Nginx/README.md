@@ -1,9 +1,5 @@
 # Implementing Load Balancers with Nginx
-<style>
-    body {
-        color:red;
-    }
-    </style>
+
 - In this project, we going to learn how to distribute traffic efficiently across multiple servers, optimize
 
 performance, and ensure high availability for your web applications.
@@ -74,4 +70,17 @@ When you insert NGINXas a load balancer in front of your application and server,
 
 performance, and reliability. NGINX helps in maximizing customer satisfaction and return on IT investments.
 
+# Setting Up a Basic Load Balancer
+
+- In this exercise, we are going to provision two EC2 instances running ubuntu 22.04 and install Apache Webserver in them.
+
+We will open the port 8000 to allow traffic from anywhere, and finally update the default page of the webservers to display 
+
+their public IP address.
+
+- Next we will provision another EC2 instance running Ubuntu 22.04, this time we will install Nginx and configure it to act as 
+
+a load balancer distributing traffic acroos the webservers.
+
+- Step 1
 
