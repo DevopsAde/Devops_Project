@@ -108,6 +108,12 @@ using the command **`sudo systemctl status apache2`**, output below confirms apa
 
 ![Alt text](<Images/apache active.png>)
 
+*Web_Server*
+
+![Alt text](<Images/apache active_A.png>)
+
+*Web_Server_B*
+
 
 
 
