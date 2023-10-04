@@ -102,5 +102,11 @@ To do this we must connect to each of the webservers via **`ssh`**.
 
 ![Alt text](<Images/ssh connect.png>)
 
-- Step 5: Run this command **`sudo apt update -y && sudo apt install apache2 -y`**
+- Step 5: Run this command **`sudo apt update -y && sudo apt install apache2 -y`** and Verify that apache is running
+
+using the command **`sudo systemctl status apache2`**, output below confirms apache is active and running successfully.
+
+![Alt text](<Images/apache active.png>)
+
+
 
