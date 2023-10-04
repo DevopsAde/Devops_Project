@@ -126,7 +126,7 @@ public IP of the EC2 instance. We will then override the apache webserver's defa
 
 ![Alt text](<Images/add port 8000.png>)
 
-- Step 8: Next open the file **`/etc/apache2/sites-available/000-default.conf`** and change **`port 80`**` on the 
+- Step 8: Next open the file **`/etc/apache2/sites-available/000-default.conf`** and change **`port 80`** on the 
 
 virtual host to **`8000`**.
 
@@ -135,6 +135,42 @@ virtual host to **`8000`**.
 - Step 9: Restart Apache to load the new configuration using the command below:
 
 **`sudo systemctl restart apache2`**
+
+# NOTE: Commands Preview used
+
+![Alt text](<Images/cmd instruct.png>)
+
+- Next is to open a new **`index.html`** file using this command **`sudo nano index.html`**, but before pasting the **`HTML CODE`**
+
+we need to get the public IP address of the EC2 instance and replace the placeholder text for IP address in the HTML file.
+
+![Alt text](<Images/html insert.png>)
+
+- Now, we will change the file ownership of the **`index.html`** file with the command below:
+
+**`sudo chown www-data:www-data ./index.html`**
+
+- Lets Overide the Default HTML file of the Apache Webserver:
+
+1. Replace the default HTML file with our new HTML file using the command below:
+
+**`sudo cp -f ./index.html /var/www/html/index.html`**
+
+2. Now, lets Restart the webserver to load the new configuration using the command below:
+
+**`sudo systemctl restart apache2`**
+
+3. Let's now load the page on the browser to view it's content. Typed like this on the browser, remember with the 
+
+Public IP Address:**`LISTEN PORT 8000`**
+
+**`http://54.170.14.15:8000/`**. Output Below:
+
+![Alt text](<Images/public html output.png>)
+
+
+
+
 
 
 
