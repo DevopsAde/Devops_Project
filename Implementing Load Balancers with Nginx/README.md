@@ -219,8 +219,13 @@ and provide necessary information like your server IP address of both servers (E
 
 - Finally, paste the Public address of Nginx Load Balancer. We should see the same webpages served by the webservers.
 
+# NOTE: REFRESH THE PAGE AND SEE IT DISPLAY BOTH EC2 INSTANCE (WEB_SERVER & WEB_SERVER_B)
 
+![Alt text](<Images/First instance nginx load.png>)
+*Web_Server*
 
+![Alt text](<Images/Second instance nginx load.png>)
+*Web_Server_B*
 
 
 
