@@ -112,7 +112,7 @@ using the command **`sudo systemctl status apache2`**, output below confirms apa
 
 ![Alt text](<Images/apache active_A.png>)
 
-<span style="color:red;">Web_Server_B</span>
+<span style="color:blue;">Web_Server_B</span>
 
 
 
