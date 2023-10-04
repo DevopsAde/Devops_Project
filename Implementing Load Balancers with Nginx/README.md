@@ -122,13 +122,19 @@ public IP of the EC2 instance. We will then override the apache webserver's defa
 
 - Using any text editor open the file **`/etc/apache2/ports.conf`**, use the **`sudo nano /etc/apache2/ports.conf`**
 
-- Step 7: Add a new listen Directive for port 8000, **`Hit Ctrl + X, HIt Y and Enter`**. This saves the file.
+- Step 7: Add a new listen Directive for port 8000, **`Hit Ctrl + X, Hit Y and Enter`**. This saves the file.
 
 ![Alt text](<Images/add port 8000.png>)
 
 - Step 8: Next open the file **`/etc/apache2/sites-available/000-default.conf`** and change **`port 80`**` on the 
 
 virtual host to **`8000`**.
+
+![Alt text](Images/apache2_sites.png)
+
+- Step 9: Restart Apache to load the new configuration using the command below:
+
+**`sudo systemctl restart apache2`**
 
 
 
