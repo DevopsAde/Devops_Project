@@ -82,5 +82,11 @@ their public IP address.
 
 a load balancer distributing traffic acroos the webservers.
 
-- Step 1
+- Step 1: Create two Instances **`Web_Server`"" && **`Web_Server_B`**
+
+![Alt text](Images/instances.png)
+
+- Step 2: Edit inbound rules and open port 8000 on both EC2 instances created, and llow traffic from anywhere.
+
+![Alt text](<Images/edit inbound.png>)
 
