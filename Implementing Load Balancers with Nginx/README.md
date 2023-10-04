@@ -164,7 +164,7 @@ we need to get the public IP address of the EC2 instance and replace the placeho
 
 Public IP Address:**`http://54.170.14.15:8000/`**, followed by the listening **`port 8000`**.
 
-Output Below:
+# Output Below:
 
 ![Alt text](<Images/public html output.png>)
 
