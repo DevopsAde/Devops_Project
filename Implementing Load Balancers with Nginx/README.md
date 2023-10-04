@@ -82,7 +82,7 @@ their public IP address.
 
 a load balancer distributing traffic acroos the webservers.
 
-- Step 1: Create two Instances: In this  **`Web_Server`"" && **`Web_Server_B`**
+- Step 1: Create two Instances: In this  **`Web_Server && Web_Server_B`**
 
 ![Alt text](Images/instances.png)
 
@@ -101,4 +101,6 @@ To do this we must connect to each of the webservers via **`ssh`**.
 (webservers) created.
 
 ![Alt text](<Images/ssh connect.png>)
+
+- Step 5: Run this command **`sudo apt update -y && sudo apt install apache2 -y`**
 
