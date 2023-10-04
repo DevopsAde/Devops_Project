@@ -34,7 +34,7 @@ automatically starts to send request to it.
 
 ![Alt text](<Images/load balancer diag.png>)
 
-A typical Load Balancing Diagram 
+*A typical Load Balancing Diagram* 
 
 # In this steps, a load balancer performs the following functions:
 
@@ -69,3 +69,5 @@ The comprehensive load balancing capabilities in NGINX enables you to build a hi
 When you insert NGINXas a load balancer in front of your application and server, it increases your website's efficiency, 
 
 performance, and reliability. NGINX helps in maximizing customer satisfaction and return on IT investments.
+
+<span style="color:red">setting up a basic load balancer</span>
