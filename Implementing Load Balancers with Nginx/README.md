@@ -168,7 +168,9 @@ Public IP Address:**`LISTEN PORT 8000`**
 
 ![Alt text](<Images/public html output.png>)
 
+# NOTE: Commands Preview used 
 
+![Alt text](<Images/cmd preview B.png>)
 
 
 
