@@ -8,15 +8,15 @@ performance, and ensure high availability for your web applications.
 
 - **`What is Load Balancing`**?
 
-In simple terms, load balancing means distributing the work or tasks among several computers or servers so 
+In simple terms, load balancing means distributing the work or tasks among several computers or servers so
 
 that no computer gets overloaded with too much work. This helps to keep everything running smoothly and ensures
 
 that websites and apps work quickly and don't get too slow.
 
-Modern high-traffic websites must serve hundreds of thousands, if not millions, of concurrent  requests from 
+Modern high-traffic websites must serve hundreds of thousands, if not millions, of concurrent  requests from
 
-users or clients and return the correct text, images, video, or application data, all in a fast and reliable 
+users or clients and return the correct text, images, video, or application data, all in a fast and reliable
 
 manner. To cost-effectively scale to meet these high volumes, modern computing best practice generally requires adding
 
@@ -28,15 +28,15 @@ all servers capable of fulfilling those requests in a manner that maximizes spee
 
 that no one server is overworked, which could degrade performance. If a single server goes down, the load balancer
 
-redirects traffic to the remaining online servers. When a new server is added to the server group, the load balancer 
+redirects traffic to the remaining online servers. When a new server is added to the server group, the load balancer
 
 automatically starts to send request to it.
 
 ![Alt text](<Images/load balancer diag.png>)
 
-*A typical Load Balancing Diagram* 
+*A typical Load Balancing Diagram*
 
-# In this steps, a load balancer performs the following functions:
+# In this steps, a load balancer performs the following functions
 
 - Distributes client requests or network load efficiently across multiple servers.
 
@@ -66,8 +66,10 @@ Zynga. More than 350 million websites worldwide rely on NGINX to deliver their c
 
 The comprehensive load balancing capabilities in NGINX enables you to build a high optimized application delivery network.
 
-When you insert NGINXas a load balancer in front of your application and server, it increases your website's efficiency, 
+When you insert NGINXas a load balancer in front of your application and server, it increases your website's efficiency,
 
 performance, and reliability. NGINX helps in maximizing customer satisfaction and return on IT investments.
 
 <span style="color:red">setting up a basic load balancer</span>
+
+<span style="color:red">red texto</span>
