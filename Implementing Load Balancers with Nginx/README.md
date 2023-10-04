@@ -171,6 +171,7 @@ Public IP Address:**`LISTEN PORT 8000`**
 # NOTE: Commands Preview used 
 
 ![Alt text](<Images/cmd preview B.png>)
+
 *Web_Server EC2 Instance*
 
 ## NOTE: Repeat this above process for the second EC2 instance (Web_server_B), pay attention to the different IP Public Address.
@@ -211,6 +212,7 @@ and provide necessary information like your server IP address of both servers (E
 **`sudo nginx -t`**
 
 ![Alt text](Images/nginx-t.png)
+
 *configuration OK*
 
 - Next, we restart Nginx to load the new configuration with the command below:
@@ -223,11 +225,11 @@ and provide necessary information like your server IP address of both servers (E
 
 ![Alt text](<Images/First instance nginx load.png>)
 
-*Web_Server*
+*Web_Server instance*
 
 ![Alt text](<Images/Second instance nginx load.png>)
 
-*Web_Server_B*
+*Web_Server_B instance*
 
 
 
