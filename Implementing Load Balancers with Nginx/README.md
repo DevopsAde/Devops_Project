@@ -231,7 +231,9 @@ and provide necessary information like your server IP address of both servers (E
 
 *Web_Server_B instance*
 
+- *A simple illustrator of my understanding of the Project*.
 
+![Alt text](<Images/Design illustrator.png>)
 
 
 
