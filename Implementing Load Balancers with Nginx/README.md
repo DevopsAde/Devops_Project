@@ -235,5 +235,63 @@ and provide necessary information like your server IP address of both servers (E
 
 ![Alt text](<Images/Design illustrator.png>)
 
+# Load Balancing Algorithms
+
+- Load balancer algorithms are techniques used to distribute incoming network traffic or workload across multiple
+
+servers, ensuring efficient utilization of resources and improving overall system performance, reliability, and
+
+availability. Here are some common load balancer algorithms:
+
+1. Round Robin: THis algorithm distributes requests sequentially to each server in the pool. It is simple to implement
+
+and ensures an even distribution of traffic. It works well when all servers have similar capabilities and resources.
+
+2. Least Connections: This algorithm routes new requests to the server with the least number of active connections. 
+
+It is effective when servers have varying capacities or workloads, as it helps distribute traffic to the least busy
+
+server.
+
+3. Weighted Round Robin: Similar to the Round Robin algorithm, but servers are assigned different weights based on their
+
+capabilities. Servers with higher capacities receive more requests. This approach is useful when servers have varying 
+
+capacities or performance levels.
+
+4. Weighted Least Connections: Similar to the Least Connections algorithm, but servers are assigned different weights
+
+based on their capabilities. Servers with higher capacities receive more connections. This approach balances traffic based on
+
+server capacities.
+
+5. IP Hash: This algorithm uses a hash function based on the client's IP address to consistently map the client to a 
+
+specific server. This ensures that the same client always reaches the same server, which can be helpful for maintaining 
+
+session data or stateful connections.
+
+- *Further Reading & Study Material*
+
+1. *SSL TERMINATION AND HTTPS LOAD BALANCING*
+
+2. *ENCRYPTION (TYPES OF ENCRYPTION)*
+
+3. *THE PURPOSE OF TLS/SSL CERTIFICATE (HOW TLS/SSL WORK)*
+
+4. *ADVANCED LOAD BALANCING FEATURES*
+
+# NOTE: 
+
+- These advanced features make load balancers a powerful tools for optimizing application performance, ensuring high 
+
+availability, and protecting applications from various threats and failures. They are essential compnents in modern,
+
+scalable, and robust IT infrastructures.
+
+
+
+# THANK YOU
+
 
 
