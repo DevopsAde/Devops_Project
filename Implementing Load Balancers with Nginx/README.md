@@ -271,7 +271,7 @@ specific server. This ensures that the same client always reaches the same serve
 
 session data or stateful connections.
 
-- *Further Reading & Study Material*
+- *FURTHER READING*
 
 1. *SSL TERMINATION AND HTTPS LOAD BALANCING*
 
