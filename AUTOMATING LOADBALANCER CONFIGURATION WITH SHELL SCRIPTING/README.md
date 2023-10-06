@@ -1,16 +1,14 @@
 # Automating LoadBalancer configuration with Shell Scripting
 
-- This project demonstrates load balancer configuration using shell scripting and CI/CD on Jenkins, and
+- This project demonstrates load balancer configuration using shell scripting and CI/CD on Jenkins, and also using 
 
-also using automation process to setup and maintain load balancer.
+automation process to setup and maintain load balancer.
 
 ## Automate the Deployment of Webservers
 
-- In the previous project **`IMPLEMENTING LOADBALANCERS WITH NGINX`**, remember we deployed two backend
+- In the previous project **`IMPLEMENTING LOADBALANCERS WITH NGINX`**, remember we deployed two backend servers, with 
 
-servers, with a load balancer distributing traffic across the webservers. Note, we did all configurations
-
-and commands via the terminal.
+a load balancer distributing traffic across the webservers. Note, we did all configurations and commands via the terminal.
 
 Now, imagine automating the whole process. We will achieve this by writing a shell script, that when executed
 
