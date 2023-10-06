@@ -48,6 +48,10 @@ all we did manually will be done automatically.
 
 ![Alt text](<Images/install sh_B.png>)
 
+- NOTE: Remember to repeat same process for **`Server_B`**
+
+![Alt text](<Images/Server_B Install.png>)
+
 
 
 
