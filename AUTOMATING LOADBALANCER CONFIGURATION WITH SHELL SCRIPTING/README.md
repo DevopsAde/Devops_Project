@@ -40,7 +40,9 @@ all we did manually will be done automatically.
 
 - Run the shell script using the command below. 
 
-**`./install.sh 34.251.9.49`**. Output Below:
+**`./install.sh 34.251.9.49`**. 
+
+- Output Below:
 
 ![Alt text](Images/install.sh.png)
 
