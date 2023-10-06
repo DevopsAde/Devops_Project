@@ -52,9 +52,39 @@ all we did manually will be done automatically.
 
 ![Alt text](<Images/Server_B Install.png>)
 
+## Deployment of Nginx as a Load Balancer using Shell Script
 
+- Having successfully deploying and configuring two webservers, we provision an EC2 instance for load balancer and
 
+open port 80 to anywhere using the security group and connect to the load balancer via the terminal.
 
+![Alt text](<Images/NGINX PORT 80.png>)
+
+# Steps to Run the Shell Script
+
+- On the terminal, open a file using this command: **`sudo nano nginx.sh`**
+
+- Copy and Paste the script inside the file
+
+![Alt text](<Images/nginx script.png>)
+
+- **`ctrl + X && Y and Hit Enter`** to close and save the file
+
+- Change the file permission to make it executable using the command below:
+
+**`sudo chmod +x nginx.sh`**
+
+- Run the script with the command below:
+
+**`./nginx.sh PUBLIC_IP Webserver-1 Webserver -2`**. In this case, the **`PUBLIC_IP`** is the public address
+
+ of the **`NGINX Server`**, while the **`Webserver-1`** is the **`Server_A`** && **`Webserver-2`** is **`Server_B`**.
+
+- OUTPUT BELOW:
+
+ ![Alt text](<Images/nginx loader.png>)
+
+ ![Alt text](<Images/nginx loader_A.png>)
 
 
 
