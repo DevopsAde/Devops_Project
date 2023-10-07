@@ -86,5 +86,17 @@ open port 80 to anywhere using the security group and connect to the load balanc
 
  ![Alt text](<Images/nginx loader_A.png>)
 
+ # Verifying the setup
+
+ - Screenshot for webserver 1
+
+ ![Alt text](<Images/screenshot servr 1.png>)
+
+- Screenshot for webserver 2
+
+![Alt text](<Images/screenshot servr 2.png>)
+
+- Screenshot of Load balancer (NGINX)
+
 
 
