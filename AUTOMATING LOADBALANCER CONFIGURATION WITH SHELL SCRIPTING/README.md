@@ -98,5 +98,8 @@ open port 80 to anywhere using the security group and connect to the load balanc
 
 - Screenshot of Load balancer (NGINX)
 
+![Alt text](<Images/Nginx loadbalancer.png>)
 
+
+# THANK YOU
 
