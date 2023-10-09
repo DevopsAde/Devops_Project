@@ -137,3 +137,22 @@ command **`sudo gdisk /dev/xvdf`**, **`/xvdg`**, **`/xvdh`**. Successful Screens
 9. Lets now verify if the physical volume has been created successfully by using the command **`sudo pvs`**
 
 ![Alt text](Images/pvs.png)
+
+10. Use **`vgcreate`** utility to add all 3 **`pvs`** to a volume group (VG). Let's name it *webdata-vg*
+
+using this command as follows: **`sudo vgcreate webdata-vg /dev/xvdh1 /dev/xvdg1 /dev/xvdf1`**
+
+11. Let's verify the VG was created successfully running **`sudo vgs`**
+
+12. Let's now create 2 logical volumes. apps-lv(will be used to store data for the website) and logs-lv(used to
+
+store data for logs). We use the following commands below:
+- **`sudo lvcreate -n apps-lv -L 14G webdata-vg`**
+
+- **`sudo lvcreate -n logs-lv -L 14G webdata-vg`**
+
+![Alt text](<Images/vgs lvm create.png>)
+
+13. Verify the logical volume has been created successfully by running the command **`sudo lvs`**
+
+![Alt text](<Images/sudo lvs.png>)
