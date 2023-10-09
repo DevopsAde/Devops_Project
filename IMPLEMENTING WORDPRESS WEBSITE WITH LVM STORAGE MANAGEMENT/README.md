@@ -36,3 +36,23 @@ of 3 seperate layers.
 
 or File System Server such as **`FTP Server`** or **`NFS Server`**
 
+- In this project, we will showcase **Three-tier Architecture** ensuring that the disks used to store files on the Linux servers
+
+are adequately partitioned and managed through programs such as **`gdisk`** and **`LVM`** respectively.
+
+-  **In this 3-Tier Setup, prerequiste required below**:
+
+1. A Laptop or PC to serve as a client
+
+2. An EC2 Linux Server as a Web Server (This is where we will install WordPress)
+
+3. An EC2 Linux Server as a Database (DB) server
+
+# NOTE:
+
+- We going to use **`RedHat`** OS for this project, remember for Ubuntu server we connect via SSH/Putty or any other tool
+
+we use **`Ubuntu`** user, but for RedHat we will need to use **`ec2-user`** user. Connecttion string will look like this
+
+**`ec2-user@<Public-IP>`**
+
