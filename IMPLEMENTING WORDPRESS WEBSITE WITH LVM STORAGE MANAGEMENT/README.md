@@ -103,10 +103,12 @@ created block devices will be **`xvdf`**, **`xvdh`**, **`xvdg`**.
 command **`sudo gdisk /dev/xvdf`**, **`/xvdg`**, **`/xvdh`**. Successful Screenshot below:
 
 ![Alt text](Images/xvdg.png)
+*xvdg Partitioning*
 
 ![Alt text](Images/xvdh.png)
 
 ![Alt text](<Images/xvdh cont..png>)
+*xvdh Partitioning*
 
 6. Now use **`lsblk`** utility to view the newly configured partition on each of the disks.
 
