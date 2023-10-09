@@ -68,4 +68,4 @@ EC2, each of 10 GiB
 *Web_server_WordPress*
 
 ![Alt text](<Images/volumes created.png>)
-*10 GiB Volumes same availability zone eu-west-1a same with the EC2 instance*
+*10 GiB Volumes created, availability zone eu-west-1a same with the EC2 instance*
