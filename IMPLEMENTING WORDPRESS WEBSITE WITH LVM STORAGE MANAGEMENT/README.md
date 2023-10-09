@@ -120,3 +120,20 @@ command **`sudo gdisk /dev/xvdf`**, **`/xvdg`**, **`/xvdh`**. Successful Screens
 
 *Partitions Created*
 
+7. Install **`Ivm2`** package using **`sudo yum install Ivm2`**.
+
+![Alt text](<Images/yum install lvm2.png>)
+
+- HIT **`y`** and **`ENTER`** to Install. Then, run **`sudo lvmdiskscan`** command to check for available partitions.
+
+![Alt text](<Images/check diskscan.png>)
+
+- NOTE: We using **`yum`** to install packages because we using the RedHat/CentOS not Ubuntu which is **`apt`**.
+
+8. Now, use **`pvcreate`** utility to mark each of the 3 disks as physical volumes to be used by LVM.
+
+![Alt text](Images/pvcreate.png)
+
+9. Lets now verify if the physical volume has been created successfully by using the command **`sudo pvs`**
+
+![Alt text](Images/pvs.png)
