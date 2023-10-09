@@ -40,7 +40,7 @@ or File System Server such as **`FTP Server`** or **`NFS Server`**
 
 are adequately partitioned and managed through programs such as **`gdisk`** and **`LVM`** respectively.
 
--  **In this 3-Tier Setup, prerequiste required below**:
+- **In this 3-Tier Setup, prerequiste required below**:
 
 1. A Laptop or PC to serve as a client
 
@@ -69,3 +69,8 @@ EC2, each of 10 GiB
 
 ![Alt text](<Images/volumes created.png>)
 *Three of 10 GiB Volumes each created, availability zone eu-west-1a same with the EC2 instance*
+
+2. Attach all three volumes one by one to the Web_server_WordPress EC2 Instance Created.
+
+![Alt text](<Images/attach volume.png>)
+*Volumes Attached*
