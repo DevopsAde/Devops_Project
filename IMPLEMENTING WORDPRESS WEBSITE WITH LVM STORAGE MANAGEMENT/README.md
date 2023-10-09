@@ -76,6 +76,6 @@ EC2, each of 10 GiB
 
 *Volumes Attached*
 
-# NOTE: All volumes attached and lready in-use in the screenshot below:
+# NOTE: All volumes attached and ready in-use in the screenshot below:
 
 ![Alt text](Images/Volumes_successfully.png)
