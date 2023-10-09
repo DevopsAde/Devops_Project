@@ -25,6 +25,7 @@ In this project we will provision storage infrastructure on two Linux Servers an
 of 3 seperate layers.
 
 ![Alt text](Images/three-tier-architecture.png)
+
 *Three-tier Architecture*
 
 1. **`Presentation Layer (PL)`**: This is the user interface such as the client server or browser on your laptop.
