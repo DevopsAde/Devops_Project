@@ -117,5 +117,6 @@ command **`sudo gdisk /dev/xvdf`**, **`/xvdg`**, **`/xvdh`**. Successful Screens
 - Check out the output below for newly created partitions on each devices.
 
 ![Alt text](Images/partitions.png)
+
 *Partitions Created*
 
