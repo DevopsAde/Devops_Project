@@ -73,4 +73,5 @@ EC2, each of 10 GiB
 2. Attach all three volumes one by one to the Web_server_WordPress EC2 Instance Created.
 
 ![Alt text](<Images/attach volume.png>)
+
 *Volumes Attached*
