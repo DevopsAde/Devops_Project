@@ -60,3 +60,9 @@ we use **`Ubuntu`** user, but for RedHat we will need to use **`ec2-user`** user
 
 - Step 1: Prepare a Web Server
 
+1. Launch an EC2 instance that will serve as WebServer. Create 3 volumes in the same Availability Zone as the WebServer 
+
+EC2, each of 10 GiB
+
+![Alt text](Images/web_server.png)
+*Web_server_WordPress*
