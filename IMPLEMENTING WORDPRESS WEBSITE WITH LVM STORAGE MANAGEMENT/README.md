@@ -79,3 +79,24 @@ EC2, each of 10 GiB
 # NOTE: All volumes attached and ready in-use in the screenshot below:
 
 ![Alt text](Images/Volumes_successfully.png)
+
+3. Open up the Linux Terminal to Begin Configuration and use **`lsblk`** command to inspect what block devices
+
+are attached to the server.
+
+*Newly Created Devices*
+
+![Alt text](<Images/list of disk.png>)
+
+- Note, all devices in Linux reside in **`dev/directory`**. Inspect it with the command **`ls /dev/`**. The 3 newly
+
+created block devices will be **`xvdf`**, **`xvdh`**, **`xvdg`**.
+
+![Alt text](<Images/ls dev.png>)
+
+4. Use **`df -h`** command to see all mounts and free space on the server.
+
+![Alt text](<Images/chk free_space.png>)
+
+5. Use **`gdisk`** utility to create a single partition on each of the 3 disks. Use this command **`sudo gdisk /dev/xvdf`**
+
