@@ -52,7 +52,11 @@ are adequately partitioned and managed through programs such as **`gdisk`** and 
 
 - We going to use **`RedHat`** OS for this project, remember for Ubuntu server we connect via SSH/Putty or any other tool
 
-we use **`Ubuntu`** user, but for RedHat we will need to use **`ec2-user`** user. Connecttion string will look like this
+we use **`Ubuntu`** user, but for RedHat we will need to use **`ec2-user`** user. Connection string will look like this
 
 **`ec2-user@<Public-IP>`**
+
+## Implementing LVM on Linux Servers(Web and Databse Servers)
+
+- Step 1: Prepare a Web Server
 
