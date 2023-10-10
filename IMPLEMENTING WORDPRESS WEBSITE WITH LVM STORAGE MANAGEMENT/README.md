@@ -156,3 +156,68 @@ store data for logs). We use the following commands below:
 13. Verify the logical volume has been created successfully by running the command **`sudo lvs`**
 
 ![Alt text](<Images/sudo lvs.png>)
+
+14. Let's verify the entire setup, using the command below:
+
+- **`sudo vgdisplay -v`** (used to view complete setup - **`VG, PV, and LV`**)
+
+![Alt text](Images/vgdisplay_A.png)
+
+![Alt text](Images/vgdisplay_B.png)
+
+![Alt text](Images/vgdisplay_C.png)
+
+15. Let's use **`mkfs.ext4`** to format the logical volumes with *ext4* filesystem. Use the command below:
+
+- **`sudo mkfs -t ext4 /dev/webdata-vg/apps-lv`** && **`sudo mkfs -t ext4 /dev/webdata-vg/logs-lv`**
+
+![Alt text](Images/mkfs_ext4.png)
+
+16. Now, create **/var/www/html** directory to store website files. Use the command below:
+
+**`sudo mkdir -p /var/www/html`**
+
+17. Create **/home/recovery/logs** to store backup of log data. Use the command below:
+
+**`sudo mkdir -p /home/recovery/logs`**
+
+18. Mount **/var/www/html** on **apps-lv** logical volume. Using the command below:
+
+**`sudo mount /dev/webdata-vg/apps-lv /var/www/html/`**
+
+19. Use the **`rsync`** utility command to backup all the files in the log directory **/var/log** 
+
+into **/home/recovery/logs**. (Required before mounting the file system)
+
+![Alt text](<Images/rsync recovery_A.png>)
+
+![Alt text](<Images/rsync recovery_B.png>)
+
+20. Mount **/var/log** on **logs-lv** logical volume. (Note that all the existing data data on /var/log will be deleted
+
+That's why step 16 above is crucial). Run the command: **`sudo mount /dev/webdata-vg/logs-lv /var/log`**
+
+21. Now restore log files back into **/var/log** directory. Use the command below:
+
+**`sudo rsync -av /home/recovery/logs/log/. /var/log`**
+
+22. Update **`/etc/fstab`** file so that the mount configuration will persist after restart of the server.
+
+- Check the UUID of the device using **`sudo blkid`**
+
+![Alt text](<Images/sudo blkid.png>)
+
+23. Run the **`sudo vi /etc/fstab`** to update own UUID from the image above.
+
+![Alt text](<Images/update UUID.png>)
+
+24. Lastly let's test the configuration and reload the daemon using the command below:
+
+- **`sudo mount -a`** && **`sudo systemctl daemon-reload`** and verify the setup running **`df -h`**
+
+![Alt text](<Images/verify setup.png>)
+
+
+
+
+
