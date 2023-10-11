@@ -294,6 +294,14 @@ inbound rule configuration source /32.
 
 ![Alt text](<Images/Showdatabases visible.png>)
 
+3. Now let's change permissions and configuration so Apache would use WordPress:
+
+- Enable TCP port 80 in inbound rules configuration on the Web Server EC2(enable from anywhere **`0.0.0.0/0`**)
+
+and save the rules.
+
+![Alt text](<Images/Tcp port 80_web_server.png>)
+
 
 
 
