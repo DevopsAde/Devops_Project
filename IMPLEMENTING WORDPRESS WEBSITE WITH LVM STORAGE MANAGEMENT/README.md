@@ -199,7 +199,7 @@ That's why step 16 above is crucial). Run the command: **`sudo mount /dev/webdat
 
 21. Now restore log files back into **/var/log** directory. Use the command below:
 
-**`sudo rsync -av /home/recovery/logs/log/. /var/log`**
+**`sudo rsync -av /home/recovery/logs/. /var/log`**
 
 22. Update **`/etc/fstab`** file so that the mount configuration will persist after restart of the server.
 
@@ -216,6 +216,70 @@ That's why step 16 above is crucial). Run the command: **`sudo mount /dev/webdat
 - **`sudo mount -a`** && **`sudo systemctl daemon-reload`** and verify the setup running **`df -h`**
 
 ![Alt text](<Images/verify setup.png>)
+
+# Installing WordPress and Configuring to use MySQL Database
+
+- Step 2: Prepare the Database server
+
+Now we going to launch a second RedHat EC2 instance that will have a role- **`DB Server`**.
+
+Take Note: Repeat the same steps as for the Web Server, but instead of **`apps-lv`** create **`db-lv`** and mount it
+
+to **`/db`** directory instead of **`/var/www/html`**
+
+
+- Step 3: Install WordPress on the WEb SErver EC2
+
+1. Update the repository **`sudo yum -y update`**
+
+2. Install wget, Apache and it's dependencies **`sudo yum -y install wget httpd php php-mysqlnd php-fpm php-json`**
+
+3. Start Apache with the command below:
+
+- **`sudo systemctl enable httpd`** && **`sudo systemctl start httpd`**
+
+4. To install PHP and it's dependencies run this following command below:
+
+![Alt text](<Images/php install and dependencies.png>)
+
+5. Restart Apache: **`sudo systemctl restart httpd`**
+
+6. Download WordPress and copy WordPress to **`var/www/html`**
+
+![Alt text](<Images/download wordpress.png>)
+
+7. Configure SELinux Policies
+
+![Alt text](<Images/configure SELinux Policies.png>)
+
+- Step 4: Install MySQL on the DB_Server EC2 Instance, using the command below:
+
+![Alt text](<Images/mysql install.png>)
+
+- Verify that the service is up and running by using **`sudo systemctl status mysqld`**
+
+- If its running restart the service and enable it using the command below:
+
+- **`sudo systemctl restart mysqld`** && **`sudo systemctl enable mysqld`**
+
+- Step 5: Configure DB to work with WordPress using the command below:
+
+![Alt text](<Images/conf db wordpress.png>)
+
+- # SHOW DATABASE
+
+![Alt text](<Images/show database.png>)
+
+- Step 6: Configure WordPress to connect to remote database:
+
+- NOTE: Remember to open MySQL port 3306 on **`DB_SERVER`** EC2 instance. For extra security allow access to the DB 
+
+server **ONLY** from the Web Sever IP address, then specify in the inbound rule configuration source /32. 
+
+![Alt text](<Images/db edit inbound rule.png>)
+
+
+
 
 
 
