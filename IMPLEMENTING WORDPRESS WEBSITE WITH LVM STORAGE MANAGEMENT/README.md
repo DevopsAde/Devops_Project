@@ -272,13 +272,27 @@ to **`/db`** directory instead of **`/var/www/html`**
 
 - Step 6: Configure WordPress to connect to remote database:
 
-- NOTE: Remember to open MySQL port 3306 on **`DB_SERVER`** EC2 instance. For extra security allow access to the DB 
+- NOTE: Remember to open MySQL port 3306 on **`DB_SERVER`** EC2 instance. 
 
-server **ONLY** from the Web Sever IP address, then specify in the inbound rule configuration source /32. 
+![Alt text](<Images/db edit_inbound.png>)
 
-![Alt text](<Images/db edit inbound rule.png>)
+For extra security allow access to the DB server **ONLY** from the Web Sever IP address, then specify in the 
 
+inbound rule configuration source /32. 
 
+![Alt text](<Images/web_server edit_inbound.png>)
+
+1. Install MySQL Client and Test you can connect from your Web Server to the DB Server using **`mysql-client`**
+
+- Using the command below:
+
+- **`sudo yum install mysql`** && **`sudo mysql -u admin -p -h <DB-Server-Private-IP-address>`**
+
+![Alt text](Images/webserver_connect_mysql.png)
+
+2. Verify if you can excute **`SHOW DATABASES;`** command and see a list of the existing database.
+
+![Alt text](<Images/Showdatabases visible.png>)
 
 
 
