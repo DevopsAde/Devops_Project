@@ -339,6 +339,9 @@ and run this command **`sudo vi wp-config.php`** and edit the database configura
 ![Alt text](<Images/wordpress successful.png>)
 
 
+**CONGRATULATIONS!!!!!*
+
+
 
 
 
