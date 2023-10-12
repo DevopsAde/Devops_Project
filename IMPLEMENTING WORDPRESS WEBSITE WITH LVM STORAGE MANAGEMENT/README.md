@@ -341,6 +341,8 @@ and run this command **`sudo vi wp-config.php`** and edit the database configura
 
 **CONGRATULATIONS!!!!!*
 
+# We have just configured Linux Storage system and deployed a full-scale Web Solution using WordPress CMS and MySQL RDBMS.
+
 
 
 
