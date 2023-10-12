@@ -302,6 +302,49 @@ and save the rules.
 
 ![Alt text](<Images/Tcp port 80_web_server.png>)
 
+4. Now, let's access WordPress from our browser using this format **`http://<Web-Server-Public-IP-Address>/wordpress/.
+
+- But, before then lets edit this file on the terminal **`cd`** into **`var/www/html`** and **`ls`** into **`wordpress`**
+
+and run this command **`sudo vi wp-config.php`** and edit the database configuration file to allow for connection.
+
+![Alt text](Images/wp-config_php.png)
+
+5. Before we view wordpress on the internet let's disable the default page of the apache or else it won't display.
+
+- NOTE: see this image below stating the reason and what to edit that's what we going do now:
+
+![Alt text](<Images/default edit_page.png>)
+
+## Edited using the following commands on the terminal:
+
+![Alt text](<Images/edited wordpress config.png>)
+
+6. Change permissions and configuration so Apache could use WordPress using the command below:
+
+- **`sudo chcon -t httpd_sys_content_t /var/www/html/wordpress -R`**
+- **`sudo setsebool -P httpd_can_network_connect=1`**
+- **`sudo setsebool -P httpd_can_network_connect_db 1`**
+
+- And let's see what happens: 
+
+![Alt text](<Images/wordPress_welcome page.png>)
+
+7. Let's fill the credentials to setup the account for the WordPress website and Login:
+
+![Alt text](<Images/WordPress Login.png>)
+
+**I HAVE SUCCESSFULLY LOGGED INTO WORDPRESS**
+
+![Alt text](<Images/wordpress successful.png>)
+
+
+
+
+
+
+
+
 
 
 
