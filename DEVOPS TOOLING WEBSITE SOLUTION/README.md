@@ -96,8 +96,13 @@ IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT/README.md
 
 ![Alt text](<Images/NFS install.png>)
 
-7. Export the mounts for webservers  subnet CIDR to connect as clients. For simplicity, we going to install all 3 webservers inside the 
+![Alt text](<Images/nfs active.png>)
 
-same subnet, but in production set up you would probably want to separate each tier inside its own subnet for higher level of security.
+7. Export the mounts for webservers subnet CIDR to connect as clients. For simplicity, we going to install all 3 webservers inside the 
+
+same subnet, but in the production set up you would probably want to separate each tier inside its own subnet for higher level of security.
 
 To check the **`subnet cidr`**- let's open our EC2 details on the AWS web console and locate the **Networking** tab and open a Subnet link:
+
+![Alt text](<Images/nfs set permission.png>)
+![Alt text](<Images/subnets ID.png>)
