@@ -172,10 +172,13 @@ This approach will make our Web Servers **`stateless`**, which means we will be 
 
 need and the integrity of the data (in the database and on NFS) will be preserved.
 
-- During the next steps we will do the following:
+During the next steps we will do the following:
 
-1. Configure NFS Client (this step must be done on all 3 servers)
+- Configure NFS Client (this step must be done on all 3 servers)
 
-2. Deploy a Tooling application to our Web Servers into a shared NFS folder
+- Deploy a Tooling application to our Web Servers into a shared NFS folder
 
-3. Configure the Web Servers to work with a single MySQL database.
+- Configure the Web Servers to work with a single MySQL database.
+
+1. Launch a New EC2 instance with **`RHEL 8 Operating System`**
+![Alt text](<Images/nfs client.png>)
