@@ -48,8 +48,6 @@ database and modern alerting approach.
 
 6. Code Repository: GitHub
 
-- NOTE: For Rhel 8 server use this ami------------------
-
 The diagram below comprises of several stateless Web Servers that share a common database and also access the same files using
 
 Network File System (NFS) as a shared file storage. Despite the NFS server been located on a completely separate hardware, for Web Servers
@@ -70,4 +68,30 @@ for our solution.
 
 1. Spin up a new EC2 instance with RHEL Linux 8 operating system.
 
-2. Based on the LVM experience from the [3-tier architecture project](https://github.com/DevopsAde/Devops_Project/blob/main/IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT/README.md)
+2. Based on the LVM experience from the [3-tier architecture project](https://github.com/DevopsAde/Devops_Project/blob/main/
+
+IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT/README.md), configure LVM on the Server.
+
+3. Instead of foramting the disks as **`ext4`** format them as **`xfs`**
+
+![Alt text](<Images/xfs format.png>)
+
+4. Ensure there are 3 Logical Volumes: **`lv-opt`**, **`lv-apps`**, and **`lv-logs`**
+
+![Alt text](<Images/logical volumes.png>)
+
+![Alt text](Images/lvm.png)
+
+5. Create mount points on **`/mnt`** directory for the logical volumes as follow:
+
+- Mount **`lv-apps`** on **`/mnt/apps`** to be used by webservers.
+
+- Mount **`lv-logs`** on **`/mnt/logs`** to be used by webservers logs.
+
+- Mount **`lv-opt`** on **`/mnt/opt`** to be used by Jenkins server.
+
+![Alt text](<Images/mnt volume.png>)
+
+6. Install NFS server, configure it to start on reboot and its up and running. Use the command below:
+
+![Alt text](<Images/NFS install.png>)
