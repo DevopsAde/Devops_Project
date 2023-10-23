@@ -70,4 +70,4 @@ for our solution.
 
 1. Spin up a new EC2 instance with RHEL Linux 8 operating system.
 
-2. Based on the LVM experience from the [3-tier architecture project],(https://github.com/DevopsAde/Devops_Project/tree/main/IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT)
+2. Based on the LVM experience from the [3-tier architecture project](https://github.com/DevopsAde/Devops_Project/blob/main/IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT/README.md)
