@@ -95,7 +95,6 @@ IMPLEMENTING%20WORDPRESS%20WEBSITE%20WITH%20LVM%20STORAGE%20MANAGEMENT/README.md
 6. Install NFS server, configure it to start on reboot and its up and running. Use the command below:
 
 ![Alt text](<Images/NFS install.png>)
-
 ![Alt text](<Images/nfs active.png>)
 
 7. Export the mounts for webservers subnet CIDR to connect as clients. For simplicity, we going to install all 3 webservers inside the 
