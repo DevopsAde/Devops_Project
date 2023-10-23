@@ -120,7 +120,7 @@ To check the **`subnet cidr`**- let's open our EC2 details on the AWS web consol
 
 ![Alt text](<Images/cat verify.png>)
 
-- Now replace the **`Subnet-CIDR`** with the ip address **`172.31.16.0/20`** still in the **`VI MODE`** & Check by 
+- Now replace the **`Subnet-CIDR`** with the ip address **`172.31.16.0/20`** still in the **`VI MODE`** & check by 
 
 running **`cat`** to verify it's all saved.
 
@@ -157,3 +157,25 @@ running **`cat`** to verify it's all saved.
 
 ![Alt text](<Images/database create.png>)
 ![Alt text](<Images/database cont..png>)
+
+# STEP 3: PREPARE THE WEB SERVERS
+
+- We need to make sure that our WebServers can serve the same content from shared storage solutions, in this case
+
+NFS Server and MySQL Database. We already know that one DB can be accessed for **`reads`** and **`writes`** by multiple clients.
+
+For storing shared files that our Web Servers will use, we will utilize NFS and mount previously created Logical Volume **`lv-apps`**
+
+to the folder where Apache stores fils to be served to the users **`/var/www`**.
+
+This approach will make our Web Servers **`stateless`**, which means we will be able to add new ones or remove them whenever we 
+
+need and the integrity of the data (in the database and on NFS) will be preserved.
+
+- During the next steps we will do the following:
+
+1. Configure NFS Client (this step must be done on all 3 servers)
+
+2. Deploy a Tooling application to our Web Servers into a shared NFS folder
+
+3. Configure the Web Servers to work with a single MySQL database.
