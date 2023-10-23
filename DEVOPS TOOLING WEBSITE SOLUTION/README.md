@@ -116,11 +116,11 @@ To check the **`subnet cidr`**- let's open our EC2 details on the AWS web consol
 
 ![Alt text](<Images/configure access for NFS clients.png>)
 
-- Edit and check the **`<Subnet-CIDR>`** & Check by running **`cat`** to verify it's all saved.
+- Edit and check the **`<Subnet-CIDR>`**.
 
 ![Alt text](<Images/cat verify.png>)
 
-- Now replace the **`Subnet-CIDR`** with the ip address **`172.31.16.0/20`**
+- Now replace the **`Subnet-CIDR`** with the ip address **`172.31.16.0/20`** & Check by running **`cat`** to verify it's all saved.
 
 ![Alt text](<Images/edit Subnet CIDR.png>)
 
