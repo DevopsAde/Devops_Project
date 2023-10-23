@@ -105,3 +105,53 @@ To check the **`subnet cidr`**- let's open our EC2 details on the AWS web consol
 
 ![Alt text](<Images/nfs set permission.png>)
 ![Alt text](<Images/subnets ID.png>)
+
+- Make sure we set up permission that will allow our Web servers to read, write and execute files on NFS:
+
+![Alt text](<Images/file execution.png>)
+
+- Next we configure access to NFS for clients within the same subnet (example of Subnet CIDR -**`172.31.16.0/20`**)
+
+- Do **`sudo vi /etc/exports`** and paste this inside and Press **`Esc + :wq!`**
+
+![Alt text](<Images/configure access for NFS clients.png>)
+
+- Check by running **`cat`** to verify it's all saved.
+
+![Alt text](<Images/cat verify.png>)
+
+- Now replace the **`Subnet-CIDR`** with the ip address **`172.31.16.0/20`**
+
+![Alt text](<Images/edit Subnet CIDR.png>)
+
+- Execute **`sudo vi /etc/exports`**
+
+![Alt text](<Images/exportfs arv.png>)
+
+8. Now, check which port is been used by NFS and open it using Security Groups (Hint: Add inbound Rule). Use the command below
+
+**`rpcinfo -p | grep nfs`**
+
+![Alt text](<Images/port by NFS.png>)
+
+*IMPORTANT NOTE: IN ORDER FOR NFS SERVER TO BE ACCESSIBLE FROM MY CLIENT, WE MUST OPEN THE FOLLOWING PORTS:* 
+
+**`TCP 111, UDP 111, UDP 2049`**
+
+![Alt text](<Images/NFS configuration.png>)
+
+# STEP 2: CONFIGURE BACKEND DATABASE AS PART OF 3 TIER ARCHITECTURE
+
+1. Install MySQL Server
+
+![Alt text](<Images/MySql Server.png>)
+*Now that we have MySql active and running*
+
+2. Now we Create a Database and name it **`tooling`** & Remember to use **`sudo mysql`**.
+
+3. Create a Database user and name it **`webaccess`**
+
+4. Grant permission to **`webaccess`** user on **`tooling`** database to do anything only from the webservers **`subnet cidr`**
+
+![Alt text](<Images/database create.png>)
+![Alt text](<Images/database cont..png>)
