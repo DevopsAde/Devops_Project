@@ -116,7 +116,7 @@ To check the **`subnet cidr`**- let's open our EC2 details on the AWS web consol
 
 ![Alt text](<Images/configure access for NFS clients.png>)
 
-- Check by running **`cat`** to verify it's all saved.
+- Edit and check the **`<Subnet-CIDR>`** & Check by running **`cat`** to verify it's all saved.
 
 ![Alt text](<Images/cat verify.png>)
 
