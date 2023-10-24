@@ -238,7 +238,9 @@ And also on the NFS server:
 
 - Use the command **`sudo touch test.txt`**. Screenshot below proves the file **`test.txt`** is accessible from both Web Servers.
 
+*NFS_SERVER*
 ![Alt text](<Images/nfs touch_test.png>)
+*WEB_SERVER
 ![Alt text](<Images/web server_test.png>)
 
 7. Locate the log folder for Apache on the Web server and mount it to NFS server's export for logs. Repeat step №4 to make sure
