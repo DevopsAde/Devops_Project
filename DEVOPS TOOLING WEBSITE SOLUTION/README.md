@@ -250,4 +250,12 @@ And also on the NFS server:
 
 the mount point will persist after reboot.
 
+![Alt text](Images/Web_server_nfs_mount.png)
+
+![Alt text](<Images/NFS_server export logs.png>)
+
+*df -h to verify NFS MOunted Successfully*
+
+![Alt text](Images/mounted_NFS.png)
+
 
