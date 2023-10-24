@@ -182,3 +182,11 @@ During the next steps we will do the following:
 
 1. Launch a New EC2 instance with **`RHEL 8 Operating System`**
 ![Alt text](<Images/nfs client.png>)
+
+2. Install NFS Client with the following command **`sudo yum install nfs-utils nfs4-acl-tools -y`**
+![Alt text](<Images/nfs installation.png>)
+
+3. Mount **`/var/www/`** and target the NFS server export for apps. Use this command below to execute.
+
+**`sudo mkdir /var/www`** && **`sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www`**
+
