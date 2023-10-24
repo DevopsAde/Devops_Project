@@ -180,8 +180,7 @@ During the next steps we will do the following:
 
 - Configure the Web Servers to work with a single MySQL database.
 
-1. Launch a New EC2 instance with **`RHEL 8 Operating System`**
-![Alt text](<Images/nfs client.png>)
+1. Launch a New EC2 instance with **`RHEL 8 Operating System`** and name it **`WEB_SERVER`**
 
 2. Install NFS Client with the following command **`sudo yum install nfs-utils nfs4-acl-tools -y`**
 ![Alt text](<Images/nfs installation.png>)
