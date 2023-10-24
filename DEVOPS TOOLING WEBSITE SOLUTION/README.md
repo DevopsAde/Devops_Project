@@ -280,6 +280,8 @@ someone cloned the original repository and then pushed to a new , empty reposito
 
 ![Alt text](Images/tool_list.png)
 
+![Alt text](Images/websitecode_webserver.png)
+
 # NOTE 1: DO NOT FORGET TO OPEN TCP PORT 80 ON THE WEB SERVER
 
 # NOTE 2: If you encounter 403 Error:
