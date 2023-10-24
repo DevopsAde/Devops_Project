@@ -260,7 +260,7 @@ the mount point will persist after reboot.
 
 8. Fork the tooling website's code from [this repo](https://github.com/darey-io/tooling) to your Github account. 
 
-(Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
+   (Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
 
 9. Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to **`/var/www/html`**
 
