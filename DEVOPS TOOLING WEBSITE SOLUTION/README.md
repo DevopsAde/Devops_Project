@@ -274,13 +274,11 @@ someone cloned the original repository and then pushed to a new , empty reposito
 
 - Install git using **`sudo yum install git -y`**
 
-9. Deploy the tooling website’s code to the Webserver. 
-
 ![Alt text](Images/tooling.png)
 
-![Alt text](Images/tool_list.png)
+9. Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to **`/var/www/html`**
 
-Ensure that the html folder from the repository is deployed to **`/var/www/html`**
+![Alt text](Images/tool_list.png)
 
 # NOTE 1: DO NOT FORGET TO OPEN TCP PORT 80 ON THE WEB SERVER
 
