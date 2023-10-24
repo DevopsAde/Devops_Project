@@ -254,8 +254,13 @@ the mount point will persist after reboot.
 
 ![Alt text](<Images/NFS_server export logs.png>)
 
-*df -h to verify NFS MOunted Successfully*
+*df -h to verify NFS Mounted Successfully*
 
 ![Alt text](Images/mounted_NFS.png)
 
+8. Fork the tooling website's code from [this repo](https://github.com/IwunzeGE/DevopsToolingWebsite) to your Github account. 
+
+(Learn how to fork a repo [here](https://youtu.be/f5grYMXbAV0))
+
+9. Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to **`/var/www/html`**
 
