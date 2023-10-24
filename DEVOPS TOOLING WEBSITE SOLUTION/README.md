@@ -64,7 +64,7 @@ for our solution.
 
 ## IMPLEMENTING A BUSINESS WEBSITE USING NFS FOR THE BACKEND FILE STORAGE
 
-- Step 1: Prepare NFS Server
+# STEP 1: PREPARE NFS SERVER
 
 1. Spin up a new EC2 instance with RHEL Linux 8 operating system.
 
