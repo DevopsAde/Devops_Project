@@ -190,9 +190,15 @@ During the next steps we will do the following:
 
 **`sudo mkdir /var/www`** && **`sudo mount -t nfs -o rw,nosuid <NFS-Server-Private-IP-Address>:/mnt/apps /var/www`**
 
-4. Verify that NFS was mounted successfully by running **`df -h`**. And make sure that the changes will persist on 
+4. Verify that NFS was mounted successfully by running **`df -h`**.
+
+![Alt text](<Images/df -h.png>)
+
+And make sure that the changes will persist on 
 
 Web Server after reboot: Execute the **`sudo vi /etc/fstab`** and add the following line below:
+
+![Alt text](Images/etc_fstab.png)
 
 **`<NFS-Server-Private-IP-Address>:/mnt/apps /var/www nfs defaults 0 0`** in this case i will change the NFS private IP to
 
@@ -200,10 +206,10 @@ this **`172.31.31.193:/mnt/apps /var/www nfs defaults 0 0`**.
 
 5. Now Install Remi Repository, Apache and PHP with the following command below:
 
-
 ```sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm -y
 
 sudo dnf install dnf-utils http://rpms.remirepo.net/enterprise/remi-release-8.rpm -y 
+
 sudo dnf module reset php
 
 sudo dnf module enable php:remi-7.4 -y
