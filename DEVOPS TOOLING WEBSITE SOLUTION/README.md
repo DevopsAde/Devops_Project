@@ -262,5 +262,21 @@ the mount point will persist after reboot.
 
    (Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
 
+# WHAT IS FORK?
+
+- A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if
+
+someone cloned the original repository and then pushed to a new , empty repository.
+
 9. Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to **`/var/www/html`**
+
+# NOTE 1: DO NOT FORGET TO OPEN TCP PORT 80 ON THE WEB SERVER
+
+# NOTE 2: If you encounter 403 Error:
+
+1. Check Permissions to the **`/var/www/html`** folder
+
+2. Disable SELinux **`sudo setenforce 0`**
+
+3. To make this change permanent: open the following config file **`sudo vi /etc/sysconfig/selinux`** and set **`SELINUX=disabled`**, then restart httpd.
 
