@@ -258,6 +258,12 @@ the mount point will persist after reboot.
 
 ![Alt text](Images/mounted_NFS.png)
 
+# WHAT IS FORK?
+
+- A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if
+
+someone cloned the original repository and then pushed to a new , empty repository.
+
 8. Fork the tooling website's code from [this repo](https://github.com/darey-io/tooling) to your Github account. 
 
 ![Alt text](Images/fork.png)
@@ -266,11 +272,7 @@ the mount point will persist after reboot.
 
 - Install git using **`sudo yum install git -y`**
 
-# WHAT IS FORK?
 
-- A fork is a complete copy of a repository, including all files, commits, and (optionally) branches. The new fork acts as if
-
-someone cloned the original repository and then pushed to a new , empty repository.
 
 9. Deploy the tooling website’s code to the Webserver. 
 
