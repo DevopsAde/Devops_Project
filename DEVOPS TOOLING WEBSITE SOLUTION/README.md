@@ -260,7 +260,11 @@ the mount point will persist after reboot.
 
 8. Fork the tooling website's code from [this repo](https://github.com/darey-io/tooling) to your Github account. 
 
-   (Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
+![Alt text](Images/fork.png)
+
+(Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
+
+- Install git using **`sudo yum install git -y`**
 
 # WHAT IS FORK?
 
@@ -268,7 +272,13 @@ the mount point will persist after reboot.
 
 someone cloned the original repository and then pushed to a new , empty repository.
 
-9. Deploy the tooling website’s code to the Webserver. Ensure that the html folder from the repository is deployed to **`/var/www/html`**
+9. Deploy the tooling website’s code to the Webserver. 
+
+![Alt text](Images/tooling.png)
+
+![Alt text](Images/tool_list.png)
+
+Ensure that the html folder from the repository is deployed to **`/var/www/html`**
 
 # NOTE 1: DO NOT FORGET TO OPEN TCP PORT 80 ON THE WEB SERVER
 
