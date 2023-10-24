@@ -240,6 +240,7 @@ And also on the NFS server:
 
 *NFS_SERVER*
 ![Alt text](<Images/nfs touch_test.png>)
+
 *WEB_SERVER
 ![Alt text](<Images/web server_test.png>)
 
