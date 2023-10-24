@@ -270,9 +270,9 @@ someone cloned the original repository and then pushed to a new , empty reposito
 
 (Learn how to fork a repo [here](https://www.youtube.com/watch?v=f5grYMXbAV0))
 
+![Alt text](<Images/clone https.png>)
+
 - Install git using **`sudo yum install git -y`**
-
-
 
 9. Deploy the tooling website’s code to the Webserver. 
 
