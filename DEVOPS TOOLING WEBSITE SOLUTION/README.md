@@ -1,4 +1,4 @@
-# Devops Tooling Website Solution
+# DEVOPS TOOLING WEBSITE SOLUTION
 
 In this project we going to explore the integration of various tools and technologies to create a unified platform
 
