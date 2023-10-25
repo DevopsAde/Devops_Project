@@ -296,6 +296,8 @@ someone cloned the original repository and then pushed to a new , empty reposito
 
 3. To make this change permanent: open the following config file **`sudo vi /etc/sysconfig/selinux`** and set **`SELINUX=disabled`**, then restart httpd.
 
+- Use this command to check status and start **`httpd`**: **`sudo systemctl status httpd`** && **`sudo systemctl start httpd`**
+
 ![Alt text](Images/SELINUX_disabled.png)
 
 10. Update the website's configuration to connect to the database in **`/var/www/html/functions.php`** file.
@@ -322,3 +324,5 @@ Apply **`tooling-db.sql`** script to the database using this command **`mysql -h
 12. Now let's open the website in the browser using **`http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php`** and make sure
 
 you can login into the website with **`myuser`** user.
+
+![Alt text](<Images/login_php page.png>)
