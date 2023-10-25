@@ -308,3 +308,7 @@ Apply **`tooling-db.sql`** script to the database using this command **`mysql -h
 
 - Now to confirm if this worked succesfully in the **`DB-Server`**. Run the following commands in Database Terminal.
 
+![Alt text](<Images/show _db.png>)
+![Alt text](Images/show_db1.png)
+
+11. Create in MySQL a new admin user with username: **`myuser`** and password: **`password`**.
