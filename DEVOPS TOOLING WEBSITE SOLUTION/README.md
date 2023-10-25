@@ -318,3 +318,7 @@ Apply **`tooling-db.sql`** script to the database using this command **`mysql -h
 - Confirm insertion using the command: **`select * from users;`**
 
 ![Alt text](Images/insert_db_success.png)
+
+12. Now let's open the website in the browser using **`http://<Web-Server-Public-IP-Address-or-Public-DNS-Name>/index.php`** and make sure
+
+you can login into the website with **`myuser`** user.
