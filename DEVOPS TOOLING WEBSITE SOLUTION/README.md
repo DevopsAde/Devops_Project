@@ -158,7 +158,7 @@ running **`cat`** to verify it's all saved.
 ![Alt text](<Images/database create.png>)
 ![Alt text](<Images/database cont..png>)
 
-- Now, let's confirm this with follwoing command below:
+- Now, let's confirm this with following command below:
 
 ![Alt text](Images/user_webaccess_db.png)
 
