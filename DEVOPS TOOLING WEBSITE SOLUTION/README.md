@@ -311,10 +311,10 @@ Apply **`tooling-db.sql`** script to the database using this command **`mysql -h
 ![Alt text](<Images/show _db.png>)
 ![Alt text](Images/show_db1.png)
 
-- Confirm insertion using the command: **`select * from users;`**
-
-![Alt text](Images/insert_db_success.png)
-
 11. Create in MySQL a new admin user with username: **`myuser`** and password: **`password`**. Insert this command below into the Database.
 
 ![Alt text](Images/insert_db.png)
+
+- Confirm insertion using the command: **`select * from users;`**
+
+![Alt text](Images/insert_db_success.png)
