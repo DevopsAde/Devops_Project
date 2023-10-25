@@ -326,3 +326,6 @@ Apply **`tooling-db.sql`** script to the database using this command **`mysql -h
 you can login into the website with **`myuser`** user.
 
 ![Alt text](<Images/login_php page.png>)
+![Alt text](Images/login_page.png)
+![Alt text](Images/welcome_page.png)
+![Alt text](<Images/welcome_page cont.png>)
