@@ -158,6 +158,10 @@ running **`cat`** to verify it's all saved.
 ![Alt text](<Images/database create.png>)
 ![Alt text](<Images/database cont..png>)
 
+- Now, let's confirm this with follwoing command below:
+
+![Alt text](Images/user_webaccess_db.png)
+
 # STEP 3: PREPARE THE WEB SERVERS
 
 - We need to make sure that our WebServers can serve the same content from shared storage solutions, in this case
@@ -291,4 +295,16 @@ someone cloned the original repository and then pushed to a new , empty reposito
 2. Disable SELinux **`sudo setenforce 0`**
 
 3. To make this change permanent: open the following config file **`sudo vi /etc/sysconfig/selinux`** and set **`SELINUX=disabled`**, then restart httpd.
+
+![Alt text](Images/SELINUX_disabled.png)
+
+10. Update the website's configuration to connect to the database in **`/var/www/html/functions.php`** file.
+
+![Alt text](Images/web_con_database.png)
+
+Apply **`tooling-db.sql`** script to the database using this command **`mysql -h <database-private-ip> -u <db-username> -p <db-password> < tooling-db.sql`**
+
+![Alt text](<Images/tooling _db_script.png>)
+
+- Now to confirm if this worked succesfully in the **`DB-Server`**. Run the following commands in Database Terminal.
 
