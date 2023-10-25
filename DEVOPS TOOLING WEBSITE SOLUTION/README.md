@@ -330,4 +330,7 @@ you can login into the website with **`myuser`** user.
 ![Alt text](Images/welcome_page.png)
 ![Alt text](<Images/welcome_page cont.png>)
 
+
+
+
 # WE HAVE JUST IMPLEMENTED A WEB SOLUTION FOR A DEVOPS TEAM USING LAMP STACK WITH REMOTE DATABASE AND NFS SERVERS.
