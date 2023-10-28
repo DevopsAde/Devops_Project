@@ -31,3 +31,9 @@ It provide better security and reduces attack surface. On the diagram below the 
 Public subnet has public IP addresses and Private subnet is only reachable by private IP addresses.
 
 ![Alt text](Images/VPC.png)
+
+## TASKS:
+
+- Install and configure Ansible Client to act as a JUmp Server/Bastion Host
+
+- Create a simple Ansible playbook to automate servers configuration
