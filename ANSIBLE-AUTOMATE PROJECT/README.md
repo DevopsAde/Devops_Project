@@ -34,6 +34,38 @@ Public subnet has public IP addresses and Private subnet is only reachable by pr
 
 ## TASKS:
 
-- Install and configure Ansible Client to act as a JUmp Server/Bastion Host
+- Install and configure Ansible Client to act as a Jump Server/Bastion Host
 
 - Create a simple Ansible playbook to automate servers configuration
+
+# Install and Configure Ansible on EC2 Instance
+
+- Step 1: 
+
+1. Update the **`Name`** tag on your **`Jenkins`** EC2 instance to **`Jenkins_Ansible`**. We will use this server to run playbooks.
+
+![Alt text](Images/Name_tag_jenkins.png)
+
+- Run **`sudo apt update -y`** to update packages and releases.
+
+- Go to **`Jenkins.io`** and select **`Ubuntu OS`** to install open JDK requirements to install Jenkins [Jenkins Package](https://pkg.jenkins.io/debian/)
+
+- Use this code below:
+
+![Alt text](Images/jenkins_install_pckg.png)
+
+- Now install the latest Jenkins [Install Jenkins](https://www.jenkins.io/doc/book/installing/linux/)
+
+```sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
+
+2. In your GitHub account create a new repository and name it **`ansible-config-mgt`**
+
+3. Install Ansible using the command **`sudo apt install ansible`**
+
