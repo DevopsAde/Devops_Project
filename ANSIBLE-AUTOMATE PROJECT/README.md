@@ -190,6 +190,10 @@ include ticket number (e.g. **`PRJ-145`**) in the name of your branch and add a 
 
 **`hotfix`**, **`feature`**, **`release`** (e.g. **`feature/prj-145-lvm`**)
 
+![Alt text](Images/create_new_branch.png)
+![Alt text](Images/new_branch.png)
+![Alt text](Images/new_branch_created.png)
+
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure.
 
 3. Create a directory and name it **`playbooks`** - it will be used to store all your playbook files.
