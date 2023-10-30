@@ -247,9 +247,41 @@ To learn how to setup SSH agent and connect VS Code to your Jenkins_Ansible inst
 
 ![Alt text](<Images/ssh_another _server.png>)
 
+# Step 5: Create a Common Playbook
 
+It is time to start giving Ansible the instructions on what you need to be performed on all servers listed in **`inventory/dev`**/
 
+In **`common.yml`** playbook you will write configuration for repeatable, re-usable, and multi-machine tasks that is common to systems
 
+within the infrastructure. Update your **`playbooks/common.yml`** file with the following code.
+```
+---
+- name: update web and nfs servers
+  hosts: webservers, nfs
+  remote_user: ec2-user
+  become: yes
+  become_user: root
+  tasks:
+    - name: ensure wireshark is at the latest version
+      yum:
+        name: wireshark
+        state: latest
+
+- name: update LB and DB server
+  hosts: lb, db
+  remote_user: ubuntu
+  become: yes
+  become_user: root
+  tasks:
+    - name: Update apt repo
+      apt: 
+        update_cache: yes
+
+    - name: ensure wireshark is at the latest version
+      apt:
+        name: wireshark
+        state: latest
+        ```
 
 
 
