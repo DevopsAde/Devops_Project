@@ -140,8 +140,6 @@ git push -u origin main
 
 ![Alt text](Images/source_code_mgt.png)
 
-![Alt text](Images/ansible-config-mgt.png)
-
 ![Alt text](Images/post_build_tick.png)
 
 - On the Post-Build option select **`Artifacts`**
