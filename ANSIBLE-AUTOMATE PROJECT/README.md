@@ -48,6 +48,8 @@ Public subnet has public IP addresses and Private subnet is only reachable by pr
 
 - Run **`sudo apt update -y`** to update packages and releases.
 
+- Install Ansible using the command **`sudo apt install ansible`**
+
 - Go to **`Jenkins.io`** and select **`Ubuntu OS`** to install open JDK requirements to install Jenkins [Jenkins Package](https://pkg.jenkins.io/debian/)
 
 - Use this code below:
@@ -64,8 +66,40 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt-get update
 sudo apt-get install jenkins
 ```
+- Let's check the ansible version we running use this command **`ansible --version`**
+
+![Alt text](Images/ansible_version.png)
+
+- And also check the status of the Jenkins **`sudo systemctl status jenkins`**
+
+![Alt text](Images/jenkins_status.png)
+
+- Note, for us to use Jenkins we have to edit inbound rules on the security group. **`Jenkins uses PORT 8080`**
+
+![Alt text](Images/jenkins_security_edit_inbound.png)
+
+- Now click on the public IP Address and type it like this followed by the port number **`http://54.154.130.55:8080/`**
+
+![Alt text](Images/jenkins_IP.png)
+
+- Now to unlock Jenkins below after pasting the **`url`** followed by port **`8080`**. Use **`sudo cat /var/lib/jenkins/secrets/initialAdminPassword`**
+
+![Alt text](Images/jenkins_unlock.png)
+![Alt text](Images/Jenkins_secret_PASS.png)
+
+
 
 2. In your GitHub account create a new repository and name it **`ansible-config-mgt`**
 
-3. Install Ansible using the command **`sudo apt install ansible`**
+![Alt text](Images/ansible-config-mgt.png)
+
+- Create a new Freestyle project **`ansible`** in Jenkins and point it to your 'ansible-config-mgt' repository.
+
+- Configure a webhook in GitHub and set the webhook to trigger **`ansible`** build.
+
+- Configure a Post-build job to save all (**) files.
+
+
+
+
 
