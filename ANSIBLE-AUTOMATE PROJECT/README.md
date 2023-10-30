@@ -198,9 +198,9 @@ include ticket number (e.g. **`PRJ-145`**) in the name of your branch and add a 
 
 5. Within the playbooks folder, create your first playbook, and name it **`common.yml`**
 
-6. Within the inventory folder, create an inventory file () for each environment (Development, Staging Testing and Production) **`dev`**, **`Staging`**, **`uat`**, & **`prod`**
+6. Within the inventory folder, create an inventory file () for each environment (Development, Staging Testing and Production) 
 
-respectively. These inventory files use **`ini`** languages style to configure Ansible hosts.
+**`dev`**,**`Staging`**, **`uat`**, & **`prod`** respectively. These inventory files use **`ini`** languages style to configure Ansible hosts.
 
 
 
