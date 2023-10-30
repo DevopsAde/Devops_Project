@@ -158,8 +158,11 @@ saves the files (build artifacts) in the following folder **`ls /var/lib/jenkins
 
 ![Alt text](Images/readme_changes_text.png)
 ![Alt text](Images/build_archive_history.png)
+![Alt text](Images/archive_build_history.png)
 ![Alt text](<Images/build_config success.png>)
 ![Alt text](Images/build_output.png)
+
+
 
 
 
