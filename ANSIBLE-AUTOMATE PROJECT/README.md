@@ -152,6 +152,14 @@ git push -u origin main
 
 ![Alt text](Images/Apply_wildcard.png)
 
+2. Test the setup by making some changes to the **`README.md`** file in **`main`** branch and make sure that builds starts automatically and Jenkins
+
+saves the files (build artifacts) in the following folder **`ls /var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/`**
+
+![Alt text](Images/readme_changes_text.png)
+![Alt text](Images/build_archive_history.png)
+
+
 
 
 
