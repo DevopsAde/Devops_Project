@@ -282,6 +282,23 @@ within the infrastructure. Update your **`playbooks/common.yml`** file with the 
         name: wireshark
         state: latest
         
+Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: 
+
+install wireshark utility (or make sure it is updated to the latest version) on your RHEL 8 and Ubuntu servers. It uses root user to perform this task 
+
+and respective package manager: **`yum`** for RHEL 8 and **`apt`** for Ubuntu.
+
+Feel free to update this playbook with following tasks:
+
+- Create a directory and a file inside it
+
+- Change timezone on all servers
+
+- Run some shell script etc
+  
+For a better understanding of Ansible playbooks – watch this [video](https://youtu.be/ZAdJ7CdN7DY) from RedHat and read this [article](https://www.redhat.com/en/topics/automation/
+
+what-is-an-ansible-playbook).   
 
 
 
