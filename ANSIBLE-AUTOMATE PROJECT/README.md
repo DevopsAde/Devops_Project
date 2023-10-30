@@ -216,6 +216,33 @@ include ticket number (e.g. **`PRJ-145`**) in the name of your branch and add a 
 
 ![Alt text](Images/inventory_list.png)
 
+# Step 4: Setup an Ansible Inventory
+
+An Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate. Since our 
+
+intention is to execute Linux commands on remote hosts, and ensure that is the intended configuration on a particular server that occurs.
+
+It is important to have a way to organize our hosts in such inventory.
+
+Save the below inventory structure in the **`inventory/dev`** file to start configuring your *development* servers. Ensure to replace the IP
+
+addresses according to your own setup.
+
+**NOTE:** Ansible uses TCP port 22 by default, which means it needs to **`ssh`** into target servers from **`Jenkins-Ansible`** host- for this
+
+you can implement the concept of **`ssh-agent`**. Now you need to import your key into **`ssh-agent`**:
+
+To learn how to setup SSH agent and connect VS Code to your Jenkins_Ansible instance, please see the video below:
+
+- For windows users - [ssh-agent on windows](https://www.youtube.com/watch?v=OplGrY74qog)
+
+- For Linux users - [ssh-agent on linux](https://www.youtube.com/watch?v=OplGrY74qog)
+
+- Confirm the key has been added with the command below, you should see the name of your key, use **`ssh-add -l`**
+
+![Alt text](<Images/ssh-add -l.png>)
+![Alt text](<Images/ssh-add -l_contd.png>)
+
 
 
 
