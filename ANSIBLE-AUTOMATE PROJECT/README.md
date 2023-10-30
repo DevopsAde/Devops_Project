@@ -281,7 +281,7 @@ within the infrastructure. Update your **`playbooks/common.yml`** file with the 
       apt:
         name: wireshark
         state: latest
-        ```
+        
 
 
 
