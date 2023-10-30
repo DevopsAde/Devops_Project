@@ -102,14 +102,16 @@ sudo apt-get install jenkins
 
 - Now let's initialize a git repo where we have **`ansible-config-mgt`**, remember to open it with **`VSCODE`** and run the following command below:
 
-```echo "# ansible-config-mgt" >> README.md
+```$ echo "# ansible-config-mgt" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:DevopsAde/ansible-config-mgt.git
+git remote add origin https://github.com/DevopsAde/ansible-config-mgt.git
 git push -u origin main
 ```
+![Alt text](Images/ansible_conf_readme.png)
+
 - Create a new Freestyle project **`ansible`** in Jenkins and point it to your 'ansible-config-mgt' repository.
 
 1. **`Skip and continue as admin`** && **`Save and Continue`**
