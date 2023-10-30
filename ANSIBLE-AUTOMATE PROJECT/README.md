@@ -70,7 +70,7 @@ sudo apt-get install jenkins
 
 ![Alt text](Images/ansible_version.png)
 
-- And also check the status of the Jenkins **`sudo systemctl status jenkins`**
+- And also check the status of the Jenkins **`sudo systemctl status jenkins`** && NOTE: to restart use **sudo systemctl restart jenkins.service`**
 
 ![Alt text](Images/jenkins_status.png)
 
@@ -87,17 +87,69 @@ sudo apt-get install jenkins
 ![Alt text](Images/jenkins_unlock.png)
 ![Alt text](Images/Jenkins_secret_PASS.png)
 
+- Copy the HASH PASSWORD to unlock Jenkins.
+
+![Alt text](Images/paste_hash_jenkins.png)
+![Alt text](Images/Jenkins_pass_accepted.png)
+
+- Click to install Suggested Plugins
+
 
 
 2. In your GitHub account create a new repository and name it **`ansible-config-mgt`**
 
 ![Alt text](Images/ansible-config-mgt.png)
 
+- Now let's initialize a git repo where we have **`ansible-config-mgt`**, remember to open it with **`VSCODE`** and run the following command below:
+
+```echo "# ansible-config-mgt" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:DevopsAde/ansible-config-mgt.git
+git push -u origin main
+```
 - Create a new Freestyle project **`ansible`** in Jenkins and point it to your 'ansible-config-mgt' repository.
+
+1. **`Skip and continue as admin`** && **`Save and Continue`**
+
+![Alt text](Images/jenkins_click_1.png)
+![Alt text](Images/jenkins_click_2.png)
+![Alt text](Images/jenkins_ready.png)
+
+![Alt text](Images/create_JOB.png)
+![Alt text](Images/create_freestyle_project.png)
+
 
 - Configure a webhook in GitHub and set the webhook to trigger **`ansible`** build.
 
+![Alt text](Images/webhook.png)
+![Alt text](Images/create_webhook.png)
+
+- Now we want jenkins to communicate with GitHub we paste **`http://54.154.130.55:8080/`** of jenkins in the field followed by **`github-webhook/`**
+
+- And change the **`Content type`** to **`application/json`**
+
+![Alt text](Images/jenkins_communicate.png)
+![Alt text](Images/webhook_success.png)
+
 - Configure a Post-build job to save all (**) files.
+
+1. Specify the source code management. Copy the webhook url **`https://github.com/DevopsAde/ansible-config-mgt`**
+
+![Alt text](Images/ansible-config-mgt.png)
+
+![Alt text](Images/post_build_tick.png)
+
+- Onn the Post-Build option select **`Artifacts`**
+
+![Alt text](Images/select_artifacts.png)
+
+- And type **`**`** wildcard to save all files && Click **`Apply`** && **`Save`**.
+
+![Alt text](Images/Apply_wildcard.png)
+
 
 
 
