@@ -162,6 +162,10 @@ saves the files (build artifacts) in the following folder **`ls /var/lib/jenkins
 ![Alt text](<Images/build_config success.png>)
 ![Alt text](Images/build_output.png)
 
+Now your setup will look like this in the image below:
+
+![Alt text](Images/final_setup.png)
+
 
 
 
