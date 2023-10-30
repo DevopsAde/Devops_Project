@@ -297,9 +297,9 @@ Feel free to update this playbook with following tasks:
 
 - Run some shell script etc
   
-For a better understanding of Ansible playbooks – watch this [video](https://youtu.be/ZAdJ7CdN7DY) from RedHat and read this [article](https://www.redhat.com/en/topics/automation/
+For a better understanding of Ansible playbooks – watch this [video](https://youtu.be/ZAdJ7CdN7DY) from RedHat and read this
 
-what-is-an-ansible-playbook).   
+[article](https://www.redhat.com/en/topics/automation/what-is-an-ansible-playbook).   
 
 
 
