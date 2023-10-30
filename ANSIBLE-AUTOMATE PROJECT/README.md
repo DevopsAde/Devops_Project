@@ -243,6 +243,10 @@ To learn how to setup SSH agent and connect VS Code to your Jenkins_Ansible inst
 ![Alt text](<Images/ssh-add -l.png>)
 ![Alt text](<Images/ssh-add -l_contd.png>)
 
+- Now lets try and ssh into another server instances. The image below:
+
+![Alt text](<Images/ssh_another _server.png>)
+
 
 
 
