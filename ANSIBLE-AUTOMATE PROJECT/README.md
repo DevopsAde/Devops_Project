@@ -196,19 +196,25 @@ include ticket number (e.g. **`PRJ-145`**) in the name of your branch and add a 
 
 2. Checkout the newly created feature branch to your local machine and start building your code and directory structure.
 
+![Alt text](Images/branch_checkout_dev.png)
+
 3. Create a directory and name it **`playbooks`** - it will be used to store all your playbook files.
 
 4. Create a directory and name it **`inventory`** - it will be used to keep your hosts organised.
 
-5. Within the playbooks folder, create your first playbook, and name it **`common.yml`**
+**`mkdir playbooks inventory`**
+
+![Alt text](Images/mkdir_playbooks_inventory.png)
+
+5. Within the playbooks folder, create your first playbook, and name it **`common.yml`**. **TIP:** Create a file under playbook
 
 6. Within the inventory folder, create an inventory file () for each environment (Development, Staging Testing and Production) 
 
 **`dev`**,**`Staging`**, **`uat`**, & **`prod`** respectively. These inventory files use **`ini`** languages style to configure Ansible hosts.
 
+![Alt text](Images/inventory_files.png)
 
-
-
+![Alt text](Images/inventory_list.png)
 
 
 
