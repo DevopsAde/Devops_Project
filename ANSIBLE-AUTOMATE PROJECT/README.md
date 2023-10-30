@@ -138,11 +138,13 @@ git push -u origin main
 
 1. Specify the source code management. Copy the webhook url **`https://github.com/DevopsAde/ansible-config-mgt`**
 
+![Alt text](Images/source_code_mgt.png)
+
 ![Alt text](Images/ansible-config-mgt.png)
 
 ![Alt text](Images/post_build_tick.png)
 
-- Onn the Post-Build option select **`Artifacts`**
+- On the Post-Build option select **`Artifacts`**
 
 ![Alt text](Images/select_artifacts.png)
 
