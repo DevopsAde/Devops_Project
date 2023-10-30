@@ -281,7 +281,8 @@ within the infrastructure. Update your **`playbooks/common.yml`** file with the 
       apt:
         name: wireshark
         state: latest
-        
+```
+
 Examine the code above and try to make sense out of it. This playbook is divided into two parts, each of them is intended to perform the same task: 
 
 install wireshark utility (or make sure it is updated to the latest version) on your RHEL 8 and Ubuntu servers. It uses root user to perform this task 
