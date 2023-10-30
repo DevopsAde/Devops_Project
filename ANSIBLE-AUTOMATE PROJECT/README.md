@@ -40,7 +40,7 @@ Public subnet has public IP addresses and Private subnet is only reachable by pr
 
 # Install and Configure Ansible on EC2 Instance
 
-- Step 1: 
+# Step 1: Install and Configure Ansible on EC2 Instance
 
 1. Update the **`Name`** tag on your **`Jenkins`** EC2 instance to **`Jenkins_Ansible`**. We will use this server to run playbooks.
 
@@ -165,6 +165,8 @@ saves the files (build artifacts) in the following folder **`ls /var/lib/jenkins
 Now your setup will look like this in the image below:
 
 ![Alt text](Images/final_setup.png)
+
+# Step 2: Prepare your development environment using Visual Studio Code
 
 
 
