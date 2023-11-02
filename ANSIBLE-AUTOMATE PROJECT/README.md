@@ -376,4 +376,13 @@ Now, it is time to execute ansible-playbook command and verify if your playbook 
 
 - Now let's go and check each of the servers to see if **`wireshark`** has been installed by running **`which wireshark`** or **`wireshark --version`**
 
+![Alt text](Images/wireshark_version.png)
 
+![Alt text](Images/wireshark_2_install.png)
+
+- Your updated Ansible Architecture now looks like this:
+
+![Alt text](Images/ANSIBLE_ARCHITECTURE.png)
+
+
+# Congratulations:: We have successfully automated our first routine task Ansible Project.
