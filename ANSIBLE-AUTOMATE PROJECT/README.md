@@ -385,4 +385,4 @@ Now, it is time to execute ansible-playbook command and verify if your playbook 
 ![Alt text](Images/ANSIBLE_ARCHITECTURE.png)
 
 
-# Congratulations:: We have successfully automated our first routine task Ansible Project.
+# Congratulations!! You have just automated your routine tasks by implementing your first Ansible project!
