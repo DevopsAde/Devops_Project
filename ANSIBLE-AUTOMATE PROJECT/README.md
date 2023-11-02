@@ -257,7 +257,7 @@ within the infrastructure. Update your **`playbooks/common.yml`** file with the 
 ```
 ---
 - name: update web and nfs servers
-  hosts: webservers, nfs
+  hosts: webservers, nfs, db
   remote_user: ec2-user
   become: yes
   become_user: root
@@ -301,6 +301,33 @@ For a better understanding of Ansible playbooks – watch this [video](https://y
 
 [article](https://www.redhat.com/en/topics/automation/what-is-an-ansible-playbook).   
 
+## Step 6 – Update GIT with the latest code
+
+Now all of your directories and files live on your machine and you need to push changes made locally to GitHub. It is important to learn how to collaborate with help of **`GIT`**. 
+
+In many organisations there is a development rule that do not allow to deploy any code before it has been reviewed by an extra pair of eyes – it is also called "Four eyes principle".
+
+Now you have a separate branch, you will need to know how to raise a Pull Request (PR), get your branch peer reviewed and merged to the **`master`** branch.
+
+Commit your code into GitHub:
+
+1. Use git commands to add, commit and push your branch to GitHub.
+
+`git status`
+
+`git add <selected files>`
+
+`git commit -m "commit message"`
+  
+2. Create a Pull request (PR)
+
+3. Wear the hat of another developer for a second, act as a reviewer.
+
+4. If the reviewer is happy with your new feature development, merge the code to the **`master`** branch.
+
+5. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
+
+Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to `/var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.`
 
 
 
