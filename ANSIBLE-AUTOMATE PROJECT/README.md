@@ -344,6 +344,12 @@ Commit your code into GitHub:
 
 5. Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
 
+![Alt text](Images/Pull_down_changes.png)
+
+![Alt text](<Images/Pull_down_changes 2.png>)
+
+![Alt text](<Images/pull_down_chnages 3.png>)
+
 Once your code changes appear in master branch – Jenkins will do its job and save all the files (build artifacts) to `/var/lib/jenkins/jobs/ansible/builds/<build_number>/archive/ directory on Jenkins-Ansible server.`
 
 ![Alt text](Images/Jenkins_build_update.png)
@@ -351,4 +357,19 @@ Once your code changes appear in master branch – Jenkins will do its job and s
 Let's also verify in the Terminal with the image below:
 
 ![Alt text](Images/Cmd_line_Jenkins_verify.png)
+
+# Step 7 - Run First Ansible Test
+
+Now, it is time to execute ansible-playbook command and verify if your playbook actually works:
+
+1. Setup your VSCode to connect to your instance. Now let's run the playbook using the command below:
+
+- Now lets clone this repo **`https://github.com/DevopsAde/ansible-config-mgt`** to the **`Bastion Server`** 
+![Alt text](Images/Git_clone_cmd.png)
+
+- Now change directory into **`cd ansible-config-mgt`**
+
+![Alt text](Images/run_playbook.png)
+![Alt text](Images/run_playbook2.png)
+
 
