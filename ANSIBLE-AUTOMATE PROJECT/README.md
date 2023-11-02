@@ -372,4 +372,8 @@ Now, it is time to execute ansible-playbook command and verify if your playbook 
 ![Alt text](Images/run_playbook.png)
 ![Alt text](Images/run_playbook2.png)
 
+![Alt text](Images/PLAYBOOK_SUCCESS_WIRESHARK.png)
+
+- Now let's go and check each of the servers to see if **`wireshark`** has been installed by running **`which wireshark`** or **`wireshark --version`**
+
 
