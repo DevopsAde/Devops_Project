@@ -10,11 +10,13 @@ created playbooks in a new playbook. It allows us to organize tasks and reuse th
 
 ## Code Refactoring
 
-Refactoring is a general term in computer programming. It means making changes to the source code without changing expected behaviour of the software.
+Refactoring is a general term in computer programming. It means making changes to the source code without changing expected behaviour 
 
-The main idea of refactoring is to enhance code readability, increase maintainabilityand extensibility, reduce complexity, add proper comments without 
+of the software.
 
-affecting the logic.
+The main idea of refactoring is to enhance code readability, increase maintainabilityand extensibility, reduce complexity, add proper 
+
+comments without affecting the logic.
 
 In this case, we will move things around a little bit in the code, but the overall state of the infrastructure remians the same.
 
