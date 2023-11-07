@@ -26,11 +26,11 @@ Let us see how we can improve our Ansible Code!
 
 Step 1 - Jenkins Job Enhancement
 
-Before we begin, let us make some changes to our Jenkins job - now every new change in the codes creates a seperate directory which is not very convenient
+Before we begin, let us make some changes to our Jenkins job - now every new change in the codes creates a seperate directory which is not
 
-when we want to run some commands from one place. Besides, it consumes space on Jenkins server with each subsequent change. Let us enhance it by introducing a 
+very convenient when we want to run some commands from one place. Besides, it consumes space on Jenkins server with each subsequent change. 
 
-new Jenkins project/job - we will require **`copy Artifact`** plugin
+Let us enhance it by introducing a new Jenkins project/job - we will require **`copy Artifact`** plugin
 
 1. Go to your **`Jenkins_ansible`** server and create a new directory called **`ansible-config-artifact`** - we will store there all artifacts after each build.
 
