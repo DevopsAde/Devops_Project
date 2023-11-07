@@ -34,10 +34,14 @@ each subsequent change.
 
 Let us enhance it by introducing a new Jenkins project/job - we will require **`copy Artifact`** plugin
 
-1. Go to your **`Jenkins_ansible`** server and create a new directory called **`ansible-config-artifact`** - we will store there all artifacts after each build.
+1. Go to your **`Jenkins_ansible`** server and create a new directory called **`ansible-config-artifact`** - we will store there 
+
+all artifacts after each build.
 
 **`sudo mkdir /home/ubuntu/ansible-config-artifact`**
 
 2. Change permissions to this directory, so Jenkins could save files there - **`chmod -R 0777 /home/ubuntu/ansible-config-artifact`**
 
-3. Go to the Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin without restarting Jenkins
+3. Go to the Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin
+
+without restarting Jenkins
