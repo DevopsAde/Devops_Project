@@ -26,9 +26,9 @@ Let us see how we can improve our Ansible Code!
 
 Step 1 - Jenkins Job Enhancement
 
-Before we begin, let us make some changes to our Jenkins job - now every new change in the codes creates a seperate directory which is not
+Before we begin, let us make some changes to our Jenkins job - now every new change in the codes creates a seperate directory which is not very convenient
 
-very convenient when we want to run some commands from one place. Besides, it consumes space on Jenkins server with each subsequent change. 
+when we want to run some commands from one place. Besides, it consumes space on Jenkins server with each subsequent change. 
 
 Let us enhance it by introducing a new Jenkins project/job - we will require **`copy Artifact`** plugin
 
