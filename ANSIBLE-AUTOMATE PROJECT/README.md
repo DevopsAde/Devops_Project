@@ -360,6 +360,10 @@ Let's also verify in the Terminal with the image below:
 
 # Step 7 - Run First Ansible Test
 
+# NOTE: RUN THIS COMMAND BELOW TO EXECUTE THE LATEST BUILD VIA JENKINS BUILD NUMBER:
+
+![Alt text](Images/run_ansible_jenkins_build_playbook.png)
+
 Now, it is time to execute ansible-playbook command and verify if your playbook actually works:
 
 1. Setup your VSCode to connect to your instance. Now let's run the playbook using the command below:
