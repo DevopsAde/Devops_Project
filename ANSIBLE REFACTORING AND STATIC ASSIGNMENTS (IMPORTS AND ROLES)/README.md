@@ -42,6 +42,47 @@ all artifacts after each build.
 
 2. Change permissions to this directory, so Jenkins could save files there - **`chmod -R 0777 /home/ubuntu/ansible-config-artifact`**
 
+![Alt text](Images/mkdir.png)
+![Alt text](Images/change_permission.png)
+
 3. Go to the Jenkins web console -> Manage Jenkins -> Manage Plugins -> on Available tab search for Copy Artifact and install this plugin
 
-without restarting Jenkins
+without restarting Jenkins.
+
+![Alt text](Images/copy_artifacts_plugin.png)
+
+4. Create a new Freestyle project (you have done it in Project 9) and name it **`save_artifacts`**
+
+![Alt text](Images/create_freestyle_project.png)
+
+5. This project will be triggered by completion of your existing **`ansible`** project. Configure it accordingly:
+
+![Alt text](Images/save_artifacts_configuration_1.png)
+
+![Alt text](Images/save_artifacts_configuration_2.png)
+
+Note: You can configure number of builds to keep in order to save space on the server, for example, you might want to keep only last
+
+2 or 5 build results. You can also make this change to your ansible job.
+
+6. The main idea of **`save_artifacts`** project is to save artifacts into **`/home/ubuntu/ansible-config-artifact`** directory.
+
+To achieve this, create a Build step and choose Copy artifacts from other project, specify ansible as a source project and
+
+**`/home/ubuntu/ansible-config-artifact`** as a target directory.
+
+![Alt text](Images/save_artifacts_configuration_3.png)
+
+![Alt text](Images/save_artifacts_upstream_projects.png)
+
+7. Test your set up by making some change in README.md file inside your ansible-config-mgt repository (right inside main branch).
+
+If both Jenkins jobs have completed one after another - you shall see your files inside **`/home/ubuntu/ansible-config-artifact`**
+
+directory and it will be updated with every commit to your main branch. Now your Jenkins pipeline is more neat and clean.
+
+![Alt text](Images/edit_changes_readme.png)
+![Alt text](Images/Github_repo_save_artifacts.png)
+
+- NOTE: Now everything done was copied into the **`ansible-config-artifact`**
+![Alt text](Images/save_config_artifacts.png)
