@@ -86,3 +86,5 @@ directory and it will be updated with every commit to your main branch. Now your
 
 - NOTE: Now everything done was copied into the **`ansible-config-artifact`**
 ![Alt text](Images/save_config_artifacts.png)
+
+![Alt text](Images/copied_artifacts_success.png)
