@@ -88,3 +88,31 @@ directory and it will be updated with every commit to your main branch. Now your
 ![Alt text](Images/save_config_artifacts.png)
 
 ![Alt text](Images/copied_artifacts_success.png)
+
+## REFACTOR ANSIBLE CODE BY IMPORTING OTHER PLAYBOOKS INTO SITE.YML
+
+### Step 2 – Refactor Ansible code by importing other playbooks into site.yml
+
+Before starting to refactor the codes, ensure that you have pulled down the latest code from master (main) branch, and created a 
+
+new branch, name it refactor.
+
+Let see code re-use in action by importing other playbooks.
+
+8.	Within playbooks folder, create a new file and name it site.yml – This file will now be considered as an entry point into the 
+
+entire infrastructure configuration. Other playbooks will be included here as a reference. In other words, `site.yml` will become 
+
+a parent to all other playbooks that will be developed. Including common.yml that you created previously. Dont worry, you will understand
+
+more what this means shortly.
+
+9. Create a new folder in root of the repository and name it static-assignments. The static-assignments folder is where all other children
+
+playbooks will be stored. This is merely for easy organization of your work. It is not an Ansible specific concept, therefore you can choose
+
+how you want to organize your work. You will see why the folder name has a prefix of static very soon. For now, just follow along.
+
+10.	Move common.yml file into the newly created static-assignments folder.
+
+11.	Inside site.yml file, import common.yml playbook.
